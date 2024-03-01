@@ -13,6 +13,40 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      height: {
+        '128': '32rem',  // 512px
+        '144': '36rem',  // 576px
+        '160': '40rem',  // 640px
+      },
+      width: {
+        100: '25rem',   // 400px
+        128: '32rem',  // 512px
+        144: '36rem',  // 576px
+        160: '40rem',  // 640px
+        180: '44rem',  // 704px
+        200: '48rem',  // 768px
+        300: '64rem',  // 1024px
+        400: '76rem',  // 1216px
+        500: '88rem',  // 1408px
+        600: '96rem',  // 1536px
+        700: '104rem', // 1664px
+        800: '112rem', // 1792px
+        900: '120rem', // 1920px 
+      },
+      maxWidth: {
+        128: '32rem',  // 512px
+        144: '36rem',  // 576px
+        160: '40rem',  // 640px
+        180: '44rem',  // 704px
+        200: '48rem',  // 768px
+        300: '64rem',  // 1024px
+        400: '76rem',  // 1216px
+        500: '88rem',  // 1408px
+        600: '96rem',  // 1536px
+        700: '104rem', // 1664px
+        800: '112rem', // 1792px
+        900: '120rem', // 1920px
+      },
     },
   },
   plugins: [],
