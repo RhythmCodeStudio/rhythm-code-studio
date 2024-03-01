@@ -23,7 +23,7 @@ export default function Home() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="email Mike Martin Media">
-        <h4 className="text-xl">kevin@rhythmcodestudio.tech</h4>
+        <h4 className="text-xl underline">kevin@rhythmcodestudio.tech</h4>
       </a>
     </main>
   );
