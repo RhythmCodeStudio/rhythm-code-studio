@@ -15,6 +15,7 @@ export default function Home() {
           width={1000}
           height={594}
           alt="Rhythm Code Studio - Custom web solutions to match your beat"
+          priority
         />
       </div>
 
