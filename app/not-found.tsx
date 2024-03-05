@@ -7,11 +7,10 @@ export default function FourZeroFour() {
   useEffect(() => {
     router.push("/");
   }, [router]);
-
   return (
-    <main className="text-black flex min-h-screen flex-col items-center justify-center bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500">
+    <div>
       <h1>Not found | 404!</h1>
       <div></div>
-    </main>
+    </div>
   );
 }
