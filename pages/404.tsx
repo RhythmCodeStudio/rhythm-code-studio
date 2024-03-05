@@ -10,10 +10,10 @@ export default function FourZeroFour() {
   }, [router]);
 
   return (
-    <main className="text-black flex-col items-center justify-center bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500">
+    <div>
       404 - page not found
       Redirecting...
-    </main>
+    </div>
   )
 }
 
