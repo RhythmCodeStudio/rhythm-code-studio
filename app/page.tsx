@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SocialMediaLinks from "./components/socialMediaLinks";
 
 export default function Home() {
   return (
@@ -6,10 +7,10 @@ export default function Home() {
       <h1 className=" hidden text-2xl md:text-4xl font-bold  text-center">
         Rhythm Code Studio
       </h1>
-      <h2 className=" hidden text-2xl md:text-4xl font-bold  text-center">
+      <h2 className=" hidden text-xl md:text-xl font-bold  text-center">
         Custom web solutions to match your beat
       </h2>
-      <div className="w-72 md:w-200 mb-12 mt-12">
+      <div className="w-72 md:w-200 mb-6 mt-6">
         <Image
           src="/images/logos/horizontal-full.png"
           width={1000}
@@ -18,7 +19,6 @@ export default function Home() {
           priority
         />
       </div>
-
       <a
         href="mailto:kevin@rhythmcodestudio.tech"
         target="_blank"
@@ -26,6 +26,9 @@ export default function Home() {
         aria-label="email Mike Martin Media">
         <h4 className="text-xl underline">kevin@rhythmcodestudio.tech</h4>
       </a>
+      <div className="mt-6">
+      <SocialMediaLinks />
+      </div>
     </main>
   );
 }
