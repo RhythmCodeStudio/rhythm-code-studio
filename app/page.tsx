@@ -3,14 +3,17 @@ import SocialMediaLinks from "./components/socialMediaLinks";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500">
+    <section className="grid grid-cols-1">
       <h1 className=" hidden text-2xl md:text-4xl font-bold  text-center">
         Rhythm Code Studio
       </h1>
-      <h2 className=" hidden text-xl md:text-xl font-bold  text-center">
+      <h2 className=" hidden text-xl md:text-xl font-bold text-center">
         Custom web solutions to match your beat
       </h2>
-      <div className="w-72 md:w-200 mb-6 mt-6">
+      {/* <div className="w-72 md:w-200 mb-6 mt-52 md:mt-6"> */}
+      <div
+        className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 md:w-200 justify-center items-center absolute "
+          }`}>
         <Image
           src="/images/logos/horizontal-full.png"
           width={1000}
@@ -19,16 +22,22 @@ export default function Home() {
           priority
         />
       </div>
-      <a
-        href="mailto:kevin@rhythmcodestudio.tech"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="email Mike Martin Media">
-        <h4 className="text-xl underline">kevin@rhythmcodestudio.tech</h4>
-      </a>
-      <div className="mt-6">
-      <SocialMediaLinks />
+      <div className="left-1/2 bottom-1 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute mb-20 ">
+        <div id="email-div" className="text-center">
+          <a
+            href="mailto:kevin@rhythmcodestudio.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="email Mike Martin Media">
+            <h4 className="md:text-xl underline hover:transform hover:scale-110 transition-transform">
+              kevin@rhythmcodestudio.tech
+            </h4>
+          </a>
+        </div>
+        <div className="mt-6">
+          <SocialMediaLinks />
+        </div>
       </div>
-    </main>
+    </section>
   );
 }
