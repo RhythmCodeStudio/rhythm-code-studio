@@ -12,8 +12,7 @@ export default function Home() {
       </h2>
       {/* <div className="w-72 md:w-200 mb-6 mt-52 md:mt-6"> */}
       <div
-        className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 md:w-200 justify-center items-center absolute "
-          }`}>
+        className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 md:w-200 justify-center items-center absolute`}>
         <Image
           src="/images/logos/horizontal-full.png"
           width={1000}
@@ -22,7 +21,7 @@ export default function Home() {
           priority
         />
       </div>
-      <div className="left-1/2 bottom-1 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute mb-20 ">
+      <div className="left-1/2 bottom-1 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute mb-72 md:mb-20 ">
         <div id="email-div" className="text-center">
           <a
             href="mailto:kevin@rhythmcodestudio.tech"
