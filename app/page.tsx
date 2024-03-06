@@ -28,7 +28,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="email Mike Martin Media">
-            <h4 className="md:text-xl underline hover:transform hover:scale-110 transition-transform">
+            <h4 className="md:text-lg underline hover:transform hover:scale-110 transition-transform">
               kevin@rhythmcodestudio.tech
             </h4>
           </a>
