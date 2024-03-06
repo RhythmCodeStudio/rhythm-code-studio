@@ -21,14 +21,14 @@ export default function Home() {
           priority
         />
       </div>
-      <div className="left-1/2 bottom-1 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute mb-72 md:mb-20 ">
+      <div className="left-1/2 bottom-1 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute mb-72 md:mb-16">
         <div id="email-div" className="text-center">
           <a
             href="mailto:kevin@rhythmcodestudio.tech"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="email Mike Martin Media">
-            <h4 className="md:text-lg underline hover:transform hover:scale-110 transition-transform">
+            <h4 className="md:text-xl underline hover:transform hover:scale-110 transition-transform">
               kevin@rhythmcodestudio.tech
             </h4>
           </a>
