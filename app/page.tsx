@@ -1,5 +1,9 @@
+'use client';
 import Image from "next/image";
 import SocialMediaLinks from "./components/socialMediaLinks";
+
+import { track } from "@vercel/analytics";
+
 
 export default function Home() {
   return (
@@ -22,7 +26,12 @@ export default function Home() {
         />
       </div>
       <div className="left-1/2 bottom-1 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute mb-72 md:mb-16">
-        <div id="email-div" className="text-center">
+        <div
+          id="email-div"
+          className="text-center"
+          onClick={() => {
+            track("Email link clicked");
+          }}>
           <a
             href="mailto:kevin@rhythmcodestudio.tech"
             target="_blank"
