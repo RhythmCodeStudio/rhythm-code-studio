@@ -5,7 +5,6 @@ export default function IconLink({ href, icon, label, name }: { href: string, ic
   return (
     <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label} onClick={() => {
       track(`${name} clicked`);
-      
     }}>
       {icon}
     </a>
