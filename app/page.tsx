@@ -27,7 +27,7 @@ export default function Home() {
           priority
         />
       </div>
-      <div className="left-1/2 bottom-1 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute mb-72 md:mb-16">
+      <div className="left-1/2 bottom-1 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute mb-52 md:mb-16">
         <div
           id="email-div"
           className="text-center"
