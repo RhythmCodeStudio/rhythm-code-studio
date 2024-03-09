@@ -1,8 +1,10 @@
 'use client';
+// import from next
 import Image from "next/image";
-import SocialMediaLinks from "./components/socialMediaLinks";
-
+// import from vercel
 import { track } from "@vercel/analytics";
+// import components
+import SocialMediaLinks from "./components/socialMediaLinks";
 
 
 export default function Home() {
