@@ -51,7 +51,7 @@ export default function Home() {
             </h4>
           </a>
         </div>
-        <div className="mt-4 mb-10">
+        <div className="mt-2 mb-10">
           <SocialMediaLinks />
         </div>
       </div>
