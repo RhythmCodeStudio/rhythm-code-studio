@@ -8,16 +8,16 @@ import SocialMediaLinks from "./components/socialMediaLinks";
 
 export default function Home() {
   return (
-    <section className="grid grid-cols-1">
-      <div className=" hidden mt-24 md:mt-12 xl:mt-36">
-        <h1 className=" text-xl md:text-4xl font-bold text-center">
+    <section className="flex flex-col justify-center items-center  space-y-20">
+      <div className="hidden">
+        <h1 className="text-center">
           Rhythm Code Studio
         </h1>
-        <h2 className="text-sm  md:text-xl font-bold text-center">
+        <h2 className="text-sm md:text-xl font-bold text-center">
           Custom web solutions to match your beat
         </h2>
       </div>
-      <div className="text-md sm:text-lg lg:text-2xl font-bold text-center left-1/2 top-40 transform -translate-x-1/2 translate-y-1/2 absolute">
+      <div className="p-4 text-md sm:text-lg lg:text-2xl font-bold text-center">
         <a
           href="https://calendly.com/kevin-jnxz/30min"
           target="_blank"
@@ -27,19 +27,17 @@ export default function Home() {
           </h3>
         </a>
       </div>
-      <div
-        className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2  justify-center items-center absolute`}>
+      <div className="flex justify-center items-center">
         <Image
-          className="w-full h-auto max-4-400"
+          className="w-1/2 h-auto max-w-144"
           src="/images/logos/mark-only-full.png"
-          width={1000}
-          height={594}
+          width={796}
+          height={816}
           alt="Rhythm Code Studio - Custom web solutions to match your beat"
           priority
         />
       </div>
-
-      <div className="left-1/2 bottom-40 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute">
+      <div className="flex justify-center items-center">
         <div
           id="email-div"
           className="text-center"
@@ -56,11 +54,69 @@ export default function Home() {
             </h4>
           </a>
         </div>
-       
       </div>
-      <div className="left-1/2 bottom-20 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute">
-          <SocialMediaLinks />
-        </div>
+      <div className="flex justify-center items-center mb-4">
+        <SocialMediaLinks />
+      </div>
     </section>
   );
 }
+
+// export default function Home() {
+//   return (
+//     <section className="grid grid-cols-1">
+//       <div className=" hidden mt-24 md:mt-12 xl:mt-36">
+//         <h1 className=" text-xl md:text-4xl font-bold text-center">
+//           Rhythm Code Studio
+//         </h1>
+//         <h2 className="text-sm  md:text-xl font-bold text-center">
+//           Custom web solutions to match your beat
+//         </h2>
+//       </div>
+//       <div className="text-md sm:text-lg lg:text-2xl font-bold text-center left-1/2 top-40 transform -translate-x-1/2 translate-y-1/2 absolute">
+//         <a
+//           href="https://calendly.com/kevin-jnxz/30min"
+//           target="_blank"
+//           rel="noopener noreferrer">
+//           <h3 className="underline hover:transform hover:scale-110 transition-transform">
+//             Click or tap to schedule a free consultation.
+//           </h3>
+//         </a>
+//       </div>
+//       <div
+//         className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2  justify-center items-center absolute`}>
+//         <Image
+//           className="w-full h-auto max-w-400"
+//           src="/images/logos/mark-only-full.png"
+//           width={1000}
+//           height={594}
+//           alt="Rhythm Code Studio - Custom web solutions to match your beat"
+//           priority
+//         />
+//       </div>
+
+//       <div className="left-1/2 bottom-40 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute">
+//         <div
+//           id="email-div"
+//           className="text-center"
+//           onClick={() => {
+//             track("Email link clicked");
+//           }}>
+//           <a
+//             href="mailto:kevin@rhythmcodestudio.tech"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             aria-label="email Rhythm Code Studio">
+//             <h4 className="text-xl lg:text-2xl underline hover:transform hover:scale-110 transition-transform">
+//               kevin@rhythmcodestudio.tech
+//             </h4>
+//           </a>
+//         </div>
+       
+//       </div>
+//       <div className="left-1/2 bottom-20 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute">
+//           <SocialMediaLinks />
+//         </div>
+//     </section>
+//   );
+// }
