@@ -58,6 +58,7 @@ export default function Home() {
       <div className="flex justify-center items-center">
         <SocialMediaLinks />
       </div>
+      
     </section>
   );
 }
