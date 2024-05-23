@@ -44,7 +44,7 @@ export default function RootLayout({
           {/* Main content area, flex-grow allows it to expand */}
           <main className="flex-grow">{children}</main>
           {/* Footer will be positioned at the bottom */}
-          <div className="sticky bottom-0">
+          <div className="bottom-0">
             <Footer />
           </div>
         </div>
