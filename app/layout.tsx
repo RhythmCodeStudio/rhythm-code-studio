@@ -39,15 +39,17 @@ export default function RootLayout({
     <html lang="en" className={`${recursive.className} overflow-x-hidden`}>
       <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500">
         {/* Flex container that occupies at least the viewport height */}
-        {/* <div className="flex flex-col min-h-screen"> */}
+        <div className="flex flex-col min-h-screen">
           <Header />
-          {/* Main content area, flex-grow allows it to expand and push the footer down */}
+          {/* Main content area, flex-grow allows it to expand */}
           <main className="flex-grow">{children}</main>
-          {/* Footer will be pushed to the bottom */}
-          <Footer />
-        {/* </div> */}
+          {/* Footer will be positioned at the bottom */}
+          <div className="sticky bottom-0">
+            <Footer />
+          </div>
+        </div>
         <Analytics />
       </body>
     </html>
   );
-};
+}

@@ -8,7 +8,7 @@ import SocialMediaLinks from "./components/socialMediaLinks";
 
 export default function Home() {
   return (
-    <section className="flex flex-col justify-center items-center  space-y-24">
+    <section className="flex flex-col justify-between items-center space-y-20">
       <div className="hidden">
         <h1 className="text-center">
           Rhythm Code Studio
