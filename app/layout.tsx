@@ -1,12 +1,29 @@
 // import from vercel
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Suranna, Anaheim, Vidaloka, Recursive } from "next/font/google";
 import "./globals.css";
 // import components
 import { Footer } from "./components/footer";
-
+import { Header } from "./components/header";
+// import fonts
 const inter = Inter({ subsets: ["latin"] });
+const suranna = Suranna({
+  subsets: ["latin"],
+  weight: "400",
+});
+const anaheim = Anaheim({
+  subsets: ["latin"],
+  weight: "400",
+});
+const vidaloka = Vidaloka({
+  subsets: ["latin"],
+  weight: "400",
+});
+const recursive = Recursive({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Rhythm Code Studio",
@@ -19,19 +36,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-x-hidden">
-    <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500">
-      {/* Flex container that occupies at least the viewport height */}
-      <div className="flex flex-col min-h-screen">
-        {/* Main content area, flex-grow allows it to expand and push the footer down */}
-        <main className="flex-grow">
-          {children}
-        </main>
-        {/* Footer will be pushed to the bottom */}
-        <Footer />
-      </div>
-      <Analytics />
-    </body>
-  </html>
+    <html lang="en" className={`${recursive.className} overflow-x-hidden`}>
+      <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500">
+        {/* Flex container that occupies at least the viewport height */}
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          {/* Main content area, flex-grow allows it to expand and push the footer down */}
+          <main className="flex-grow">{children}</main>
+          {/* Footer will be pushed to the bottom */}
+          <Footer />
+        </div>
+        <Analytics />
+      </body>
+    </html>
   );
 }
