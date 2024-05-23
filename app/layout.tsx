@@ -26,9 +26,26 @@ const recursive = Recursive({
 });
 
 export const metadata: Metadata = {
-  title: "Rhythm Code Studio",
-  description: "Rhythm Code Studio - Custom web solutions to match your beat",
-};
+  metadataBase: new URL('https://rhythmcodestudio.tech'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en-US',
+      'de-DE': '/de-DE',
+    },
+  },
+  title: {
+    template: '%s | Rhythm Code Studio | Custom web solutions to match your beat',
+    default: 'Rhythm Code Studio | Custom web solutions to match your beat',
+  },
+  description: "Custom web solutions to match your beat. Custom coded websites and web based software for small businesses, musicians, bands, artists, organizations, and individuals. Let Rhythm Code Studio take care of your website. You've got more important things to do.",
+  openGraph: {
+    images: '/opengraph-image.png',
+  },
+}
+
+
+
 
 export default function RootLayout({
   children,
