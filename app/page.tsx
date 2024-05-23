@@ -39,7 +39,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="left-1/2 bottom-1 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute mb-40">
+      <div className="left-1/2 bottom-40 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute">
         <div
           id="email-div"
           className="text-center"
