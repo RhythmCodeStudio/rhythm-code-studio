@@ -36,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${recursive.className} overflow-x-hidden overflow-y-hidden`}>
+    <html lang="en" className={`${recursive.className} overflow-x-hidden`}>
       <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500">
         {/* Flex container that occupies at least the viewport height */}
         <div className="flex flex-col min-h-screen">

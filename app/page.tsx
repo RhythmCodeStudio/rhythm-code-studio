@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <section className="grid grid-cols-1">
       <div className=" hidden mt-24 md:mt-12 xl:mt-36">
-        <h1 className=" text-xl md:text-4xl font-bold  text-center">
+        <h1 className=" text-xl md:text-4xl font-bold text-center">
           Rhythm Code Studio
         </h1>
         <h2 className="text-sm  md:text-xl font-bold text-center">
@@ -30,7 +30,7 @@ export default function Home() {
       <div
         className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2  justify-center items-center absolute`}>
         <Image
-          className="w-full h-auto "
+          className="w-full h-auto max-4-400"
           src="/images/logos/mark-only-full.png"
           width={1000}
           height={594}
@@ -39,7 +39,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="left-1/2 bottom-40 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute">
+      <div className="left-1/2 bottom-60 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute">
         <div
           id="email-div"
           className="text-center"
@@ -56,10 +56,11 @@ export default function Home() {
             </h4>
           </a>
         </div>
-        <div className="mt-16">
+       
+      </div>
+      <div className="left-1/2 bottom-40 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute">
           <SocialMediaLinks />
         </div>
-      </div>
     </section>
   );
 }
