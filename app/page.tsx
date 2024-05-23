@@ -17,7 +17,7 @@ export default function Home() {
           Custom web solutions to match your beat
         </h2>
       </div>
-      <div className="text-md sm:text-lg lg:text-2xl font-bold text-center left-1/2 top-30 transform -translate-x-1/2 translate-y-1/2 absolute">
+      <div className="text-md sm:text-lg lg:text-2xl font-bold text-center left-1/2 top-40 transform -translate-x-1/2 translate-y-1/2 absolute">
         <a
           href="https://calendly.com/kevin-jnxz/30min"
           target="_blank"
@@ -39,7 +39,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="left-1/2 bottom-60 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute">
+      <div className="left-1/2 bottom-40 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute">
         <div
           id="email-div"
           className="text-center"
@@ -58,7 +58,7 @@ export default function Home() {
         </div>
        
       </div>
-      <div className="left-1/2 bottom-40 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute">
+      <div className="left-1/2 bottom-20 transform -translate-x-1/2 translate-y-1/2 justify-center items-center absolute">
           <SocialMediaLinks />
         </div>
     </section>
