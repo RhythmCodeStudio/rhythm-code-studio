@@ -17,7 +17,7 @@ export default function Home() {
           Custom web solutions to match your beat
         </h2>
       </div>
-      <div className="text-md sm:text-lg lg:text-2xl font-bold text-center">
+      <div className="sm:text-lg lg:text-2xl font-bold text-center">
         <a
           href="https://calendly.com/kevin-jnxz/30min"
           target="_blank"
