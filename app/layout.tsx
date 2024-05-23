@@ -45,8 +45,6 @@ export const metadata: Metadata = {
 }
 
 
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -56,12 +54,14 @@ export default function RootLayout({
     <html lang="en" className={`${recursive.className} overflow-x-hidden`}>
       <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500">
         {/* Flex container that occupies at least the viewport height */}
-        <div className="flex flex-col justify-between h-screen">
+        <div className="flex flex-col min-h-screen">
           <Header />
           {/* Main content area, flex-grow allows it to expand */}
           <main className="">{children}</main>
           {/* Footer will be positioned at the bottom */}
+          <div className="mt-auto">
           <Footer />
+          </div>
         </div>
         <Analytics />
       </body>
