@@ -8,7 +8,7 @@ import SocialMediaLinks from "./components/socialMediaLinks";
 
 export default function Home() {
   return (
-    <section className="flex flex-col justify-between items-center space-y-20">
+    <section className="flex flex-col justify-between items-center space-y-24">
       <div className="hidden">
         <h1 className="text-center">
           Rhythm Code Studio
@@ -29,7 +29,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center items-center">
         <Image
-          className="w-1/2 md:w-full h-auto"
+          className="w-1/2 h-auto"
           src="/images/logos/mark-only-full.png"
           width={796}
           height={816}
