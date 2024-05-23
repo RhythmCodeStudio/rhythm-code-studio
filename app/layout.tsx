@@ -42,11 +42,11 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen">
           <Header />
           {/* Main content area, flex-grow allows it to expand */}
-          <main className="flex-grow">{children}</main>
+          <main className="flex-1">{children}</main>
           {/* Footer will be positioned at the bottom */}
-          <div className="bottom-0">
+          
             <Footer />
-          </div>
+          
         </div>
         <Analytics />
       </body>
