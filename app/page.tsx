@@ -29,7 +29,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center items-center">
         <Image
-          className="w-1/2 h-auto max-w-144"
+          className="w-1/2 md:w-full h-auto"
           src="/images/logos/mark-only-full.png"
           width={796}
           height={816}
@@ -55,7 +55,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="flex justify-center items-center mb-4">
+      <div className="flex justify-center items-center">
         <SocialMediaLinks />
       </div>
     </section>
