@@ -1,5 +1,4 @@
 // import icons
-
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
@@ -8,7 +7,7 @@ import IconLink from "./iconLink";
 
 export default function SocialMediaLinks() {
   return (
-    <div className="flex justify-center items-center space-x-16 lg:space-x-28 ">
+    <div className="flex justify-center items-center space-x-16 lg:space-x-28 xl:space-x-52">
       <div className="hover:transform hover:scale-125 transition-transform">
       <IconLink
         href="https://www.instagram.com/rhythmcodestudio"
