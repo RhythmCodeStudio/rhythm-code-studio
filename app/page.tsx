@@ -8,7 +8,7 @@ import SocialMediaLinks from "./components/socialMediaLinks";
 
 export default function Home() {
   return (
-    <section className="flex flex-col justify-center items-center  space-y-20">
+    <section className="flex flex-col justify-center items-center  space-y-24">
       <div className="hidden">
         <h1 className="text-center">
           Rhythm Code Studio
@@ -17,7 +17,7 @@ export default function Home() {
           Custom web solutions to match your beat
         </h2>
       </div>
-      <div className="p-4 text-md sm:text-lg lg:text-2xl font-bold text-center">
+      <div className="text-md sm:text-lg lg:text-2xl font-bold text-center">
         <a
           href="https://calendly.com/kevin-jnxz/30min"
           target="_blank"
