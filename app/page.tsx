@@ -10,14 +10,13 @@ import { FaCalendarDays } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <section className="flex flex-col justify-between  items-center space-y-20 mt-12">
+    <section className="flex flex-col items-center space-y-16">
       <div className="hidden">
         <h1 className="text-center">Rhythm Code Studio</h1>
         <h2 className="text-sm md:text-xl font-bold text-center">
           Custom web solutions to match your beat
         </h2>
       </div>
-
       <div className="p-4 text-md sm:text-lg lg:text-2xl font-bold text-center">
           <a
             href="https://calendly.com/kevin-jnxz/30min"
@@ -63,5 +62,5 @@ export default function Home() {
       </div>
     </section>
   );
-}
+};
 
