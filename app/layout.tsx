@@ -52,9 +52,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${recursive.className} overflow-x-hidden`}>
-      <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500">
+      <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 h-screen">
         {/* Flex container that occupies at least the viewport height */}
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col">
           <Header />
           {/* Main content area, flex-grow allows it to expand */}
           <main className="">{children}</main>
