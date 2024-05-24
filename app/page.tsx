@@ -18,9 +18,9 @@ export default function Home() {
         </h2>
       </div> */}
 
-      <div className="-mt-12 flex justify-center items-center">
+      <div className="flex justify-center items-center">
         <Image
-          className="w-3/4 h-auto max-w-200"
+          className="w-7/12 h-auto max-w-200"
           src="/images/logos/mark-only-full.png"
           width={796}
           height={816}
