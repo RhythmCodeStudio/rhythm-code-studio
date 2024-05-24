@@ -4,11 +4,11 @@ import  SocialMediaLinks  from './socialMediaLinks';
 
 export const Footer = () => {
   return (
-    <footer className="text-center text-sm p-6 pt-0">
-      <div className="flex justify-center items-center m-12">
+    <footer className="text-center text-sm">
+      <div className="flex justify-center items-center m-6 mt-0 sm:mt-6">
         <SocialMediaLinks />
       </div>
-      <span className='p-6 m-6' >© 2024 Rhythm Code Studio</span>
+      <span className="m-6" >© 2024 Rhythm Code Studio</span>
     </footer>
   );
 }

@@ -6,7 +6,7 @@ export const Header = () => {
     <header className=" text-center justify-center items-center p-6 pt-0 pb-0 mb-0 m-6 sm:p-8 sm:pb-0 sm:m-8 sm:mb-0">
       <div className="flex justify-center">
         <Image
-          className="w-full h-auto max-w-300"
+          className="w-full h-auto max-w-200"
           src="/images/logos/horizontal-text-only-tag.png"
           width={1747}
           height={183}

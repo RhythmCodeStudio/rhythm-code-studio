@@ -26,24 +26,25 @@ const recursive = Recursive({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://rhythmcodestudio.tech'),
+  metadataBase: new URL("https://rhythmcodestudio.tech"),
   alternates: {
-    canonical: '/',
+    canonical: "/",
     languages: {
-      'en-US': '/en-US',
-      'de-DE': '/de-DE',
+      "en-US": "/en-US",
+      "de-DE": "/de-DE",
     },
   },
   title: {
-    template: '%s | Rhythm Code Studio | Custom web solutions to match your beat',
-    default: 'Rhythm Code Studio | Custom web solutions to match your beat',
+    template:
+      "%s | Rhythm Code Studio | Custom web solutions to match your beat",
+    default: "Rhythm Code Studio | Custom web solutions to match your beat",
   },
-  description: "Custom web solutions to match your beat. Custom coded websites and web based software for small businesses, musicians, bands, artists, organizations, and individuals. Let Rhythm Code Studio take care of your website. You've got more important things to do.",
+  description:
+    "Custom web solutions to match your beat. Custom coded websites and web based software for small businesses, musicians, bands, artists, organizations, and individuals. Let Rhythm Code Studio take care of your website. You've got more important things to do.",
   openGraph: {
-    images: '/opengraph-image.png',
+    images: "/opengraph-image.png",
   },
-}
-
+};
 
 export default function RootLayout({
   children,
@@ -52,15 +53,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${recursive.className} overflow-x-hidden`}>
-      <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 h-screen">
+      <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 max-h-screen">
         {/* Flex container that occupies at least the viewport height */}
-        <div className="flex flex-col">
+        <div className="flex flex-col min-h-screen ">
           <Header />
           {/* Main content area, flex-grow allows it to expand */}
-          <main className="">{children}</main>
+          <main className="flex flex-grow items-center justify-center overflow-auto">{children}</main>
           {/* Footer will be positioned at the bottom */}
-          <div className="mt-auto">
-          <Footer />
+          <div className="mt-auto mb-2">
+            <Footer />
           </div>
         </div>
         <Analytics />
