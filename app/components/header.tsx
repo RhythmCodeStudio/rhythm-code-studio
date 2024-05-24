@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export const Header = () => {
   return (
-    <header className=" text-center justify-center items-center p-6 pt-0 pb-0 mb-0 m-6 sm:p-8 sm:pb-0 sm:m-8 sm:mb-0">
+    <header className=" text-center justify-center items-center p-6 pb-0 mb-0 m-2">
       <div className="flex justify-center">
         <Image
-          className="w-full h-auto max-w-200"
+          className="w-full h-auto max-w-144"
           src="/images/logos/horizontal-text-only-tag.png"
           width={1747}
           height={183}

@@ -17,11 +17,10 @@ export default function Home() {
           Custom web solutions to match your beat
         </h2>
       </div> */}
-     
 
-      <div className="mt-8 sm:mt-16 flex justify-center items-center">
+      <div className="-mt-12 flex justify-center items-center">
         <Image
-          className="w-1/2 sm:w-full h-auto max-w-144"
+          className="w-3/4 h-auto max-w-200"
           src="/images/logos/mark-only-full.png"
           width={796}
           height={816}
@@ -31,20 +30,20 @@ export default function Home() {
       </div>
 
       <div className="mt-12 lg:mt-12 xl:mt-10 mb-8 p-4 text-md sm:text-lg lg:text-2xl font-bold text-center md:hover:transform hover:scale-110 transition-transform">
-          <a
-            href="https://calendly.com/kevin-jnxz/30min"
-            target="_blank"
-            rel="noopener noreferrer">
-            <div className="mb-2 flex justify-center items-center">
-              <FaCalendarDays size={36} />
-            </div>
-            <h3 className=" text-sm md:text-base lg:text-xl underline">
-              Schedule a free consultation.
-            </h3>
-          </a>
-        </div>
+        <a
+          href="https://calendly.com/kevin-jnxz/30min"
+          target="_blank"
+          rel="noopener noreferrer">
+          <div className="mb-2 flex justify-center items-center">
+            <FaCalendarDays size={36} />
+          </div>
+          <h3 className=" text-sm md:text-base lg:text-xl underline">
+            Schedule a free consultation.
+          </h3>
+        </a>
+      </div>
 
-      <div className="flex justify-center items-center md:mb-6">
+      <div className="font-bold flex justify-center items-center md:mb-6">
         <div
           id="email-div"
           className="text-center"
@@ -62,8 +61,6 @@ export default function Home() {
           </a>
         </div>
       </div>
-
     </section>
   );
-};
-
+}
