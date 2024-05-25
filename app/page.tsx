@@ -10,7 +10,7 @@ import { FaCalendarDays } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <section className="3xl:mt-0 flex flex-col items-center justify-content">
+    <section className="flex flex-col items-center justify-content space-y-12">
       {/* <div className="hidden">
         <h1 className="text-center">Rhythm Code Studio</h1>
         <h2 className="text-sm md:text-xl font-bold text-center">
@@ -20,7 +20,7 @@ export default function Home() {
 
       <div className="flex justify-center items-center">
         <Image
-          className="w-1/2 h-auto max-w-128"
+          className="w-1/2 h-auto max-w-144"
           src="/images/logos/mark-only-full.png"
           width={796}
           height={816}
@@ -29,7 +29,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="mt-12 mb-12 p-4 text-md lg:text-lg xl:text-xl font-bold text-center md:hover:transform hover:scale-110 transition-transform">
+      <div className=" p-4 text-md lg:text-lg xl:text-xl font-bold text-center md:hover:transform hover:scale-110 transition-transform">
         <a
           href="https://calendly.com/kevin-jnxz/30min"
           target="_blank"
@@ -46,7 +46,7 @@ export default function Home() {
       {/* <div className="mt-6 md:mt-0 md:mb-4  font-bold flex justify-center items-center"> */}
         <div
           id="email-div"
-          className="text-center items-center"
+          className="mt-6 md:mt-0 sm:mb-4 xl:mb-10 3xl:mb-0 text-center items-center"
           onClick={() => {
             track("Email link clicked");
           }}>

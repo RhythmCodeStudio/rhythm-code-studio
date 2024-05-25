@@ -35,6 +35,7 @@ const config: Config = {
       },
       maxWidth: {
         128: '32rem',  // 512px
+        132: '33rem',  // 528px
         144: '36rem',  // 576px
         160: '40rem',  // 640px
         180: '44rem',  // 704px
