@@ -10,7 +10,7 @@ import { FaCalendarDays } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <section className=" flex flex-col items-center justify-content">
+    <section className="3xl:mt-0 flex flex-col items-center justify-content">
       {/* <div className="hidden">
         <h1 className="text-center">Rhythm Code Studio</h1>
         <h2 className="text-sm md:text-xl font-bold text-center">
@@ -20,7 +20,7 @@ export default function Home() {
 
       <div className="flex justify-center items-center">
         <Image
-          className="w-1/2 h-auto max-w-200"
+          className="w-1/2 h-auto max-w-128"
           src="/images/logos/mark-only-full.png"
           width={796}
           height={816}
