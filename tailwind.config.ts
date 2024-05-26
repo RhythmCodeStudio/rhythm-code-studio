@@ -54,6 +54,15 @@ const config: Config = {
         1800: '192rem', // 3072px
         2000: '208rem', // 3328px
       },
+      screens: {
+        'xs': '400px',
+        '3xl': '1800px',
+        '4xl': '2200px',
+        '5xl': '2600px',
+        '6xl': '2800px',
+        '7xl': '3000px',
+        '8xl': '3200px',
+      },
     },
   },
   plugins: [],

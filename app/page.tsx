@@ -10,7 +10,7 @@ import { FaCalendarDays } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-content space-y-12">
+    <section className="flex flex-col items-center justify-content space-y-24 3xl:space-y-36">
       {/* <div className="hidden">
         <h1 className="text-center">Rhythm Code Studio</h1>
         <h2 className="text-sm md:text-xl font-bold text-center">
@@ -18,7 +18,7 @@ export default function Home() {
         </h2>
       </div> */}
 
-      <div className="flex justify-center items-center">
+      <div className="flex flex-col justify-center items-center">
         <Image
           className="w-1/2 h-auto max-w-144"
           src="/images/logos/mark-only-full.png"
@@ -29,7 +29,7 @@ export default function Home() {
         />
       </div>
 
-      <div className=" p-4 text-md lg:text-lg xl:text-xl font-bold text-center md:hover:transform hover:scale-110 transition-transform">
+      <div className="text-md lg:text-lg xl:text-xl font-bold text-center md:hover:transform hover:scale-110 transition-transform">
         <a
           href="https://calendly.com/kevin-jnxz/30min"
           target="_blank"
@@ -37,34 +37,25 @@ export default function Home() {
           <div className="mb-2 flex justify-center items-center">
             <FaCalendarDays size={36} />
           </div>
-          <h3 className="underline">
-            Schedule a free consultation.
-          </h3>
+          <h3 className="underline">Schedule a free consultation.</h3>
         </a>
       </div>
-
-      {/* <div className="mt-6 md:mt-0 md:mb-4  font-bold flex justify-center items-center"> */}
-        <div
-          id="email-div"
-          className="mt-6 md:mt-0 sm:mb-4 xl:mb-10 3xl:mb-0 text-center items-center"
-          onClick={() => {
-            track("Email link clicked");
-          }}>
-          <a
-            href="mailto:kevin@rhythmcodestudio.tech"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="email Rhythm Code Studio">
-            <h4 className="font-bold text-lg md:text-xl lg:text-lg xl:text-2xl underline sm:hover:transform hover:scale-110 transition-transform">
-              kevin@rhythmcodestudio.tech
-            </h4>
-          </a>
-        </div>
-        
-      {/* </div> */}
-      {/* <div className="flex justify-center items-center">
-        <SocialMediaLinks />
-      </div> */}
+      <div
+        id="email-div"
+        className="text-center items-center"
+        onClick={() => {
+          track("Email link clicked");
+        }}>
+        <a
+          href="mailto:kevin@rhythmcodestudio.tech"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="email Rhythm Code Studio">
+          <h4 className="font-bold text-lg md:text-xl xl:text-2xl underline sm:hover:transform hover:scale-110 transition-transform">
+            kevin@rhythmcodestudio.tech
+          </h4>
+        </a>
+      </div>
     </section>
   );
 }
