@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 // import from next
 import type { Metadata } from "next";
 import { Inter, Suranna, Anaheim, Vidaloka, Recursive } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
+// import { GoogleAnalytics } from "@next/third-parties/google";
 // import css
 import "./globals.css";
 // import components
@@ -69,7 +69,7 @@ export default function RootLayout({
         </div>
         <Analytics />
       </body>
-      <GoogleAnalytics gaId={process.env.GA_ID || ""} />
+      {/* <GoogleAnalytics gaId={process.env.GA_ID || ""} /> */}
     </html>
   );
 }
