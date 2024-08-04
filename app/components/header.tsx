@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Header = () => {
   return (
-    <header className=" text-center justify-center items-center p-4 m-4">
+    <header className=" text-center justify-center items-center p-4 m-4 pb-0 mb-0">
       <div className="flex justify-center">
         <Image
           className="w-full h-auto max-w-200"
