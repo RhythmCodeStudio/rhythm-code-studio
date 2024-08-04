@@ -14,9 +14,7 @@ export default function Home() {
     <section className="overflow-hidden flex flex-col items-center justify-content space-y-16 3xl:space-y-36">
       <div className="hidden">
         <h1 className="text-center">Rhythm Code Studio</h1>
-        <h2 className="text-center">
-          Custom web solutions to match your beat
-        </h2>
+        <h2 className="text-center">Custom web solutions to match your beat</h2>
       </div>
 
       <div className="flex flex-col justify-center items-center">
@@ -30,8 +28,7 @@ export default function Home() {
         />
       </div>
 
-      <div 
-        className="text-md lg:text-lg 3xl:text-xl font-bold  md:hover:transform hover:scale-110 transition-transform">
+      <div className="text-md lg:text-lg 3xl:text-xl font-bold  md:hover:transform hover:scale-110 transition-transform">
         <a
           href="https://calendly.com/kevin-jnxz/30min"
           target="_blank"
@@ -44,22 +41,20 @@ export default function Home() {
       </div>
 
       <div
-        className="text-md lg:text-lg 3xl:text-xl font-bold hover:scale-110 transition-transform hover:transform hover:cursor-pointer"
+        className="text-md lg:text-lg 3xl:text-xl font-bold hover:scale-110 transition-transform hover:transform"
         id="email-div"
         onClick={() => {
           track("Email link clicked");
         }}>
-          <div className="mb-2 flex justify-center items-center">
-            <FaEnvelope size={36} />
-          </div>
         <a
           href="mailto:kevin@rhythmcodestudio.tech"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="email Rhythm Code Studio">
-          <h4 className="underline">
-            kevin@rhythmcodestudio.tech
-          </h4>
+          <div className="mb-2 flex justify-center items-center">
+            <FaEnvelope size={36} />
+          </div>
+          <h4 className="underline">kevin@rhythmcodestudio.tech</h4>
         </a>
       </div>
     </section>
