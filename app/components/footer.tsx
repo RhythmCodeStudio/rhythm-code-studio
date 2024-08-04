@@ -1,5 +1,7 @@
 "use client";
-
+// import from next
+import Image from 'next/image';
+// import components
 import  SocialMediaLinks  from './socialMediaLinks';
 
 export const Footer = () => {
@@ -9,6 +11,15 @@ export const Footer = () => {
         <SocialMediaLinks />
       </div>
       <span className="m-6 p-2">© 2024 Rhythm Code Studio</span>
+      <div
+        className="flex justify-center">
+        <Image
+         src="/images/logos/mark-only-light.png"
+         width={24}
+         height={24}
+         alt=""
+        />
+      </div>
     </footer>
   );
 }

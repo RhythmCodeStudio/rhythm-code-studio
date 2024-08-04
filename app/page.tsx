@@ -7,16 +7,17 @@ import { track } from "@vercel/analytics";
 import SocialMediaLinks from "./components/socialMediaLinks";
 // import icons
 import { FaCalendarDays } from "react-icons/fa6";
+import { FaEnvelope } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <section className="overflow-hidden flex flex-col items-center justify-content space-y-24 3xl:space-y-36">
-      {/* <div className="hidden">
+    <section className="overflow-hidden flex flex-col items-center justify-content space-y-16 3xl:space-y-36">
+      <div className="hidden">
         <h1 className="text-center">Rhythm Code Studio</h1>
-        <h2 className="text-sm md:text-xl font-bold text-center">
+        <h2 className="text-center">
           Custom web solutions to match your beat
         </h2>
-      </div> */}
+      </div>
 
       <div className="flex flex-col justify-center items-center">
         <Image
@@ -29,7 +30,8 @@ export default function Home() {
         />
       </div>
 
-      <div className="text-md lg:text-lg xl:text-xl font-bold text-center md:hover:transform hover:scale-110 transition-transform">
+      <div 
+        className="text-md lg:text-lg 3xl:text-xl font-bold  md:hover:transform hover:scale-110 transition-transform">
         <a
           href="https://calendly.com/kevin-jnxz/30min"
           target="_blank"
@@ -40,18 +42,22 @@ export default function Home() {
           <h3 className="underline">Schedule a free consultation.</h3>
         </a>
       </div>
+
       <div
+        className="text-md lg:text-lg 3xl:text-xl font-bold hover:scale-110 transition-transform hover:transform hover:cursor-pointer"
         id="email-div"
-        className="text-center items-center"
         onClick={() => {
           track("Email link clicked");
         }}>
+          <div className="mb-2 flex justify-center items-center">
+            <FaEnvelope size={36} />
+          </div>
         <a
           href="mailto:kevin@rhythmcodestudio.tech"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="email Rhythm Code Studio">
-          <h4 className="font-bold text-lg md:text-xl xl:text-2xl underline sm:hover:transform hover:scale-110 transition-transform">
+          <h4 className="underline">
             kevin@rhythmcodestudio.tech
           </h4>
         </a>
