@@ -63,7 +63,7 @@ export default function RootLayout({
           {/* Main content area, flex-grow allows it to expand */}
           <main className="flex flex-grow items-center justify-center overflow-auto">{children}</main>
           {/* Footer will be positioned at the bottom */}
-          <div className="mt-auto">
+          <div className="lg:mt-6 xl:mt-12">
             <Footer />
           </div>
         </div>

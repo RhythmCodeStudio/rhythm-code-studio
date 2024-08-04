@@ -23,13 +23,8 @@ const navLinks = [
     icon: "",
   },
   {
-    href: "/our_work",
-    label: "Our Work",
-    icon: "",
-  },
-  {
-    href: "/blog",
-    label: "Blog",
+    href: "/portfolio",
+    label: "Portfolio",
     icon: "",
   },
   {
@@ -49,10 +44,10 @@ export default function Nav() {
     <nav className="flex p-4 z-40">
       {/* Mobile Nav Menu */}
       <Dialog open={menuOpen} onClose={() => setMenuOpen(false)}>
-        <div className="fixed inset-0 bg-black" />
-        <div className="fixed inset-0 z-10">
+        <div className="fixed inset-0 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500" />
+        <div className="fixed inset-0 z-10 overflow-auto max-w-screen max-h-screen">
           <div className="flex justify-center items-center h-full">
-            <div className="relative text-white bg:black w-full h-full flex flex-col justify-center items-center">
+            <div className="relative w-full h-full flex flex-col justify-center items-center">
               <button
                 onClick={() => setMenuOpen(false)}
                 className="absolute top-0 right-0 mt-10 mr-7">
@@ -60,10 +55,10 @@ export default function Nav() {
               </button>
               <div className="mb-6 w-40 h-auto">
                 <Image
-                  src="/branding/mmm_logo_white.png"
+                  src="/images/logos/stacked-full-no-tag.png"
                   width={294}
                   height={95}
-                  alt="company logo"
+                  alt="Rhythm Code Studio"
                   priority
                 />
               </div>
@@ -107,10 +102,10 @@ export default function Nav() {
             <li
               key={link.label}
               className={`flex flex-col items-center justify-center  ${
-                pathname === link.href ? "scale-125 text-gray-400" : "hover:scale-110"
+                pathname === link.href ? "hidden" : "hover:scale-110"
               }`}>
               <Link href={link.href}>
-                  <span className="text-lg lg:text-xl 3xl:text-2xl mt-2 hover:text-gray-400 hover:scale-110 hover:transform transition-transform cursor-pointer">
+                  <span className="text-lg lg:text-xl 3xl:text-2xl mt-2 hover:scale-110 hover:transform transition-transform cursor-pointer">
                     {link.label}
                   </span>
               </Link>
