@@ -11,16 +11,16 @@ export const Footer = () => {
         <ContactLinks />
       </div>
       <span className="m-6 p-2">© 2024 Rhythm Code Studio</span>
-      <div className="flex justify-center items-center mt-2">
-      <div className="max-w-8">
+      <div
+        className="flex justify-center">
         <Image
-          src="/images/logos/mark-only-light.png"
-          width={796}
-          height={816}
-          alt=""
+         src="/images/logos/mark-only-light.png"
+         width={24}
+         height={24}
+         alt=""
         />
-      </div>
       </div>
     </footer>
   );
-};
+}
+  

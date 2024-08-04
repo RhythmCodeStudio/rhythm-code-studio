@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col justify-center items-center">
         <Image
-          className="w-1/2 h-auto max-w-144 mb-12"
+          className="w-1/2 h-auto max-w-144"
           src="/images/logos/mark-only-full.png"
           width={796}
           height={816}
@@ -23,9 +23,9 @@ export default function Home() {
           priority
         />
       </div>
+
       <div 
-        className="text-md lg:text-lg 3xl:text-xl font-bold md:hover:transform hover:scale-110 transition-transform"
-      >
+        className="text-md lg:text-lg 3xl:text-xl font-bold  md:hover:transform hover:scale-110 transition-transform">
         <a
           href="https://calendly.com/kevin-jnxz/30min"
           target="_blank"
