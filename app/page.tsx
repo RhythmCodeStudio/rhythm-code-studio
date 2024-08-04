@@ -25,7 +25,7 @@ export default function Home() {
           src="/images/logos/mark-only-full.png"
           width={796}
           height={816}
-          alt="Rhythm Code Studio - Custom web solutions to match your beat"
+          alt="Rhythm Code Studio logo"
           priority
         />
       </div>
