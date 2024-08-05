@@ -50,10 +50,10 @@ export default function Nav() {
             <div className="relative w-full h-full flex flex-col justify-center items-center">
               <button
                 onClick={() => setMenuOpen(false)}
-                className="absolute top-0 right-0 mt-10 mr-7">
+                className="absolute top-0 right-0">
                 <HiX size={28} />
               </button>
-              <div className="mb-6 w-40 h-auto">
+              <div className=" w-40 h-auto">
                 <Image
                   src="/images/logos/stacked-full-no-tag.png"
                   width={294}
