@@ -23,7 +23,7 @@ export default function ContactFormInput({
         className="px-4"
         htmlFor={name}>{label}</label>
       <input
-        className="rounded-xl px-4 opacity-75"
+        className="rounded-2xl px-4 opacity-75"
         type={type}
         id={name}
         name={name}

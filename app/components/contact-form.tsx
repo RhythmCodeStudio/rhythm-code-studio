@@ -216,16 +216,20 @@ export default function ContactForm() {
             required
             name="message"
             id="message"
-            className="resize-none h-20 rounded-xl px-4 opacity-75"
+            className="resize-none h-20 rounded-2xl px-4 opacity-75"
           />
           <p className="text-red-500">{messageErrorMessage}</p>
         </div>
+        <div className="flex justify-end">
         <button
           type="submit"
-          className="bg-balance text-white rounded-xl px-4 py-2 mt-4"
+          className="border border-2 text-white rounded-2xl px-4 py-1 mt-4 hover:text-black hover:bg-white"
+          onClick={handleFormSubmit}
+            // isSubmitted={buttonSubmitted}
         >
           {buttonSubmitted ? "Message Sent!" : "Send Message"}
         </button>
+        </div>
       </form>
     </div>
   );
