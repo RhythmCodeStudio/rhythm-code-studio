@@ -1,3 +1,5 @@
+// privacy-policy/page.tsx
+
 export default function PrivacyPolicy() {
   return (
     <section>
@@ -16,8 +18,8 @@ export default function PrivacyPolicy() {
         referred to as CookieFirst.
       </p>
       <p>
-        When you access our website, a connection is established with
-        CookieFirst's server to give us the possibility to obtain valid consent
+        When you access our website, a connection is established
+        CookieFirst&apos;'s server to give us the possibility to obtain valid consent
         from you to the use of certain cookies. CookieFirst then stores a cookie
         in your browser in order to be able to activate only those cookies to
         which you have consented and to properly document this. The data
