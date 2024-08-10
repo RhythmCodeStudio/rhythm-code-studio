@@ -4,10 +4,10 @@ import Image from "next/image";
 // import from vercel
 import { track } from "@vercel/analytics";
 // import components
-import SocialMediaLinks from "./components/contact-links";
 // import icons
 import { FaCalendarDays } from "react-icons/fa6";
-import { FaEnvelope } from "react-icons/fa6";
+
+import CookieConsent from "react-cookie-consent";
 
 export default function Home() {
   return (
@@ -32,13 +32,36 @@ export default function Home() {
         <a
           href="https://calendly.com/kevin-jnxz/30min"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+          onClick={() => track("schedule-consultation")}>
           <div className="mb-2 flex justify-center items-center">
             <FaCalendarDays size={36} />
           </div>
           <h3 className="underline">Schedule a free consultation.</h3>
         </a>
       </div>
+      <CookieConsent
+        location="bottom"
+        buttonText="Sure man!!"
+        cookieName="myAwesomeCookieName2"
+        style={{ background: "#2B373B" }}
+        // buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+        expires={150}
+        onAccept={(acceptedByScrolling) => {
+          if (acceptedByScrolling) {
+            // triggered if user scrolls past threshold
+            alert("Accept was triggered by user scrolling");
+          } else {
+            alert("Accept was triggered by clicking the Accept button");
+          }
+        }}
+        enableDeclineButton
+        onDecline={() => {
+          alert("nay!");
+        }}>
+        This website uses cookies to enhance the user experience.{" "}
+        <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
+      </CookieConsent>
     </section>
   );
 }

@@ -12,6 +12,7 @@ import "./globals.css";
 // import components
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
+
 // import fonts
 const inter = Inter({ subsets: ["latin"] });
 const suranna = Suranna({
@@ -65,7 +66,9 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen ">
           <Header />
           {/* Main content area, flex-grow allows it to expand */}
-          <main className="flex flex-grow items-center justify-center overflow-auto">{children}</main>
+          <main className="flex flex-grow items-center justify-center overflow-auto">
+            {children}
+          </main>
           {/* Footer will be positioned at the bottom */}
           <div className="lg:mt-6 xl:mt-12">
             <Footer />
