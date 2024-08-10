@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 // import fonts
 import { Inter, Suranna, Anaheim, Vidaloka, Recursive } from "next/font/google";
-// import from google
+// import from google for testing
 import { GoogleTagManager } from "@next/third-parties/google";
 // import { GoogleAnalytics } from "@next/third-parties/google";
 // import css
