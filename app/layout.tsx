@@ -2,7 +2,10 @@
 import { Analytics } from "@vercel/analytics/react";
 // import from next
 import type { Metadata } from "next";
+// import fonts
 import { Inter, Suranna, Anaheim, Vidaloka, Recursive } from "next/font/google";
+// import from google
+import { GoogleTagManager } from "@next/third-parties/google";
 // import { GoogleAnalytics } from "@next/third-parties/google";
 // import css
 import "./globals.css";
@@ -56,6 +59,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${recursive.className} overflow-x-hidden`}>
+      <GoogleTagManager gtmId={process.env.GTM_ID || ""} />
       <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 max-h-screen">
         {/* Flex container that occupies at least the viewport height */}
         <div className="flex flex-col min-h-screen ">
