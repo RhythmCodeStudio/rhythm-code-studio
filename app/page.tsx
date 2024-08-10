@@ -40,7 +40,7 @@ export default function Home() {
           <h3 className="underline">Schedule a free consultation.</h3>
         </a>
       </div>
-      <CookieConsent
+      {/* <CookieConsent
         location="bottom"
         buttonText="Sure man!!"
         cookieName="myAwesomeCookieName2"
@@ -61,7 +61,7 @@ export default function Home() {
         }}>
         This website uses cookies to enhance the user experience.{" "}
         <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
-      </CookieConsent>
+      </CookieConsent> */}
     </section>
   );
 }
