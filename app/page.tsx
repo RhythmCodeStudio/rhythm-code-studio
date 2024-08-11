@@ -3,18 +3,15 @@
 import Image from "next/image";
 // import from vercel
 import { track } from "@vercel/analytics";
-// import components
-import SocialMediaLinks from "./components/contact-links";
 // import icons
 import { FaCalendarDays } from "react-icons/fa6";
-import { FaEnvelope } from "react-icons/fa6";
 
 export default function Home() {
   return (
     <section className=" flex flex-col items-center justify-content space-y-16 3xl:space-y-36">
-      <div className="hidden">
-        <h1 className="text-center">Rhythm Code Studio</h1>
-        <h2 className="text-center">Custom web solutions to match your beat</h2>
+      <div className="">
+        <h1 className={`text-center text-4xl font-bold font-blenny`}>Rhythm Code Studio</h1>
+        <h2 className="text-center text-2xl font-medium">CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT</h2>
       </div>
 
       <div className="flex flex-col justify-center items-center">
@@ -32,7 +29,11 @@ export default function Home() {
         <a
           href="https://calendly.com/kevin-jnxz/30min"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+          onClick={() => {
+            track(`Calendar link clicked`);
+          }}
+        >
           <div className="mb-2 flex justify-center items-center">
             <FaCalendarDays size={36} />
           </div>

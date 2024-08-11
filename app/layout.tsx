@@ -2,8 +2,15 @@
 import { Analytics } from "@vercel/analytics/react";
 // import from next
 import type { Metadata } from "next";
+import localFont from 'next/font/local'
+const blenny = localFont({
+  src: "../public/fonts/Blenny_Trial_Blk.ttf",
+  display: "swap",
+  variable: "--font-blenny",
+});
 // import fonts
-import { Inter, Suranna, Anaheim, Vidaloka, Recursive } from "next/font/google";
+import { Karla } from "next/font/google";
+
 // import from google
 import { GoogleTagManager } from "@next/third-parties/google";
 // import { GoogleAnalytics } from "@next/third-parties/google";
@@ -13,23 +20,8 @@ import "./globals.css";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 // import fonts
-const inter = Inter({ subsets: ["latin"] });
-const suranna = Suranna({
-  subsets: ["latin"],
-  weight: "400",
-});
-const anaheim = Anaheim({
-  subsets: ["latin"],
-  weight: "400",
-});
-const vidaloka = Vidaloka({
-  subsets: ["latin"],
-  weight: "400",
-});
-const recursive = Recursive({
-  subsets: ["latin"],
-  weight: "400",
-});
+const karla = Karla({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rhythmcodestudio.tech"),
@@ -58,8 +50,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${recursive.className} overflow-x-hidden`}>
-      <GoogleTagManager gtmId={process.env.GTM_ID || ""} />
+    <html lang="en" className={`${karla.className} ${blenny.variable} overflow-x-hidden`}>
+      {/* <GoogleTagManager gtmId={process.env.GTM_ID || ""} /> */}
       <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 max-h-screen">
         {/* Flex container that occupies at least the viewport height */}
         <div className="flex flex-col min-h-screen ">
