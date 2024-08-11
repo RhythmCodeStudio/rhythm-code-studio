@@ -97,7 +97,7 @@ export default function Nav() {
       </div>
       {/* Desktop Nav Menu */}
       <div className={`flex ${menuOpen ? "" : "hidden lg:flex"} w-full`}>
-        <ul className="flex flex-row w-full space-x-10 justify-center gap-4">
+        <ul className="flex flex-row w-full space-x-10 justify-center gap-4 font-bold">
           {navLinks.map((link) => (
             <li
               key={link.label}
