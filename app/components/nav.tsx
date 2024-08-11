@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 // import from headlessui
-import { Dialog } from "@headlessui/react";
+import { Dialog } from "@headlessui/react"
 // import icons
 import { MdDehaze } from "react-icons/md";
 import { HiX } from "react-icons/hi";
@@ -50,7 +50,7 @@ export default function Nav() {
             <div className="relative w-full h-full flex flex-col justify-center items-center">
               <button
                 onClick={() => setMenuOpen(false)}
-                className="absolute top-0 right-0">
+                className="absolute top-4 right-4">
                 <HiX size={28} />
               </button>
               <div className=" w-40 h-auto">
