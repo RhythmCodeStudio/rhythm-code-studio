@@ -2,6 +2,7 @@
 import { Analytics } from "@vercel/analytics/react";
 // import from next
 import type { Metadata } from "next";
+import Script from 'next/script'
 // import fonts
 import { Inter, Suranna, Anaheim, Vidaloka, Recursive } from "next/font/google";
 // import from google for testing
@@ -51,6 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: "/opengraph-image.png",
   },
+  
 };
 
 export default function RootLayout({
@@ -75,6 +77,7 @@ export default function RootLayout({
           </div>
         </div>
         <Analytics />
+        <Script src="https://consent.cookiefirst.com/sites/rhythmcodestudio.tech-b440239d-5a16-4902-ad83-b70f15f9ef99/consent.js"></Script>
       </body>
       {/* <GoogleAnalytics gaId={process.env.GA_ID || ""} /> */}
     </html>
