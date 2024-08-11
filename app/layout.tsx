@@ -2,7 +2,7 @@
 import { Analytics } from "@vercel/analytics/react";
 // import from next
 import type { Metadata } from "next";
-import { Inter, Suranna, Anaheim, Vidaloka, Recursive } from "next/font/google";
+import { Inter, Suranna, Anaheim, Vidaloka, Recursive, Karla } from "next/font/google";
 // import { GoogleAnalytics } from "@next/third-parties/google";
 // import css
 import "./globals.css";
@@ -10,6 +10,10 @@ import "./globals.css";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 // import fonts
+const karla = Karla({
+  subsets: ["latin"],
+  weight: "400",
+});
 const inter = Inter({ subsets: ["latin"] });
 const suranna = Suranna({
   subsets: ["latin"],
