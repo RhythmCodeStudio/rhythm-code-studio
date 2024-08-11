@@ -2,9 +2,9 @@
 import { Analytics } from "@vercel/analytics/react";
 // import from next
 import type { Metadata } from "next";
-import Script from 'next/script'
+// import Script from 'next/script'
 // import fonts
-import { Inter, Suranna, Anaheim, Vidaloka, Recursive } from "next/font/google";
+import { Inter, Suranna, Anaheim, Vidaloka, Recursive, Karla } from "next/font/google";
 // import from google for testing
 import { GoogleTagManager } from "@next/third-parties/google";
 // import { GoogleAnalytics } from "@next/third-parties/google";
@@ -16,6 +16,10 @@ import { Header } from "./components/header";
 
 // import fonts
 const inter = Inter({ subsets: ["latin"] });
+const karla = Karla({
+  subsets: ["latin"],
+  weight: "400",
+});
 const suranna = Suranna({
   subsets: ["latin"],
   weight: "400",
@@ -62,7 +66,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${recursive.className} overflow-x-hidden`}>
-      <GoogleTagManager gtmId={process.env.GTM_ID || ""} />
+      {/* <GoogleTagManager gtmId={process.env.GTM_ID || ""} /> */}
       <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 max-h-screen">
         {/* Flex container that occupies at least the viewport height */}
         <div className="flex flex-col min-h-screen ">
@@ -77,7 +81,7 @@ export default function RootLayout({
           </div>
         </div>
         <Analytics />
-        <Script src="https://consent.cookiefirst.com/sites/rhythmcodestudio.tech-b440239d-5a16-4902-ad83-b70f15f9ef99/consent.js"></Script>
+        {/* <Script src="https://consent.cookiefirst.com/sites/rhythmcodestudio.tech-b440239d-5a16-4902-ad83-b70f15f9ef99/consent.js"></Script> */}
       </body>
       {/* <GoogleAnalytics gaId={process.env.GA_ID || ""} /> */}
     </html>
