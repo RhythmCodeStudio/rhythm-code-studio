@@ -12,11 +12,11 @@ import { MdDehaze } from "react-icons/md";
 import { HiX } from "react-icons/hi";
 
 const navLinks = [
-  {
-    href: "/",
-    label: "Home",
-    icon: "",
-  },
+  // {
+  //   href: "/",
+  //   label: "Home",
+  //   icon: "",
+  // },
   {
     href: "/about",
     label: "About",
@@ -97,15 +97,15 @@ export default function Nav() {
       </div>
       {/* Desktop Nav Menu */}
       <div className={`flex ${menuOpen ? "" : "hidden lg:flex"} w-full`}>
-        <ul className="flex flex-row w-full space-x-10 justify-center gap-4 font-bold">
+        <ul className="flex flex-row w-full space-x-10 3xl:space-x-16 justify-center gap-4 ">
           {navLinks.map((link) => (
             <li
               key={link.label}
               className={`flex flex-col items-center justify-center  ${
-                pathname === link.href ? "hidden" : "hover:scale-110"
+                pathname === link.href ? "font-bold" : "hover:scale-110"
               }`}>
               <Link href={link.href}>
-                  <span className="text-lg lg:text-xl 3xl:text-2xl mt-2 hover:scale-110 hover:transform transition-transform cursor-pointer">
+                  <span className="text-lg lg:text-xl xl:text-2xl 3xl:text-3xl mt-2 hover:scale-110 hover:transform transition-transform cursor-pointer">
                     {link.label}
                   </span>
               </Link>

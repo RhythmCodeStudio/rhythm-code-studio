@@ -10,13 +10,13 @@ export default function Home() {
   return (
     <section className=" flex flex-col items-center justify-content space-y-16 ">
       <div className="font-bold ">
-        <h1 className="text-center text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl font-blenny pb-2">Rhythm Code Studio</h1>
-        <h2 className="tracking-tight text-center text-lg md:text-2xl lg:text-3xl 2xl:text-5xl">CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT</h2>
+        <h1 className="text-center text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-blenny pb-2">Rhythm Code Studio</h1>
+        <h2 className="tracking-tight text-center text-lg md:text-2xl lg:text-3xl 3xl:text-5xl">CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT</h2>
       </div>
 
       <div className="flex flex-col justify-center items-center">
         <Image
-          className="w-2/5 h-auto max-w-144 xl:max-w-180"
+          className="w-2/5 h-auto max-w-144 3xl:max-w-180"
           src="/images/logos/mark-only-full.png"
           width={796}
           height={816}
@@ -25,7 +25,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="text-md lg:text-lg 3xl:text-xl font-bold  md:hover:transform hover:scale-110 transition-transform">
+      <div className="text-md lg:text-lg 3xl:text-xl font-bold  md:">
         <a
           href="https://calendly.com/kevin-jnxz/30min"
           target="_blank"
@@ -34,10 +34,10 @@ export default function Home() {
             track(`Calendar link clicked`);
           }}
         >
-          <div className="mb-2 flex justify-center items-center">
+          <div className="mb-2 flex justify-center items-center hover:transform hover:scale-110 transition-transform">
             <FaCalendarDays size={36} />
           </div>
-          <h3 className="underline">Schedule a free consultation.</h3>
+          <h3>Schedule a free consultation.</h3>
         </a>
       </div>
     </section>
