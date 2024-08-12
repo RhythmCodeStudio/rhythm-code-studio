@@ -8,7 +8,7 @@ export const Header = () => {
     <header className=" p-4 m-4">
       <div className="flex justify-between items-center">
         <Image
-          className="w-full h-auto max-w-32 lg:max-w-40 lg:ml-4"
+          className="w-full h-auto max-w-32 lg:max-w-40 xl:max-w-64 lg:ml-4"
           src="/images/logos/horizontal-full-no-tag.png"
           width={1000}
           height={54}

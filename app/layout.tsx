@@ -12,7 +12,7 @@ const blenny = localFont({
 import { Karla } from "next/font/google";
 
 // import from google
-import { GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleTagManager } from "@next/third-parties/google";
 // import { GoogleAnalytics } from "@next/third-parties/google";
 // import css
 import "./globals.css";
@@ -24,23 +24,7 @@ const karla = Karla({
   subsets: ["latin"],
   weight: "400",
 });
-const inter = Inter({ subsets: ["latin"] });
-const suranna = Suranna({
-  subsets: ["latin"],
-  weight: "400",
-});
-const anaheim = Anaheim({
-  subsets: ["latin"],
-  weight: "400",
-});
-const vidaloka = Vidaloka({
-  subsets: ["latin"],
-  weight: "400",
-});
-const recursive = Recursive({
-  subsets: ["latin"],
-  weight: "400",
-});
+
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rhythmcodestudio.tech"),
