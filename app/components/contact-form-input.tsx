@@ -1,0 +1,37 @@
+export default function ContactFormInput({
+  label,
+  name,
+  type,
+  placeholder,
+  value,
+  errorMessage,
+  handleChange,
+  setStateVariable,
+}: {
+  label: string;
+  name: string;
+  type: string;
+  placeholder: string;
+  value: any;
+  errorMessage: string;
+  handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, setState: React.Dispatch<React.SetStateAction<any>>) => void;
+  setStateVariable: React.Dispatch<React.SetStateAction<any>>;
+}) {
+  return (
+    <div className="flex flex-col py-1">
+      <label
+        className="px-4"
+        htmlFor={name}>{label}</label>
+      <input
+        className="rounded-2xl px-4 opacity-75"
+        type={type}
+        id={name}
+        name={name}
+        placeholder={placeholder}
+        value={value}
+        onChange={(e) => handleChange(e, setStateVariable)}
+      />
+      <p>{errorMessage}</p>
+    </div>
+  );
+}

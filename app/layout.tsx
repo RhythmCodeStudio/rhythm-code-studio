@@ -2,7 +2,17 @@
 import { Analytics } from "@vercel/analytics/react";
 // import from next
 import type { Metadata } from "next";
-import { Inter, Suranna, Anaheim, Vidaloka, Recursive, Karla } from "next/font/google";
+import localFont from 'next/font/local'
+const blenny = localFont({
+  src: "../public/fonts/Blenny_Trial_Blk.ttf",
+  display: "swap",
+  variable: "--font-blenny",
+});
+// import fonts
+import { Karla } from "next/font/google";
+
+// import from google
+import { GoogleTagManager } from "@next/third-parties/google";
 // import { GoogleAnalytics } from "@next/third-parties/google";
 // import css
 import "./globals.css";
@@ -59,7 +69,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${recursive.className} overflow-x-hidden`}>
+    <html lang="en" className={`${karla.className} ${blenny.variable} overflow-x-hidden`}>
+      {/* <GoogleTagManager gtmId={process.env.GTM_ID || ""} /> */}
       <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 max-h-screen">
         {/* Flex container that occupies at least the viewport height */}
         <div className="flex flex-col min-h-screen ">
@@ -67,7 +78,7 @@ export default function RootLayout({
           {/* Main content area, flex-grow allows it to expand */}
           <main className="flex flex-grow items-center justify-center overflow-auto">{children}</main>
           {/* Footer will be positioned at the bottom */}
-          <div className="mt-auto">
+          <div className="lg:mt-6 xl:mt-12">
             <Footer />
           </div>
         </div>
