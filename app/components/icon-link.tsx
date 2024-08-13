@@ -20,7 +20,8 @@ export default function IconLink({
       aria-label={label}
       onClick={() => {
         track("contact icon link clicked", {name: `${name}`});
-      }}>
+      }}
+    >
       {icon}
     </a>
   );
