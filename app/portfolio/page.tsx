@@ -1,11 +1,11 @@
 // import components
-import Project from "../components/project";
+import ProjectGallery from "../components/project-gallery";
 
 export default function Portfolio() {
   return(
     <section>
       <h1>PORTFOLIO</h1>
-      <Project />
+      <ProjectGallery />
     </section>
   );
 }

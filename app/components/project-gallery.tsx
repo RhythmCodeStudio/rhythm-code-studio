@@ -3,7 +3,7 @@ import { projects } from '../lib/project-data';
 // import tyoes
 import { Project } from '../lib/definitions';
 
-export default function Project() {
+export default function ProjectGallery() {
   return (
     <section>
       <h1>PROJECTS</h1>
