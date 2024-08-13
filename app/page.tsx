@@ -8,15 +8,14 @@ import { FaCalendarDays } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <section className=" flex flex-col items-center justify-content space-y-16 ">
-      <div className="font-bold ">
-        <h1 className="text-center text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-blenny pb-2">Rhythm Code Studio</h1>
-        <h2 className="tracking-tight text-center text-lg md:text-2xl lg:text-3xl 3xl:text-5xl">CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT</h2>
+    <section className="flex flex-col items-center justify-content space-y-16 ">
+      <div className="">
+        <h1 className="text-center text-3xl xs:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-blenny pb-2">Rhythm Code Studio</h1>
+        <h2 className="tracking-tight text-center xs:text-lg md:text-2xl lg:text-3xl 3xl:text-5xl">CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT</h2>
       </div>
-
       <div className="flex flex-col justify-center items-center">
         <Image
-          className="w-2/5 h-auto max-w-144 3xl:max-w-180"
+          className="w-2/5 h-auto max-w-180"
           src="/images/logos/mark-only-full.png"
           width={796}
           height={816}
@@ -24,7 +23,6 @@ export default function Home() {
           priority
         />
       </div>
-
       <div className="text-md lg:text-lg 3xl:text-xl font-bold  md:">
         <a
           href="https://calendly.com/kevin-jnxz/30min"

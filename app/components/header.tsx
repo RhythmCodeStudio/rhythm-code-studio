@@ -10,7 +10,7 @@ export const Header = () => {
       <div className="flex justify-between items-center">
         <Link href="/"> 
         <Image
-          className="w-full h-auto max-w-32 lg:max-w-40 xl:max-w-48 3xl:max-w-64 lg:ml-4"
+          className="w-full h-auto max-w-40 xl:max-w-48 3xl:max-w-64 ml-4"
           src="/images/logos/horizontal-full-no-tag.png"
           width={1000}
           height={54}
@@ -18,7 +18,7 @@ export const Header = () => {
           priority
         />
         </Link>
-        <div className="lg:mr-12">
+        <div className="mr-2 lg:mr-12">
         <Nav />
         </div>
       </div>

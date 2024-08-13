@@ -47,15 +47,17 @@ export default function Nav() {
         <div className="fixed inset-0 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500" />
         <div className="fixed inset-0 z-10 overflow-auto max-w-screen max-h-screen">
           <div className="flex justify-center items-center h-full">
-            <div className="relative w-full h-full flex flex-col justify-center items-center">
+            <div className="relative w-full h-full flex flex-col justify-center items-center space-y-6">
               <button
                 onClick={() => setMenuOpen(false)}
                 className="absolute top-4 right-4">
                 <HiX size={28} />
               </button>
-              <div className=" w-40 h-auto">
+              <h1 className="font-blenny text-3xl">Rhythm Code Studio</h1>
+              {/* Logo */}
+              <div className=" w-36 h-auto">
                 <Image
-                  src="/images/logos/stacked-full-no-tag.png"
+                  src="/images/logos/mark-only-full.png"
                   width={294}
                   height={95}
                   alt="Rhythm Code Studio"
@@ -67,8 +69,8 @@ export default function Nav() {
                 {navLinks.map((link) => (
                   <li
                     key={link.label}
-                    className={`font-bold text-center w-full p-2 ${
-                      pathname === link.href ? "hidden" : ""
+                    className={`text-center w-full p-2 ${
+                      pathname === link.href ? "font-bold" : ""
                     }`}>
                     <Link href={link.href}>
                       <div
