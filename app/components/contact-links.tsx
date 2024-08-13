@@ -14,7 +14,7 @@ export default function ContactLinks() {
         href="mailto:kevin@rhythmcodestudio.tech"
         icon={<FaEnvelope size={32} />}
         label="Click to email Rhythm Code Studio"
-        name="Email Rhythm Code Studio"
+        name="Link to Email Rhythm Code Studio"
       />
       </div>
       <div className="sm:hover:transform hover:scale-125 transition-transform">

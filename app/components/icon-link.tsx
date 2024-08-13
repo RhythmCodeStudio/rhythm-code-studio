@@ -19,7 +19,7 @@ export default function IconLink({
       rel="noopener noreferrer"
       aria-label={label}
       onClick={() => {
-        track(`${name} clicked`);
+        track("contact icon link clicked", {name: `${name}`});
       }}>
       {icon}
     </a>
