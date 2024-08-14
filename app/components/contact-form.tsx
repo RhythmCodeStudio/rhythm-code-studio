@@ -227,7 +227,7 @@ export default function ContactForm() {
           onClick={handleFormSubmit}
             // isSubmitted={buttonSubmitted}
         >
-          {buttonSubmitted ? "Message Sent!" : "Send Message"}
+          {buttonSubmitted ? "Message Sent!" : "SYNC UP TODAY"}
         </button>
         </div>
       </form>

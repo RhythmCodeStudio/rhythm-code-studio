@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <section className="grid grid-cols-1 md:grid-rows-4 md:grid-cols-2">
-      <div className="order-3 md:order-1 row-span-4 flex justify-center md:justify-end place-content-center ">
+    <section className="grid grid-cols-1 lg:grid-rows-4 lg:grid-cols-2 ">
+      <div className="order-3 lg:order-1 row-span-4 flex justify-center lg:justify-end items-center lg:mx-12">
         <div className="w-[279px] h-[286px] xl:w-[318px] xl:h-[326px] 2xl:w-[398px] 2xl:h-[408px] 3xl:w-[597px] 3xl:h-[612px] flex justify-center items-center ">
           <Image
             priority
@@ -17,158 +17,36 @@ export default function About() {
           />
         </div>
       </div>
-      <div className="order-1 md:order-2 text-center md:text-start">
-        <h1 className="font-bold text-2xl md:text-3xl xl:text-4xl">ABOUT RHYTHM CODE STUDIO</h1>
+      <div className="order-1 lg:order-2 text-center lg:text-start place-content-end">
+        <h1 className="font-bold text-2xl lg:text-3xl 2xl:text-4xl 3xl:text-5xl">
+          ABOUT RHYTHM CODE STUDIO
+        </h1>
       </div>
-      <div className="order-2 md:order-3">
-        <p>
-          Rhythm Code founder and lead developer, Kevin Long is attuned to the pulse of his hometown. He is immersed in the arts scene and serves small business, musicians, creatives, and organizations in St. Louis and beyond.
+      <div className="order-2 lg:order-3 place-content-center">
+        <p className="p-6 lg:p-0 lg:text-xl 3xl:text-2xl">
+          Rhythm Code founder and lead developer, Kevin Long is attuned to the
+          pulse of his hometown. He is immersed in the arts scene and serves
+          small business, musicians, creatives, and organizations in St. Louis
+          and beyond.
         </p>
       </div>
-      <div className="order-3 md:order-4">
-        <p>
-          Rhythm Code founder and lead developer, Kevin Long is attuned to the pulse of his hometown. He is immersed in the arts scene and serves small business, musicians, creatives, and organizations in St. Louis and beyond.
+      <div className="order-4 place-content-center">
+        <p className="p-6 lg:p-0 lg:text-xl 3xl:text-2xl">
+          Kevin brings the passion and imagination of an artist, along with the
+          patient persistence of an educator to every job he touches. His
+          diverse background in arts and education and deep development
+          knowledge make for a disciplined creativity like none other. Kevin and
+          Rhythm Code Studio are dedicated to making your project sing in your
+          own distinctive voice.
         </p>
+      </div>
+      <div className="order-5 px-6 lg:px-0 flex justify-center lg:justify-start mb-4 lg:mt-8 ">
+        <Link href="/contact">
+          <span className="tracking-wider border-2 border-white text-white rounded-full text-xl px-4 py-1 hover:bg-white hover:text-black hover:font-bold">
+            SYNC UP TODAY
+          </span>
+        </Link>
       </div>
     </section>
-    // <section className="grid md:grid-cols-2 gap-4">
-    //   <div className="flex justify-center md:justify-end">
-    //     <Image
-    //       priority
-    //       className=""
-    //       src="/images/logos/mark-only-full.png"
-    //       alt="Rhythm Code Studio"
-    //       width={279}
-    //       height={286}
-    //     />
-    //   </div>
-    //   <div>
-    //     <h1 className="text-center md:text-left text-2xl font-bold">
-    //       ABOUT RHYTHM CODE STUDIO
-    //     </h1>
-    //     <p className="p-6">
-    //       Rhythm Code founder and lead developer, Kevin Long is attuned to the
-    //       pulse of his hometown. He is immersed in the arts scene and serves small
-    //       business, musicians, creatives, and organizations in St. Louis and
-    //       beyond.
-    //     </p>
-    //     <p className="p-6">
-    //       Kevin brings the passion and imagination of an artist, along with the
-    //       patient persistence of an educator to every job he touches. His diverse
-    //       background in arts and education and deep development knowledge make for
-    //       a disciplined creativity like none other. Kevin and Rhythm Code Studio
-    //       are dedicated to making your project sing in your own distinctive voice.
-    //     </p>
-    //     <div className="flex justify-center md:justify-start pb-4">
-    //       <Link href="/contact">
-    //         <span className="tracking-wider border-2 border-white text-white rounded-full text-2xl px-4 py-1 hover:bg-white hover:text-black hover:font-bold">
-    //           SYNC UP TODAY
-    //         </span>
-    //       </Link>
-    //     </div>
-    //   </div>
-    // </section>
-    // <section>
-    //   <h1 className="text-center text-2xl font-bold">
-    //     ABOUT RHYTHM CODE STUDIO
-    //   </h1>
-    //   <p className="p-6">
-    //     Rhythm Code founder and lead developer, Kevin Long is attuned to the
-    //     pulse of his hometown. He is immersed in the arts scene and serves small
-    //     business, musicians, creatives, and organizations in St. Louis and
-    //     beyond.
-    //   </p>
-    //   <div className="flex justify-center ">
-    //     <Image
-    //       priority
-    //       className=""
-    //       src="/images/logos/mark-only-full.png"
-    //       alt="Rhythm Code Studio"
-    //       width={279}
-    //       height={286}
-    //     />
-    //   </div>
-    //   <p className="p-6">
-    //     Kevin brings the passion and imagination of an artist, along with the
-    //     patient persistence of an educator to every job he touches. His diverse
-    //     background in arts and education and deep development knowledge make for
-    //     a disciplined creativity like none other. Kevin and Rhythm Code Studio
-    //     are dedicated to making your project sing in your own distinctive voice.
-    //   </p>
-    //   <div className="flex justify-center pb-4">
-    //     <Link href="/contact">
-    //       <span className="tracking-wider border-2 border-white text-white rounded-full text-2xl px-4 py-1 hover:bg-white hover:text-black hover:font-bold">
-    //         SYNC UP TODAY
-    //       </span>
-    //     </Link>
-    //   </div>
-    // </section>
-    // <section>
-    //   <div className="grid grid-cols-1 xl:grid-rows-4 xl:grid-cols-4 xl:gap-4">
-    //     <div className="row-span-4 col-span-2 flex justify-center xl:justify-end place-content-center p-4">
-    //       <div className="w-[279px] h-[286px] 2xl:w-[318px] 2xl:h-[326px] 3xl:w-[597px] 3xl:h-[612px] flex justify-center items-center ">
-    //         <Image
-    //           priority
-    //           className=""
-    //           src="/images/logos/mark-only-full.png"
-    //           alt="Rhythm Code Studio"
-    //           width={597}
-    //           height={612}
-    //         />
-    //       </div>
-    //     </div>
-    //     <h1 className="text-center xl:text-left xl:px-4 col-span-2 place-content-center text-2xl 2xl:text-4xl 3xl:text-6xl font-bold m-2">
-    //       ABOUT RHYTHM CODE STUDIO
-    //     </h1>
-    //     <div className="px-4 col-span-2 place-content-center xl:mr-52 3xl:mr-96 text-xl xl:text-3xl">
-    //       <p className="m-2">
-    //       Rhythm Code founder and lead developer, Kevin Long is attuned to the pulse of his hometown. He is immersed in the arts scene and serves small business, musicinas, creatives, and organizations in St. Louis and beyond.
-    //       </p>
-    //     </div>
-    //     <div className="px-4 col-span-2 place-content-center xl:mr-52 3xl:mr-96 text-xl xl:text-3xl">
-    //       <p className="m-2">
-    //       Kevin brings the passion and imagination of an artist, along with the patient persistence of an educator to every job he touches. His diverse background in arts and education nd deep development knowledge make for a disciplined creativity like none other. Kevin and Rhythm Code Studio are dedicated to making your project sing in your own distinctive voice.
-    //       </p>
-    //     </div>
-
-    //       <Link href="/contact" className="mt-6 px-4 text-center">
-    //       <span className="tracking-wider border-2 border-white text-white rounded-full text-2xl xl:text-4xl px-4 py-1 hover:bg-white hover:text-black hover:font-bold">
-    //         SYNC UP TODAY
-    //         </span>
-    //       </Link>
-
-    //   </div>
-    // </section>
-    // <section className="grid grid-cols-1 xl:grid-cols-2 gap-16">
-
-    //   <div className="flex justify-center xl:justify-end ">
-
-    //     <Image
-    //       priority
-    //       className=""
-    //       src="/images/logos/mark-only-full.png"
-    //       alt="Rhythm Code Studio"
-    //       width={398}
-    //       height={408}
-    //     />
-    //   </div>
-
-    //   <div className="place-content-center text-2xl ">
-    //     <h1 className="m-4 font-bold text-start text-4xl">ABOUT RHYTHM CODE STUDIO</h1>
-    //     <p className="m-4">
-    //       Rhythm Code founder and lead developer, Kevin Long is attuned to the pulse of his hometown. He is immersed in the arts scene and serves small business, musicinas, creatives, and organizations in St. Louis and beyond.
-    //     </p>
-    //     <p className="m-4 mb-12">
-    //       Kevin brings the passion and imagination of an artist, along with the patient persistence of an educator to every job he touches. His diverse background in arts and education nd deep development knowledge make for a disciplined creativity like none other. Kevin and Rhythm Code Studio are dedicated to making your project sing in your own distinctive voice.
-    //     </p>
-    //     <span className="tracking-wider px-2 py-1 m-4 border border-white  border-2 text-white rounded-full text-3xl">
-    //       <Link href="/contact"
-    //       className="mx-2">
-    //         SYNC UP TODAY
-    //       </Link>
-    //     </span>
-
-    //   </div>
-    // </section>
   );
 }
