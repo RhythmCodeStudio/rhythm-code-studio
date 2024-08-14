@@ -9,11 +9,15 @@ import { FaCalendarDays } from "react-icons/fa6";
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-content space-y-16 ">
-      <div className="">
-        <h1 className="text-center text-3xl xs:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-blenny pb-2">Rhythm Code Studio</h1>
-        <h2 className="tracking-tight text-center xs:text-lg md:text-2xl lg:text-3xl 3xl:text-5xl">CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT</h2>
+      <div className="expand-on-load">
+        <h1 className="text-center text-3xl xs:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-blenny pb-2">
+          Rhythm Code Studio
+        </h1>
+        <h2 className="tracking-tight text-center xs:text-lg md:text-2xl lg:text-3xl 3xl:text-5xl ">
+          CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT
+        </h2>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center expand-on-load">
         <Image
           className="w-2/5 h-auto max-w-180"
           src="/images/logos/mark-only-full.png"
@@ -30,8 +34,7 @@ export default function Home() {
           rel="noopener noreferrer"
           onClick={() => {
             track(`Calendar link clicked`);
-          }}
-        >
+          }}>
           <div className="mb-2 flex justify-center items-center hover:transform hover:scale-110 transition-transform">
             <FaCalendarDays size={36} />
           </div>

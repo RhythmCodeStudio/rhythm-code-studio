@@ -36,7 +36,8 @@ body {
   }
 }
 
-/* textarea::placeholder, input::placeholder {
-  color: #C85250;
-} */
+.expand-on-load {
+  @apply animate-expand;
+}
+
 
