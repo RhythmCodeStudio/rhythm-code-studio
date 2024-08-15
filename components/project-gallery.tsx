@@ -1,7 +1,7 @@
 // import data
-import { projects } from '../lib/project-data';
+import { projects } from "../app/lib/project-data";
 // import tyoes
-import { Project } from '../lib/definitions';
+import { Project } from "../app/lib/definitions";
 
 export default function ProjectGallery() {
   return (
@@ -20,8 +20,6 @@ export default function ProjectGallery() {
           </li>
         ))}
       </ul>
-      
     </section>
-
   );
 }
