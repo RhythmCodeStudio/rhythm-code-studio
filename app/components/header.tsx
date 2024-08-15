@@ -4,7 +4,7 @@ import Image from "next/image";
 export const Header = () => {
   return (
     <header className=" text-center justify-center items-center p-4 m-4 pb-0 mb-0">
-      <div className="flex justify-center">
+      <div className="flex justify-center expand-on-load">
         <Image
           className="w-full h-auto max-w-200"
           src="/images/logos/horizontal-text-only-tag.png"

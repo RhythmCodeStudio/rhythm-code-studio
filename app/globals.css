@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.expand-on-load {
+  @apply animate-expand;
+}

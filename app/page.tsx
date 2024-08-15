@@ -7,7 +7,6 @@ import { track } from "@vercel/analytics";
 // import icons
 import { FaCalendarDays } from "react-icons/fa6";
 
-import CookieConsent from "react-cookie-consent";
 
 export default function Home() {
   return (
@@ -17,7 +16,7 @@ export default function Home() {
         <h2 className="text-center">Custom web solutions to match your beat</h2>
       </div>
 
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center expand-on-load">
         <Image
           className="w-2/5 h-auto max-w-144"
           src="/images/logos/mark-only-full.png"
@@ -28,7 +27,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="text-md lg:text-lg 3xl:text-xl font-bold  md:hover:transform hover:scale-110 transition-transform">
+      <div className="text-md lg:text-lg 3xl:text-xl font-bold  md:hover:transform hover:scale-110 transition-transform expand-on-load">
         <a
           href="https://calendly.com/kevin-jnxz/30min"
           target="_blank"
@@ -40,28 +39,6 @@ export default function Home() {
           <h3 className="underline">Schedule a free consultation.</h3>
         </a>
       </div>
-      {/* <CookieConsent
-        location="bottom"
-        buttonText="Sure man!!"
-        cookieName="myAwesomeCookieName2"
-        style={{ background: "#2B373B" }}
-        // buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-        expires={150}
-        onAccept={(acceptedByScrolling) => {
-          if (acceptedByScrolling) {
-            // triggered if user scrolls past threshold
-            alert("Accept was triggered by user scrolling");
-          } else {
-            alert("Accept was triggered by clicking the Accept button");
-          }
-        }}
-        enableDeclineButton
-        onDecline={() => {
-          alert("nay!");
-        }}>
-        This website uses cookies to enhance the user experience.{" "}
-        <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
-      </CookieConsent> */}
     </section>
   );
 }

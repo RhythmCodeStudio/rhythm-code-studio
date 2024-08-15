@@ -6,7 +6,7 @@ import SocialMediaLinks from "./contact-links";
 
 export const Footer = () => {
   return (
-    <footer className="text-center text-sm m-4">
+    <footer className="text-center text-sm m-4 expand-on-load">
       <div className="flex justify-center items-center mb-8 mt-0 md:my-12">
         <SocialMediaLinks />
       </div>
