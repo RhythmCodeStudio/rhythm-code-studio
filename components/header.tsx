@@ -6,11 +6,11 @@ import Nav from "./nav";
 
 export const Header = () => {
   return (
-    <header className="py-4 m-4 mb-6">
+    <header className="m-4">
       <div className="flex justify-between items-center">
         <Link href="/"> 
         <Image
-          className="w-full h-auto max-w-40 xl:max-w-48 3xl:max-w-64 ml-4"
+          className="w-full h-auto max-w-40 xl:max-w-48 3xl:max-w-64 3xl:m-4"
           src="/images/logos/horizontal-full-no-tag.png"
           width={1000}
           height={54}
@@ -18,7 +18,7 @@ export const Header = () => {
           priority
         />
         </Link>
-        <div className="mr-2 lg:mr-12">
+        <div className="3xl:mr-12">
         <Nav />
         </div>
       </div>

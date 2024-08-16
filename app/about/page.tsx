@@ -22,16 +22,16 @@ export default function About() {
           ABOUT RHYTHM CODE STUDIO
         </h1>
       </div>
-      <div className="order-2 lg:order-3 place-content-center">
-        <p className="p-6 lg:p-0 lg:text-xl 3xl:text-2xl">
+      <div className="order-2 lg:order-3 place-content-center max-w-400">
+        <p className="p-6 xl:mr-36 3xl:mr-96 lg:p-0 lg:text-lg 3xl:text-xl">
           Rhythm Code founder and lead developer, Kevin Long is attuned to the
           pulse of his hometown. He is immersed in the arts scene and serves
           small business, musicians, creatives, and organizations in St. Louis
           and beyond.
         </p>
       </div>
-      <div className="order-4 place-content-center">
-        <p className="p-6 lg:p-0 lg:text-xl 3xl:text-2xl">
+      <div className="order-4 place-content-center max-w-400">
+        <p className="p-6 xl:mr-36 3xl:mr-96 lg:p-0 lg:text-lg 3xl:text-xl">
           Kevin brings the passion and imagination of an artist, along with the
           patient persistence of an educator to every job he touches. His
           diverse background in arts and education and deep development
