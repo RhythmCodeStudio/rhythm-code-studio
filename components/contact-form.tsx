@@ -218,7 +218,7 @@ export default function ContactForm() {
             required
             name="message"
             id="message"
-            className="resize-none h-20 rounded-2xl px-4 opacity-75"
+            className="resize-none h-32 rounded-2xl px-4 opacity-75"
           />
           <p className="text-red-500">{messageErrorMessage}</p>
         </div>

@@ -1,7 +1,7 @@
 export default function Bio() {
   return (
-    <section>
+    <div>
       
-    </section>
+    </div>
   );
 }
