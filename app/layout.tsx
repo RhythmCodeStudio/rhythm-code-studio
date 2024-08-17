@@ -66,7 +66,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${recursive.className} overflow-x-hidden`}>
-      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ""} />
+      {/* <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ""} /> */}
       <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 max-h-screen">
         {/* Flex container that occupies at least the viewport height */}
         <div className="flex flex-col min-h-screen ">
@@ -81,7 +81,7 @@ export default function RootLayout({
           </div>
         </div>
         <Analytics />
-        <Script src="https://consent.cookiefirst.com/sites/rhythmcodestudio.tech-b440239d-5a16-4902-ad83-b70f15f9ef99/consent.js"></Script>
+        {/* <Script src="https://consent.cookiefirst.com/sites/rhythmcodestudio.tech-b440239d-5a16-4902-ad83-b70f15f9ef99/consent.js"></Script> */}
       </body>
       {/* <GoogleAnalytics gaId={process.env.GA_ID || ""} /> */}
     </html>
