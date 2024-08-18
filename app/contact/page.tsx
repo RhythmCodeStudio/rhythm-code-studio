@@ -14,7 +14,7 @@ export default function ContactPage() {
       {formSubmitted ? (
         <div className="items-center justify-center ">
           <h1 className="text-6xl lg:text-8xl 2xl:text-10xl font-blenny text-center">Rock On!</h1>
-          <p className="m-8 max-w-128 text-center">
+          <p className="m-8 max-w-128">
             Thanks for your inquiry. Your request to sync up was received. Rhythm Code Studio will reach out to you shortly.
           </p>
         </div>
