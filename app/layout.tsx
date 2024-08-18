@@ -4,9 +4,9 @@ import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import Script from 'next/script'
 // import fonts
-import { Inter, Suranna, Anaheim, Vidaloka, Recursive, Karla } from "next/font/google";
+import { Karla } from "next/font/google";
 // import from google for testing
-import { GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleTagManager } from "@next/third-parties/google";
 // import { GoogleAnalytics } from "@next/third-parties/google";
 // import css
 import "./globals.css";
@@ -15,24 +15,8 @@ import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 
 // import fonts
-const inter = Inter({ subsets: ["latin"] });
+
 const karla = Karla({
-  subsets: ["latin"],
-  weight: "400",
-});
-const suranna = Suranna({
-  subsets: ["latin"],
-  weight: "400",
-});
-const anaheim = Anaheim({
-  subsets: ["latin"],
-  weight: "400",
-});
-const vidaloka = Vidaloka({
-  subsets: ["latin"],
-  weight: "400",
-});
-const recursive = Recursive({
   subsets: ["latin"],
   weight: "400",
 });
@@ -65,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${recursive.className} overflow-x-hidden`}>
+    <html lang="en" className={`${karla.className} overflow-x-hidden`}>
       {/* <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ""} /> */}
       <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 max-h-screen">
         {/* Flex container that occupies at least the viewport height */}
@@ -81,7 +65,6 @@ export default function RootLayout({
           </div>
         </div>
         <Analytics />
-        {/* <Script src="https://consent.cookiefirst.com/sites/rhythmcodestudio.tech-b440239d-5a16-4902-ad83-b70f15f9ef99/consent.js"></Script> */}
       </body>
       {/* <GoogleAnalytics gaId={process.env.GA_ID || ""} /> */}
     </html>
