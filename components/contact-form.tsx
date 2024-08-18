@@ -9,7 +9,7 @@ import ContactFormInput from "./contact-form-input";
 import {
   validateEmail,
   validateName,
-  validatePhone,
+  // validatePhone,
   validateMessage,
 } from "../app/lib/utils";
 // import from emailjs
@@ -19,10 +19,10 @@ export default function ContactForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  // const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [emailErrorMessage, setEmailErrorMessage] = useState("");
-  const [phoneErrorMessage, setPhoneErrorMessage] = useState("");
+  // const [phoneErrorMessage, setPhoneErrorMessage] = useState("");
   const [firstNameErrorMessage, setFirstNameErrorMessage] = useState("");
   const [lastNameErrorMessage, setLastNameErrorMessage] = useState("");
   const [messageErrorMessage, setMessageErrorMessage] = useState("");
@@ -38,15 +38,15 @@ export default function ContactForm() {
     if (e.target.name === "email" && validateEmail(e.target.value)) {
       setEmailErrorMessage("");
     }
-    if (e.target.name === "firstName" && validateName(e.target.value)) {
+    if (e.target.name === "first_name" && validateName(e.target.value)) {
       setFirstNameErrorMessage("");
     }
-    if (e.target.name === "lastName" && validateName(e.target.value)) {
+    if (e.target.name === "last_name" && validateName(e.target.value)) {
       setLastNameErrorMessage("");
     }
-    if (e.target.name === "phone" && validatePhone(e.target.value)) {
-      setPhoneErrorMessage("");
-    }
+    // if (e.target.name === "phone" && validatePhone(e.target.value)) {
+    //   setPhoneErrorMessage("");
+    // }
     if (e.target.name === "message" && validateMessage(e.target.value)) {
       setMessageErrorMessage("");
     }
@@ -58,10 +58,10 @@ export default function ContactForm() {
     const trimmedFirstName = firstName.trim();
     const trimmedLastName = lastName.trim();
     const trimmedEmail = email.trim();
-    const trimmedPhone = phone.trim();
+    // const trimmedPhone = phone.trim();
     // validation  for inputs, handle errors accordingly
     const isEmailValid = validateEmail(trimmedEmail);
-    const isPhoneValid = validatePhone(trimmedPhone);
+    // const isPhoneValid = validatePhone(trimmedPhone);
     const isFirstNameValid = validateName(trimmedFirstName);
     const isLastNameValid = validateName(trimmedLastName);
     const isMessageValid = validateMessage(message);
@@ -73,10 +73,10 @@ export default function ContactForm() {
       setLastNameErrorMessage("Please enter a valid last name.");
       return;
     }
-    if (!isPhoneValid) {
-      setPhoneErrorMessage("Please enter a valid phone number.");
-      return;
-    }
+    // if (!isPhoneValid) {
+    //   setPhoneErrorMessage("Please enter a valid phone number.");
+    //   return;
+    // }
     if (!isEmailValid) {
       setEmailErrorMessage("Please enter a valid email address.");
       return;
@@ -87,7 +87,7 @@ export default function ContactForm() {
     }
     if (
       isEmailValid &&
-      isPhoneValid &&
+      // isPhoneValid &&
       isFirstNameValid &&
       isLastNameValid &&
       isMessageValid
@@ -96,7 +96,7 @@ export default function ContactForm() {
         first_name: trimmedFirstName,
         last_name: trimmedLastName,
         email: trimmedEmail,
-        phone_number: trimmedPhone,
+        // phone_number: trimmedPhone,
         message: message,
       };
 
@@ -114,7 +114,7 @@ export default function ContactForm() {
             setFirstName("");
             setLastName("");
             setEmail("");
-            setPhone("");
+            // setPhone("");
             setMessage("");
             // Reset the button's submitted state after 5 seconds
             setTimeout(() => {
@@ -123,7 +123,7 @@ export default function ContactForm() {
           });
       } catch (error) {
         setDeliveryErrorMessage(
-          "There was an error delivering your message. Please click to email us at mmmcontact@mikemartinmedia.com. We apologize for the inconvenience."
+          "There was an error delivering your message. Please click to email us at kevin@rhythmcodestudio.tech. We apologize for the inconvenience."
         );
       }
     }
@@ -136,20 +136,20 @@ export default function ContactForm() {
           label="First Name"
           name="first_name"
           type="text"
-          placeholder="First Name"
+          placeholder=""
           value={firstName}
-          required={false}
+          required={true}
           errorMessage={firstNameErrorMessage}
           handleChange={handleChange}
           setStateVariable={setFirstName}
         />
         <ContactFormInput
-          label="Last Name"
+          label="last name"
           name="last_name"
           type="text"
-          placeholder="Last Name"
+          placeholder=""
           value={lastName}
-          required={false}
+          required={true}
           errorMessage={lastNameErrorMessage}
           handleChange={handleChange}
           setStateVariable={setLastName}
@@ -158,7 +158,7 @@ export default function ContactForm() {
           label="Email"
           name="email"
           type="text"
-          placeholder="Email"
+          placeholder=""
           value={email}
           required={true}
           errorMessage={emailErrorMessage}
@@ -167,14 +167,14 @@ export default function ContactForm() {
         />
 
         <div className="flex flex-col py-2">
-          <label htmlFor="message" className="px-4">
-            Brief Project Description*
+          <label htmlFor="message" className="px-4 font-bold">
+            {`Brief Project Description*`.toUpperCase()}
             <span className="text-xs"> (required)</span>
           </label>
           <textarea
             autoComplete="off"
-            maxLength={2000}
-            placeholder="Please briefly describe your project."
+            maxLength={1500}
+            placeholder=""
             onChange={(e) => handleChange(e, setMessage)}
             value={message}
             required={true}
@@ -182,7 +182,7 @@ export default function ContactForm() {
             id="message"
             className="resize-none h-36 rounded-2xl px-4 opacity-75"
           />
-          <p className="text-red-500">{messageErrorMessage}</p>
+          <p className="">{messageErrorMessage}</p>
         </div>
         <div className="flex justify-end">
           <button
