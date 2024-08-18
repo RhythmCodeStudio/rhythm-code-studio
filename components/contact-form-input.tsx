@@ -4,6 +4,7 @@ export default function ContactFormInput({
   type,
   placeholder,
   value,
+  required,
   errorMessage,
   handleChange,
   setStateVariable,
@@ -13,6 +14,7 @@ export default function ContactFormInput({
   type: string;
   placeholder: string;
   value: any;
+  required: boolean;
   errorMessage: string;
   handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, setState: React.Dispatch<React.SetStateAction<any>>) => void;
   setStateVariable: React.Dispatch<React.SetStateAction<any>>;
@@ -29,6 +31,7 @@ export default function ContactFormInput({
         name={name}
         placeholder={placeholder}
         value={value}
+        required={required}
         onChange={(e) => handleChange(e, setStateVariable)}
       />
       <p>{errorMessage}</p>

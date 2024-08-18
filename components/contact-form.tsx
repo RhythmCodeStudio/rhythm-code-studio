@@ -65,10 +65,6 @@ export default function ContactForm() {
     const isFirstNameValid = validateName(trimmedFirstName);
     const isLastNameValid = validateName(trimmedLastName);
     const isMessageValid = validateMessage(message);
-    if (!isEmailValid) {
-      setEmailErrorMessage("Please enter a valid email address.");
-      return;
-    }
     if (!isFirstNameValid) {
       setFirstNameErrorMessage("Please enter a valid first name.");
       return;
@@ -79,6 +75,10 @@ export default function ContactForm() {
     }
     if (!isPhoneValid) {
       setPhoneErrorMessage("Please enter a valid phone number.");
+      return;
+    }
+    if (!isEmailValid) {
+      setEmailErrorMessage("Please enter a valid email address.");
       return;
     }
     if (!isMessageValid) {
@@ -138,6 +138,7 @@ export default function ContactForm() {
           type="text"
           placeholder="First Name"
           value={firstName}
+          required={false}
           errorMessage={firstNameErrorMessage}
           handleChange={handleChange}
           setStateVariable={setFirstName}
@@ -148,6 +149,7 @@ export default function ContactForm() {
           type="text"
           placeholder="Last Name"
           value={lastName}
+          required={false}
           errorMessage={lastNameErrorMessage}
           handleChange={handleChange}
           setStateVariable={setLastName}
@@ -158,67 +160,27 @@ export default function ContactForm() {
           type="text"
           placeholder="Email"
           value={email}
+          required={true}
           errorMessage={emailErrorMessage}
           handleChange={handleChange}
           setStateVariable={setEmail}
         />
-        {/* <div className="flex flex-col py-2">
-          <label htmlFor="first_name" className="px-4">First Name</label>
-          <input
-            type="text"
-            name="first_name"
-            value={firstName}
-            onChange={(e) => handleChange(e, setFirstName)}
-            required
-            className="rounded-xl px-4 opacity-80"
-            placeholder="First Name"
-          />
-          <p className="text-red-500">{firstNameErrorMessage}</p>
-        </div>
 
         <div className="flex flex-col py-2">
-          <label htmlFor="first_name" className="px-4">Last Name</label>
-          <input
-            type="text"
-            name="last_name"
-            value={lastName}
-            onChange={(e) => handleChange(e, setLastName)}
-            required
-            className="rounded-xl px-4 opacity-80"
-            placeholder="First Name"
-          />
-          <p className="text-red-500">{lastNameErrorMessage}</p>
-        </div>
-
-        <div className="flex flex-col py-2">
-          <label htmlFor="email" className="px-4">Email</label>
-          <input
-            type="text"
-            name="email"
-            value={email}
-            onChange={(e) => handleChange(e, setEmail)}
-            required
-            className="rounded-xl px-4 opacity-80"
-            placeholder="Email"
-          />
-          <p className="text-red-500">{emailErrorMessage}</p>
-        </div> */}
-
-        <div className="flex flex-col py-2">
-          <label htmlFor="email" className="px-4">
+          <label htmlFor="message" className="px-4">
             Brief Project Description*
             <span className="text-xs"> (required)</span>
           </label>
           <textarea
             autoComplete="off"
-            maxLength={1000}
+            maxLength={2000}
             placeholder="Please briefly describe your project."
             onChange={(e) => handleChange(e, setMessage)}
             value={message}
-            required
+            required={true}
             name="message"
             id="message"
-            className="resize-none h-32 rounded-2xl px-4 opacity-75"
+            className="resize-none h-36 rounded-2xl px-4 opacity-75"
           />
           <p className="text-red-500">{messageErrorMessage}</p>
         </div>
