@@ -15,7 +15,7 @@ import {
 // import from emailjs
 import emailjs from "@emailjs/browser";
 
-export default function ContactForm() {
+export default function ContactForm({ setFormSubmitted }: { setFormSubmitted: React.Dispatch<React.SetStateAction<boolean>> }) {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -116,6 +116,7 @@ export default function ContactForm() {
             setEmail("");
             // setPhone("");
             setMessage("");
+            setFormSubmitted(true);
             // Reset the button's submitted state after 5 seconds
             setTimeout(() => {
               setButtonSubmitted(false);
