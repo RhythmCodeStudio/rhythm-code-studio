@@ -56,6 +56,9 @@ export default function Nav() {
               <h1 className="font-blenny text-3xl">Rhythm Code Studio</h1>
               {/* Logo */}
               <div className=" w-36 h-auto">
+                <Link href="/"
+                  onClick={() => setMenuOpen(false)}
+                >
                 <Image
                   src="/images/logos/mark-only-full.png"
                   width={294}
@@ -63,6 +66,7 @@ export default function Nav() {
                   alt="Rhythm Code Studio"
                   priority
                 />
+                </Link>
               </div>
               {/* Nav Links */}
               <ul className="space-y-4 text-xl">
