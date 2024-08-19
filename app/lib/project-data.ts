@@ -4,7 +4,7 @@ export const projects = [
     project: "Website",
     description: "A website for a media company.",
     desktop_image: "/images/projects/mmm/mmm-desktop.png",
-    mobile_image: "/images/projects/mike-martin-media-mobile.png",
+    mobile_image: "/images/projects/mmm/mmm-mobile.jpg",
     url: "https://mikemartinmedia.com",
   },
   {

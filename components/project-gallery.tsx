@@ -15,6 +15,16 @@ export default function ProjectGallery() {
         {projects.map((project: Project) => (
           <li key={project.client}>
             <h3>{project.client}</h3>
+            <div className="flex items-center justify-center p-6 ">
+              <div className="w-52 md:w-72  h-auto p-6">
+            <Image 
+              src={project.mobile_image} 
+              alt={project.client} 
+              width={1080}
+              height={1920}
+            />
+            </div>
+            </div>
             <h4>{project.project}</h4>
             <p>{project.description}</p>
             <div className="w-96 md:w-128 lg:w-200 h-auto p-6">
