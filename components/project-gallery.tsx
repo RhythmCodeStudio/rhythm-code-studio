@@ -27,7 +27,7 @@ export default function ProjectGallery() {
             </h4>
             </a>
             <div className="flex items-center justify-center">
-                <figure className="w-52 md:w-72 h-auto ">
+                <figure className="w-32 lg:w-40 xl:w-52 h-auto ">
                   <Image
                     src={project.mobile_image}
                     alt={project.client}
@@ -41,13 +41,13 @@ export default function ProjectGallery() {
             </div>
           
             <div className="flex items-center justify-center">
-              <figure className="w-96 md:w-128 lg:w-200 h-auto px-4">
+              <figure className="w-96 md:w-144 lg:w-300 h-auto px-4">
                 <Image
                   src={project.desktop_image}
                   alt={project.client}
                   width={1920}
                   height={1080}
-                  className="rounded-2xl"
+                  className="rounded-2xl shadow-xl"
                 />
                 <figcaption className="text-center font-bold">
                   Desktop View
