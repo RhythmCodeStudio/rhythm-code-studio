@@ -19,14 +19,14 @@ export default function ProjectGallery() {
               target="_blank"
               rel="noopener noreferrer"
             >
-            <h3 className="text-center font-bold text-lg sm:text-xl md:text-2xl mt-4">
+            <h3 className="text-center font-bold text-lg sm:text-xl md:text-2xl mt-4 font-blenny">
               {project.client}
             </h3>
             <h4 className="text-center font-bold sm:text-lg md:text-xl mb-2 underline">
               {project.url}
             </h4>
             </a>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center m-2">
                 <figure className="w-32 lg:w-40 xl:w-52 h-auto ">
                   <Image
                     src={project.mobile_image}
@@ -34,13 +34,13 @@ export default function ProjectGallery() {
                     width={1080}
                     height={1920}className="rounded-2xl"
                   />
-                  <figcaption className="text-center font-bold">
+                  <figcaption className="text-center font-bold text-xs lg:text-sm">
                     Mobile View
                   </figcaption>
                 </figure>
             </div>
           
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center m-2">
               <figure className="w-96 md:w-144 lg:w-300 h-auto px-4">
                 <Image
                   src={project.desktop_image}
@@ -49,13 +49,27 @@ export default function ProjectGallery() {
                   height={1080}
                   className="rounded-2xl shadow-xl"
                 />
-                <figcaption className="text-center font-bold">
+                <figcaption className="text-center font-bold text-xs lg:text-sm">
                   Desktop View
                 </figcaption>
               </figure>
             </div>
             <div className="">
-              <p className="p-4">{project.description}</p>
+              <p className="p-4 md:text-lg xl:text-xl">{project.description}</p>
+            </div>
+            <h5 className="font-bold text-lg text-center">Features</h5>
+            <div className="flex justify-center mb-4">
+              
+              <ul className="grid grid-cols-3 lg:grid-cols-4">
+              {project.features.map((feature) => (
+                <li
+                  key={feature}
+                  className="bg-zinc-900 text-white m-2 p-2 rounded-2xl text-sm text-center"
+                >
+                  {feature}
+                </li>
+              ))}
+              </ul>
             </div>
           </li>
         ))}

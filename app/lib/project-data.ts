@@ -22,5 +22,11 @@ export const projects = [
     desktop_image: "/images/projects/the-long-emergency/the-long-emergency-desktop.png",
     mobile_image: "/images/projects/the-long-emergency/the-long-emergency-mobile.jpg",
     url: "thelongemergency.net",
+    features: [
+      "Video Gallery",
+      "Photo Gallery",
+      "Blog",
+      "Contact Form",
+    ],
   },
 ]

@@ -5,6 +5,7 @@ export type Project = {
   desktop_image: string;
   mobile_image: string;
   url: string;
+  features: string[];
 };
 
 export type Client = {
