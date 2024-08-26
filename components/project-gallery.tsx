@@ -1,9 +1,32 @@
+"use client";
 // import data
 import { projects } from "../app/lib/project-data";
-// import tyoes
 import { Project } from "../app/lib/definitions";
-// import from next
 import Image from "next/image";
+import { EmblaOptionsType } from 'embla-carousel';
+import useEmblaCarousel from 'embla-carousel-react';
+
+type PropType = {
+  slides: string[]
+  options?: EmblaOptionsType
+}
+
+const EmblaCarousel: React.FC<PropType> = (props) => {
+  const { slides, options } = props;
+  const [emblaRef, emblaApi] = useEmblaCarousel(options);
+
+  return (
+    <div className="embla__viewport" ref={emblaRef}>
+      <div className="embla__container">
+        {slides.map((slide, index) => (
+          <div className="embla__slide" key={index}>
+            <Image src={slide} alt={`Slide ${index + 1}`} width={1080} height={1920} className="rounded-2xl border-4 border-zinc-900" />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function ProjectGallery() {
   return (
@@ -13,33 +36,27 @@ export default function ProjectGallery() {
       </h2>
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-">
         {projects.map((project: Project) => (
-          <li key={project.client} className="shadow-2xl m-6 max-w-200 border border-zinc-900 rounded-2xl">
+          <li key={project.client} className="shadow-2xl m-6 max-w-200 border-2 border-zinc-900 rounded-2xl">
             <a 
               href={`https://${project.url}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-            <h3 className="text-center font-bold text-lg sm:text-xl md:text-2xl mt-4 font-blenny">
-              {project.client}
-            </h3>
-            <h4 className="text-center font-bold sm:text-lg md:text-xl mb-2 underline">
-              {project.url}
-            </h4>
+              <h3 className="text-center font-bold text-lg sm:text-xl md:text-2xl mt-4 font-blenny">
+                {project.client}
+              </h3>
+              <h4 className="text-center font-bold sm:text-lg md:text-xl mb-2 underline">
+                {project.url}
+              </h4>
             </a>
             <div className="flex items-center justify-center m-2">
-                <figure className="w-32 lg:w-40 xl:w-52 h-auto ">
-                  <Image
-                    src={project.mobile_image}
-                    alt={project.client}
-                    width={1080}
-                    height={1920}className="rounded-2xl"
-                  />
+                <figure className="w-32 lg:w-40 xl:w-52 h-auto">
+                  <EmblaCarousel slides={project.mobile_images} />
                   <figcaption className="text-center font-bold text-xs lg:text-sm">
                     Mobile View
                   </figcaption>
                 </figure>
             </div>
-          
             <div className="flex items-center justify-center m-2">
               <figure className="w-96 md:w-144 lg:w-300 h-auto px-4">
                 <Image
@@ -47,7 +64,7 @@ export default function ProjectGallery() {
                   alt={project.client}
                   width={1920}
                   height={1080}
-                  className="rounded-2xl shadow-xl"
+                  className="rounded-2xl shadow-xl border-4 border-zinc-900"
                 />
                 <figcaption className="text-center font-bold text-xs lg:text-sm">
                   Desktop View
@@ -59,12 +76,11 @@ export default function ProjectGallery() {
             </div>
             <h5 className="font-bold text-lg text-center">Features</h5>
             <div className="flex justify-center mb-4">
-              
               <ul className="grid grid-cols-3 lg:grid-cols-4">
               {project.features.map((feature) => (
                 <li
                   key={feature}
-                  className="bg-zinc-900 text-white m-2 p-2 rounded-2xl text-sm text-center"
+                  className="bg-zinc-900 text-white m-1 p-2 rounded-2xl text-xs md:text-base text-center shadow-xl"
                 >
                   {feature}
                 </li>
