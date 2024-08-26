@@ -15,19 +15,29 @@ export const projects = [
       "/images/projects/mmm/mmm-mobile-3.jpg",
       "/images/projects/mmm/mmm-mobile-4.jpg",
     ],
-    desktop_image: "/images/projects/mmm/mmm-desktop.png",
+    desktop_image: [
+      "/images/projects/mmm/mmm-desktop.png",
+      "/images/projects/mmm/mmm-desktop-2.png",
+      "/images/projects/mmm/mmm-desktop-3.png",
+      "/images/projects/mmm/mmm-desktop-4.jpg",
+    ],
     url: "mikemartinmedia.com",
   },
   {
     client: "The Long Emergency",
     project: "Website",
     description: "A website for a rock band. A website for a media company. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl.",
-    desktop_image: "/images/projects/the-long-emergency/the-long-emergency-desktop.png",
     mobile_images: [
       "/images/projects/the-long-emergency/the-long-emergency-mobile.jpg",
       "/images/projects/the-long-emergency/the-long-emergency-mobile.jpg",
       "/images/projects/the-long-emergency/the-long-emergency-mobile.jpg",
       "/images/projects/the-long-emergency/the-long-emergency-mobile.jpg",
+    ],
+    desktop_image: [
+      "/images/projects/the-long-emergency/the-long-emergency-desktop.png",
+      "/images/projects/the-long-emergency/the-long-emergency-desktop.png",
+      "/images/projects/the-long-emergency/the-long-emergency-desktop.png",
+      "/images/projects/the-long-emergency/the-long-emergency-desktop.png",
     ],
     url: "thelongemergency.net",
     features: [

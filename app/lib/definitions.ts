@@ -2,7 +2,7 @@ export type Project = {
   client: string;
   project: string;
   description: string;
-  desktop_image: string;
+  desktop_image: string[];
   mobile_images: string[];
   url: string;
   features: string[];
