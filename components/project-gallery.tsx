@@ -12,7 +12,7 @@ import DesktopCarousel from "./desktop-carousel";
 export default function ProjectGallery() {
   return (
     <>
-      <h2 className="tracking-tight text-center xs:text-lg sm:text-xl md:text-2xl lg:text-3xl 3xl:text-5xl ">
+      <h2 className="font-semibold tracking-tight text-center xs:text-lg sm:text-xl md:text-2xl lg:text-3xl 3xl:text-5xl ">
         CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT
       </h2>
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-">
@@ -27,12 +27,12 @@ export default function ProjectGallery() {
               <h3 className="text-center font-bold text-lg sm:text-xl md:text-2xl mt-4 font-blenny">
                 {project.client}
               </h3>
-              <h4 className="text-center font-bold sm:text-lg md:text-xl mb-2 underline">
+              <h4 className="text-center font-semibold sm:text-lg md:text-xl mb-2 underline">
                 {project.url}
               </h4>
             </a>
             <div className="flex items-center justify-center m-2">
-              <figure className="w-32 lg:w-40 xl:w-52 h-auto">
+              <figure className="w-full h-auto">
                 <MobileCarousel slides={project.mobile_images} />
                 <figcaption className="text-center font-bold text-xs lg:text-sm">
                   Mobile View
@@ -47,8 +47,8 @@ export default function ProjectGallery() {
                 </figcaption>
               </figure>
             </div>
-            <div className="">
-              <p className="p-4 md:text-lg xl:text-xl">{project.description}</p>
+            <div>
+              <p className="border border-zinc-900 rounded-2xl shadow-2xl mx-6 p-4 md:text-lg xl:text-xl shadow-xl">{project.description}</p>
             </div>
             <h5 className="font-bold text-lg text-center">Features</h5>
             <div className="flex justify-center mb-4">

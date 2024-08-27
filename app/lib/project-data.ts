@@ -7,12 +7,13 @@ export const projects = [
       "Responsive",
       "Accessible",
       "Analytics",
+      "Tag Manager",
       "Cookie Consent",
+      "Embedded Video",
       "Video Galleries",
       "Photo Galleries",
       "Blog",
       "Contact Form",
-      "Mobile First",
       "Instagram Feed",
     ],
     mobile_images: [
@@ -57,6 +58,8 @@ export const projects = [
       "Blog",
       "Contact Form",
       "Photo Gallery",
+      "Video Gallery",
+      "Mailing List",
     ],
   },
 ]
