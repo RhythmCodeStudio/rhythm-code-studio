@@ -20,7 +20,7 @@ export default function ContactPage() {
         </div>
       ) : (
         <>
-      <div className=" items-center justify-center max-w-225">
+      <div className=" items-center justify-center max-w-200">
         <p className="px-8 py-4">
           {contactPageCopy.text_block_one}
         </p>
