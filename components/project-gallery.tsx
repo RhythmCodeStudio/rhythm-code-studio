@@ -19,11 +19,11 @@ export default function ProjectGallery() {
         {projects.map((project: Project) => (
           <li
             key={project.client}
-            className="shadow-2xl m-6 max-w-200 border-2 border-zinc-900 rounded-2xl">
-              <h3 className="text-center font-bold text-lg sm:text-xl md:text-2xl mt-4 font-blenny">
-                {project.client}
-              </h3>
-            <div className="flex items-center justify-center m-2">
+            className="shadow-2xl m-4 max-w-200 border-2 border-zinc-900 rounded-2xl">
+            <h3 className="text-center font-bold text-lg sm:text-xl md:text-2xl mt-4 font-blenny">
+              {project.client}
+            </h3>
+            <div className="flex items-center justify-center my-4">
               <figure className="w-full h-auto">
                 <figcaption className="text-center font-bold text-xs lg:text-sm">
                   Mobile View
@@ -31,7 +31,7 @@ export default function ProjectGallery() {
                 <MobileCarousel slides={project.mobile_images} />
               </figure>
             </div>
-            <div className="flex items-center justify-center m-2">
+            <div className="flex items-center justify-center my-8">
               <figure className="w-full h-auto px-4">
                 <figcaption className="text-center font-bold text-xs lg:text-sm">
                   Desktop View
@@ -39,7 +39,7 @@ export default function ProjectGallery() {
                 <DesktopCarousel slides={project.desktop_image} />
               </figure>
             </div>
-            <div className="mx-6 p-4 border border-zinc-900 rounded-2xl shadow-2xl">
+            <div className="mx-6 p-4 border border-zinc-900 rounded-2xl shadow-2xl mb-12">
               <a
                 href={`https://${project.url}`}
                 target="_blank"
@@ -48,9 +48,9 @@ export default function ProjectGallery() {
                   {project.url}
                 </h4>
               </a>
-              <p className=" md:text-lg xl:text-xl">{project.description}</p>
+              <p className=" md:text-lg 2xl:text-xl">{project.description}</p>
             </div>
-            <h5 className="font-bold text-lg text-center">Features</h5>
+            <h5 className="font-bold text-lg md:text-xl text-center mb-4">Features</h5>
             <div className="flex justify-center mb-4">
               <ul className="grid grid-cols-3 lg:grid-cols-4">
                 {project.features.map((feature) => (

@@ -2,7 +2,7 @@ export const projects = [
   {
     client: "Mike Martin Media",
     project: "Website",
-    description: "A website for a media company. A website for a rock band. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl.",
+    description: "Mike Martin Media is a multi media production company. MMM is baed in St. Louis, MO, but they work all around the world. They needed a website that A website for a media company. A website for a rock band. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl.",
     features: [
       "Responsive",
       "Accessible",
@@ -54,12 +54,12 @@ export const projects = [
       "Gig Calendar",
       "Audio Player",
       "Audio Downloads",
-      "Merch Store",
+      // "Merch Store",
       "Blog",
       "Contact Form",
-      "Photo Gallery",
-      "Video Gallery",
-      "Mailing List",
+      // "Photo Gallery",
+      // "Video Gallery",
+      // "Mailing List",
     ],
   },
 ]
