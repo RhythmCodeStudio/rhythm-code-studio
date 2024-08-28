@@ -92,7 +92,8 @@ body {
 }
 .embla__button:disabled {
   /* color: rgb(101, 101, 101); */
-  display: none;
+  /* display: none; */
+  opacity: 0.2;
 }
 .embla__button__svg {
   width: 20%;

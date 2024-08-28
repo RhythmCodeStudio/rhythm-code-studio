@@ -30,7 +30,7 @@ export default function DesktopCarousel(props: PropType) {
         ))}
       </div>
     </div>
-    <div className="embla__dots flex justify-center">
+    {/* <div className="embla__dots flex justify-center">
         {scrollSnaps.map((_, index) => (
           <DotButton
             key={index}
@@ -40,7 +40,7 @@ export default function DesktopCarousel(props: PropType) {
             )}
           />
         ))}
-      </div>
+      </div> */}
     </>
   );
 }
