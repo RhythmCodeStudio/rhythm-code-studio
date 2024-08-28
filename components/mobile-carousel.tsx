@@ -2,7 +2,7 @@ import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 // import components
-import { DotButton, useDotButton } from "./carousel-dot-buttons";
+// import { DotButton, useDotButton } from "./carousel-dot-buttons";
 import {
   PrevButton,
   NextButton,
@@ -17,8 +17,8 @@ type PropType = {
 export default function MobileCarousel(props: PropType) {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
-  const { selectedIndex, scrollSnaps, onDotButtonClick } =
-    useDotButton(emblaApi);
+  // const { selectedIndex, scrollSnaps, onDotButtonClick } =
+  //   useDotButton(emblaApi);
   const {
     prevBtnDisabled,
     nextBtnDisabled,
@@ -29,7 +29,7 @@ export default function MobileCarousel(props: PropType) {
   return (
     <>
       <div className="grid grid-cols-3">
-        <div className="embla__buttons place-content-center">
+        <div className="embla__buttons place-content-center ml-10">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
         </div>
 
@@ -46,14 +46,13 @@ export default function MobileCarousel(props: PropType) {
                   alt={`Slide ${index + 1}`}
                   width={1080}
                   height={1920}
-                  className=""
                 />
               </div>
             ))}
           </div>
         </div>
 
-        <div className="embla__buttons place-content-center">
+        <div className="embla__buttons place-content-center mr-10">
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
       </div>

@@ -20,35 +20,35 @@ export default function ProjectGallery() {
           <li
             key={project.client}
             className="shadow-2xl m-6 max-w-200 border-2 border-zinc-900 rounded-2xl">
-            <a
-              href={`https://${project.url}`}
-              target="_blank"
-              rel="noopener noreferrer">
               <h3 className="text-center font-bold text-lg sm:text-xl md:text-2xl mt-4 font-blenny">
                 {project.client}
               </h3>
-              <h4 className="text-center font-semibold sm:text-lg md:text-xl mb-2 underline">
-                {project.url}
-              </h4>
-            </a>
             <div className="flex items-center justify-center m-2">
               <figure className="w-full h-auto">
-                <MobileCarousel slides={project.mobile_images} />
                 <figcaption className="text-center font-bold text-xs lg:text-sm">
                   Mobile View
                 </figcaption>
+                <MobileCarousel slides={project.mobile_images} />
               </figure>
             </div>
             <div className="flex items-center justify-center m-2">
               <figure className="w-full h-auto px-4">
-                <DesktopCarousel slides={project.desktop_image} />
                 <figcaption className="text-center font-bold text-xs lg:text-sm">
                   Desktop View
                 </figcaption>
+                <DesktopCarousel slides={project.desktop_image} />
               </figure>
             </div>
-            <div>
-              <p className="border border-zinc-900 rounded-2xl shadow-2xl mx-6 p-4 md:text-lg xl:text-xl shadow-xl">{project.description}</p>
+            <div className="mx-6 p-4 border border-zinc-900 rounded-2xl shadow-2xl">
+              <a
+                href={`https://${project.url}`}
+                target="_blank"
+                rel="noopener noreferrer">
+                <h4 className="text-center font-semibold sm:text-lg md:text-xl mb-2 underline">
+                  {project.url}
+                </h4>
+              </a>
+              <p className=" md:text-lg xl:text-xl">{project.description}</p>
             </div>
             <h5 className="font-bold text-lg text-center">Features</h5>
             <div className="flex justify-center mb-4">
@@ -62,11 +62,15 @@ export default function ProjectGallery() {
                 ))}
               </ul>
             </div>
-            {/* <iframe
-              src={`https://${project.url}`}
-              title={project.client}
-              className="w-full h-96 border-2 border-zinc-900 rounded-2xl"
-            ></iframe> */}
+            <div className="flex justify-center">
+              <Image
+                src="/images/logos/mark-only-full.png"
+                alt="Rhythm Code Studio Logo"
+                width={75}
+                height={75}
+                className="m-4"
+              />
+            </div>
           </li>
         ))}
       </ul>
