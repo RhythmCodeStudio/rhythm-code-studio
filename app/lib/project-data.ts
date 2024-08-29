@@ -33,7 +33,7 @@ export const projects = [
   {
     client: "The Long Emergency",
     project: "Website",
-    description: "A website for a rock band. A website for a media company. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl.",
+    description: "Mike Martin Media is a multi media production company. MMM is baed in St. Louis, MO, but they work all around the world. They needed a website that A website for a media company. A website for a rock band. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl.",
     mobile_images: [
       "/images/projects/the-long-emergency/the-long-emergency-mobile.jpg",
       "/images/projects/the-long-emergency/the-long-emergency-mobile.jpg",
