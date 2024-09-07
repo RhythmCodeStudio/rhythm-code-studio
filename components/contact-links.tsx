@@ -8,7 +8,7 @@ import IconLink from "./icon-link";
 
 export default function ContactLinks() {
   return (
-    <div className="flex justify-center items-center space-x-16 lg:space-x-28 xl:space-x-48 ">
+    <div className="flex justify-center items-center space-x-16 lg:space-x-32 xl:space-x-64 3xl:space-x-72">
       <div className="sm:hover:transform hover:scale-125 transition-transform">
       <IconLink
         href="mailto:kevin@rhythmcodestudio.tech"

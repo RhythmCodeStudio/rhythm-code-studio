@@ -2,7 +2,7 @@ export const projects = [
   {
     client: "Mike Martin Media",
     project: "Website",
-    description: "Mike Martin Media is a multi media production company. MMM is baed in St. Louis, MO, but they work all around the world. They needed a website that A website for a media company. A website for a rock band. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl.",
+    description: "Mike Martin Media is an award winning multi media production company. MMM is based in St. Louis, MO, but they work all around the world. They needed a website that A website for a media company. A website for a rock band. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl.",
     features: [
       "Responsive",
       "Accessible",
@@ -15,6 +15,7 @@ export const projects = [
       "Blog",
       "Contact Form",
       "Instagram Feed",
+      "Embedded Map",
     ],
     mobile_images: [
       "/images/projects/mmm/mmm-mobile.jpg",
@@ -37,10 +38,13 @@ export const projects = [
     project: "Website",
     description: "Mike Martin Media is a multi media production company. MMM is baed in St. Louis, MO, but they work all around the world. They needed a website that A website for a media company. A website for a rock band. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec nisl.",
     mobile_images: [
-      "/images/projects/the-long-emergency/the-long-emergency-mobile.jpg",
-      "/images/projects/the-long-emergency/the-long-emergency-mobile.jpg",
-      "/images/projects/the-long-emergency/the-long-emergency-mobile.jpg",
-      "/images/projects/the-long-emergency/the-long-emergency-mobile.jpg",
+      "/images/projects/the-long-emergency/mobile/landing.jpg",
+      "/images/projects/the-long-emergency/mobile/merch.jpg",
+      "/images/projects/the-long-emergency/mobile/menu.jpg",
+      "/images/projects/the-long-emergency/mobile/music.jpg",
+      "/images/projects/the-long-emergency/mobile/shows.jpg",
+      "/images/projects/the-long-emergency/mobile/music-player-sing-me-to-sleep.jpg",
+      // "/images/projects/the-long-emergency/mobile/.jpg",
     ],
     desktop_image: [
       "/images/projects/the-long-emergency/desktop.png",

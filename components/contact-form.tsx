@@ -181,18 +181,18 @@ export default function ContactForm({ setFormSubmitted }: { setFormSubmitted: Re
             required={true}
             name="message"
             id="message"
-            className="resize-none h-36 rounded-2xl px-4 opacity-75"
+            className="resize-none h-36 rounded-3xl px-4 opacity-75"
           />
           <p className="">{messageErrorMessage}</p>
         </div>
         <div className="flex justify-end">
           <button
             type="submit"
-            className="border border-2 text-white rounded-2xl px-4 py-1 mt-4 hover:text-black hover:bg-white"
+            className="tracking-wider border border-2 text-white rounded-full px-4 py-1 mt-4 hover:text-black hover:bg-white"
             onClick={handleFormSubmit}
             // isSubmitted={buttonSubmitted}
           >
-            {buttonSubmitted ? "Message Sent!" : "SYNC UP TODAY"}
+            {buttonSubmitted ? "Message Sent!" : "SUBMIT"}
           </button>
         </div>
       </form>

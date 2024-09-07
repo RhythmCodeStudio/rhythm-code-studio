@@ -27,7 +27,7 @@ export default function ContactFormInput({
         {required && <><span>*</span><span className="text-xs"> (required)</span></>}
       </label>
       <input
-        className="rounded-2xl px-4 opacity-75"
+        className="rounded-full px-4 opacity-75"
         type={type}
         id={name}
         name={name}

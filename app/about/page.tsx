@@ -1,4 +1,5 @@
 // import from next
+import ScheduleConsultation from "@/components/schedule-consultation";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -47,6 +48,7 @@ export default function About() {
           </span>
         </Link>
       </div>
+     
     </section>
   );
 }
