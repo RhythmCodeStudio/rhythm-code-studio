@@ -47,8 +47,9 @@ export default function Services({
           <li>Analytics</li>
           <li>Security Monitoring</li>
           <li>Domain Registration</li>
+          <li>Cookie Consent Management</li>
         </ul>
       </div>
-    </section>
+     </section>
   );
 }

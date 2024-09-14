@@ -6,6 +6,9 @@ import Link from "next/link";
 export default function About() {
   return (
     <div className="flex flex-col">
+      <h1 className="text-center text-3xl xs:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-blenny pb-2 3xl:mb-12">
+          Rhythm Code Studio
+      </h1>
       <section className="grid grid-cols-1 lg:grid-rows-4 lg:grid-cols-2 ">
         <div className="order-3 lg:order-1 row-span-4 flex justify-center lg:justify-end items-center lg:mx-12">
           <div className="w-[279px] h-[286px] xl:w-[318px] xl:h-[326px] 2xl:w-[398px] 2xl:h-[408px] 3xl:w-[597px] 3xl:h-[612px] flex justify-center items-center ">
@@ -95,7 +98,7 @@ export default function About() {
       </Link>
     </div>
   </section> */}
-      <div className="flex justify-center">
+      <div className="flex justify-center 3xl:mt-24">
         <Services
           headingLevel="h2"
           headingText="CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
