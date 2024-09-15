@@ -131,7 +131,7 @@ export default function ContactForm({ setFormSubmitted }: { setFormSubmitted: Re
   };
 
   return (
-    <div className="p-8 m-4 w-full">
+    <div className="expand-on-load p-8 m-4 w-full">
       <form onSubmit={handleFormSubmit} className="">
         <ContactFormInput
           label="First Name"

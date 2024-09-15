@@ -14,7 +14,7 @@ export default function About() {
           <div className="w-[279px] h-[286px] xl:w-[318px] xl:h-[326px] 2xl:w-[398px] 2xl:h-[408px] 3xl:w-[597px] 3xl:h-[612px] flex justify-center items-center ">
             <Image
               priority
-              className=""
+              className="expand-on-load"
               src="/images/logos/mark-only-full.png"
               alt="Rhythm Code Studio"
               width={597}
