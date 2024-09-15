@@ -1,7 +1,7 @@
 // import from next
 import Image from "next/image";
 import Link from "next/link";
-// import components
+// import nav component
 import Nav from "./nav";
 
 export const Header = () => {
