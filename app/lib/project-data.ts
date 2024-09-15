@@ -44,7 +44,6 @@ export const projects = [
       "/images/projects/the-long-emergency/mobile/music.jpg",
       "/images/projects/the-long-emergency/mobile/shows.jpg",
       "/images/projects/the-long-emergency/mobile/music-player-sing-me-to-sleep.jpg",
-      // "/images/projects/the-long-emergency/mobile/.jpg",
     ],
     desktop_image: [
       "/images/projects/the-long-emergency/desktop/desktop.png",
@@ -64,15 +63,13 @@ export const projects = [
       "Merch Store",
       "Blog",
       "Contact Form",
-      // "Photo Gallery",
-      // "Video Gallery",
       "Mailing List",
     ],
   },
   {
     client: "Vain Mainstream",
     project: "Website",
-    description: "Vain Mainstream is an indie rock musician based in Minneapolis, Minnesota, best known for his work with the legendary Twin Cities garage rock orchestra, \"The Drug Budget\". From December of 2022 through the summer of 2023 Vain Mainstream undertook an ambitious project he called \"The Life Expectancy Tour\". The project tok him all around the world recording and performing an eclectic collection of cover songs performed with his own unique spin. I was hired to design and develop a website to document the project. As the tour progressed we updated the site each week with a new track. The website features an embedded audio player, audio downloads, and embedded videos. At the client's direction the site was designed to reflect an early internet aesthetic reminiscent. To achieve this I used pixelated graphics and a pixelated font along with a white background, blue links, and simple animations. As always the site is fully responsive. It is also an installable progressive web application.",
+    description: "Vain Mainstream is an indie rock musician based in Minneapolis, Minnesota, best known for his work with the legendary Twin Cities garage rock orchestra, \"The Drug Budget\". From December of 2022 through the summer of 2023 Vain Mainstream undertook an ambitious project he called \"The Life Expectancy Tour\". The project took him all over the world, recording and performing an eclectic collection of cover songs performed with his own unique spin. I was hired to design and develop a website to document the project. As the tour progressed we updated the site each week with a new track. The website features an embedded audio player, audio downloads, and embedded videos. At the client's direction the site was designed to reflect an early internet aesthetic reminiscent. To achieve this I used pixelated graphics and a pixelated font along with a white background, blue links, and simple animations. As always the site is fully responsive. It is also an installable progressive web application.",
     mobile_images: [
       "/images/projects/vain-mainstream/mobile/radio-gif.gif",
       "/images/projects/vain-mainstream/mobile/radio.jpg",
