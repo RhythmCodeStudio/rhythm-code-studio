@@ -38,17 +38,32 @@ export default function MobileCarousel(props: PropType) {
           ref={emblaRef}>
           <div className="embla__container">
             <div className="embla__controls"></div>
-            {slides.map((slide, index) => (
-              <div className="embla__slide" key={index}>
-                <Image
-                  priority
-                  src={slide}
-                  alt={`Slide ${index + 1}`}
-                  width={1080}
-                  height={1920}
-                />
-              </div>
-            ))}
+            {slides.map((slide, index) => {
+              const isVideo = /\.(mp4|webm|ogg)$/.test(slide);
+              return (
+                <div className="embla__slide" key={index}>
+                  {isVideo ? (
+                    <video
+                      src={slide}
+                      // alt={`Slide ${index + 1}`}
+                      width={1080}
+                      height={1920}
+                      autoPlay
+                      loop
+                      muted
+                    />
+                  ) : (
+                    <Image
+                      priority
+                      src={slide}
+                      alt={`Slide ${index + 1}`}
+                      width={1080}
+                      height={1920}
+                    />
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
 

@@ -17,6 +17,7 @@ export const projects = [
       "Embedded Map",
     ],
     mobile_images: [
+      "/images/projects/mmm/mobile/home-vid.mp4",
       "/images/projects/mmm/mobile/mmm-mobile.jpg",
       "/images/projects/mmm/mobile/mmm-mobile-2.jpg",
       "/images/projects/mmm/mobile/mmm-mobile-3.jpg",
