@@ -32,6 +32,7 @@ const navLinks = [
     label: "Contact",
     icon: "",
   },
+
 ];
 
 export default function Nav() {

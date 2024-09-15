@@ -18,7 +18,7 @@ import { Karla } from "next/font/google";
 import "./globals.css";
 // import components
 import { Footer } from "../components/footer";
-import Header from "../components/header";
+import { Header } from "../components/header";
 // import fonts
 const karla = Karla({
   subsets: ["latin"],
@@ -44,7 +44,6 @@ export const metadata: Metadata = {
   openGraph: {
     images: "/opengraph-image.png",
   },
-  
 };
 
 export default function RootLayout({
