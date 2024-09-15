@@ -7,14 +7,10 @@ import ScheduleConsultation from "./schedule-consultation";
 
 export const Footer = () => {
   return (
-<<<<<<< HEAD:app/components/footer.tsx
-    <footer className="text-center text-sm m-4 expand-on-load">
-=======
     <footer className="text-center text-sm m-4">
       <div className="mb-12 md:mb-24">
         <ScheduleConsultation />
       </div>
->>>>>>> develop:components/footer.tsx
       <div className="flex justify-center items-center mb-8 mt-0 md:my-12">
         <ContactLinks />
       </div>
