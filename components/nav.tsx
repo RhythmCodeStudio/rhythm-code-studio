@@ -12,11 +12,11 @@ import { MdDehaze } from "react-icons/md";
 import { HiX } from "react-icons/hi";
 
 const navLinks = [
-  {
-    href: "/",
-    label: "Home",
-    icon: "",
-  },
+  // {
+  //   href: "/",
+  //   label: "Home",
+  //   icon: "",
+  // },
   {
     href: "/about",
     label: "About",
