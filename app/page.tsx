@@ -1,12 +1,5 @@
-"use client";
 // import from next
 import Image from "next/image";
-// import from vercel
-import { track } from "@vercel/analytics";
-// import icons
-import { FaCalendarDays } from "react-icons/fa6";
-// import components
-import Services from "@/components/services";
 
 export default function Home() {
   return (
