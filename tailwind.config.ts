@@ -5,17 +5,21 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+   
   ],
   theme: {
     extend: {
       animation: {
-        'expand': 'expand 1s ease-out',
+        'expand': 'expand 1s ease-out'
       },
       keyframes: {
         expand: {
           '0%': { transform: 'scale(0)' },
           '100%': { transform: 'scale(1)' }
-        },
+        }
+      },
+      fontFamily: {
+       blenny: ["var(--font-blenny)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -49,6 +53,8 @@ const config: Config = {
         160: '40rem',  // 640px
         180: '44rem',  // 704px
         200: '48rem',  // 768px
+        225: '56.25rem', // 900px
+        250: '62.5rem', // 1000px
         300: '64rem',  // 1024px
         400: '76rem',  // 1216px
         500: '88rem',  // 1408px
