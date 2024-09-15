@@ -2,10 +2,9 @@ export const projects = [
   {
     client: "Mike Martin Media",
     project: "Website",
-    description: "Mike Martin Media is an multi media production company based in St Louis , Missouri and working all around the world. When I first began working with MMM they had an old WordPress website that was not meeting their needs. Our first order of business was to stabilize the old website. After that I worked with them to design and develop a new website custom made to fit their specific needs. The biggest challenge was working with a large amount of video content. They needed a website to showcase their work for potential clients. Video files are big and not always easy to work with. I was able to optimize the website to load quickly and display the video content in a way that was easy to navigate and view. The website is fully responsive and accessible. It features a blog, contact form, and an embedded Instagram feed. The website is also integrated with Google Analytics and Google Tag Manager for running ads and monitoring site traffic.",
+    description: "Mike Martin Media is an multi media production company based in St Louis, Missouri and working all around the world. When I first began working with MMM they had an old WordPress website that was not meeting their needs. Our first order of business was to stabilize the old website. After that I worked with them to design and develop a new website, custom made to fit their specific needs. The biggest challenge was working with a large amount of video content. They needed a website to showcase their work for potential clients. Video files are big and not always easy to work with. I was able to optimize the website to load quickly and display the video content in a way that was easy to navigate and view. Like all of our work, the website is fully responsive and looks great on any device. It features a blog, contact form, and an embedded Instagram feed. The website is also integrated with Google Analytics and Google Tag Manager for running ads and monitoring site traffic.",
     features: [
       "Responsive",
-      "Accessible",
       "Analytics",
       "Tag Manager",
       "Cookie Consent",
@@ -36,7 +35,7 @@ export const projects = [
   {
     client: "The Long Emergency",
     project: "Website",
-    description: "The Long Emergency is a band in St. Louis, Missouri. They needed a website to showcase their music, shows, and merchandise. The website features a gig calendar, music player, audio downloads, merch store, blog, and contact form. The website is fully responsive and accessible. It is integrated with Vercel Analytics for monitoring site traffic. The website is built with Next.js and Tailwind CSS. Not all features are curretnly live. The band is gearing up for a return to performing after an extended hiatus. The website will be updated with new content and features as the band gets back to playing shows.",
+    description: "The Long Emergency is a band in St. Louis, Missouri. They needed a website to showcase their music, shows, and merchandise. The website features a gig calendar, music player, audio downloads, merch store, blog, and contact form. The website is fully responsive and accessible. It is integrated with Vercel Analytics for monitoring site traffic. The website is built with Next.js and Tailwind CSS. Not all features are currently live. The band is gearing up for a return to performing after an extended hiatus. The website will be updated with new content and features as the band gets back to playing shows and releasing new music.",
     mobile_images: [
       "/images/projects/the-long-emergency/mobile/landing.jpg",
       "/images/projects/the-long-emergency/mobile/merch.jpg",
@@ -57,7 +56,6 @@ export const projects = [
     url: "thelongemergency.net",
     features: [
       "Responsive",
-      "Accessible",
       "Analytics",
       "Gig Calendar",
       "Audio Player",
@@ -73,7 +71,7 @@ export const projects = [
   {
     client: "Vain Mainstream",
     project: "Website",
-    description: "Vain Mainstream is an indie rock musician based in Minneapolis, Minnesota.",
+    description: "Vain Mainstream is an indie rock musician based in Minneapolis, Minnesota, best known for his work with the legendary Twin Cities garage rock orchestra, \"The Drug Budget\". From December of 2022 through the summer of 2023 Vain Mainstream undertook an ambitious project he called \"The Life Expectancy Tour\". The project tok him all around the world recording and performing an eclectic collection of cover songs performed with his own unique spin. I was hired to design and develop a website to document the project. As the tour progressed we updated the site each week with a new track. The website features an embedded audio player, audio downloads, and embedded videos. At the client's direction the site was designed to reflect an early internet aesthetic reminiscent. To achieve this I used pixelated graphics and a pixelated font along with a white background, blue links, and simple animations. As always the site is fully responsive. It is also an installable progressive web application.",
     mobile_images: [
       "/images/projects/vain-mainstream/mobile/radio-gif.gif",
       "/images/projects/vain-mainstream/mobile/radio.jpg",
@@ -92,7 +90,6 @@ export const projects = [
     url: "vainmainstream.com",
     features: [
       "Responsive",
-      "Accessible",
       "Embedded Videos",
       "Audio Player",
       "Audio Downloads",

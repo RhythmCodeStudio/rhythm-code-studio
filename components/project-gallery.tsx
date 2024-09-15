@@ -19,7 +19,7 @@ export default function ProjectGallery() {
         {projects.map((project: Project) => (
           <li
             key={project.client}
-            className="shadow-2xl m-4 max-w-200 border-2 border-zinc-900 rounded-2xl">
+            className="flex flex-col shadow-2xl m-4 max-w-200 border-2 border-zinc-900 rounded-2xl">
             <h3 className="text-center font-bold text-lg sm:text-xl md:text-2xl mt-4 font-blenny">
               {project.client}
             </h3>
@@ -39,7 +39,7 @@ export default function ProjectGallery() {
                 <DesktopCarousel slides={project.desktop_image} />
               </figure>
             </div>
-            <div className="mx-6 p-4 border border-zinc-900 rounded-2xl shadow-2xl mb-12">
+            <div className="flex-grow mx-6 p-4 border border-zinc-900 rounded-2xl shadow-2xl mb-12 description-container">
               <a
                 href={`https://${project.url}`}
                 target="_blank"
@@ -50,18 +50,22 @@ export default function ProjectGallery() {
               </a>
               <p className=" md:text-lg 2xl:text-xl">{project.description}</p>
             </div>
-            <h5 className="font-bold text-lg md:text-xl text-center mb-4">Features</h5>
-            <div className="flex justify-center mb-4">
-              <ul className="grid grid-cols-3 lg:grid-cols-4">
-                {project.features.map((feature) => (
-                  <li
-                    key={feature}
-                    className="bg-zinc-900 text-white m-1 p-2 rounded-2xl text-xs md:text-base text-center shadow-xl">
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <section className="feature-container">
+              <h5 className="font-bold text-lg md:text-xl text-center mb-4">
+                Features
+              </h5>
+              <div className="flex justify-center mb-4">
+                <ul className="grid grid-cols-3 lg:grid-cols-4">
+                  {project.features.map((feature) => (
+                    <li
+                      key={feature}
+                      className="bg-zinc-900 text-white m-1 p-2 rounded-2xl text-xs md:text-base text-center shadow-xl">
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </section>
             <div className="flex justify-center">
               <Image
                 src="/images/logos/mark-only-full.png"
@@ -77,4 +81,3 @@ export default function ProjectGallery() {
     </>
   );
 }
-

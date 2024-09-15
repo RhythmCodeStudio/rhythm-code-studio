@@ -44,6 +44,7 @@ export default function Services({
           <li>Application Design</li>
           <li>Web Maintenance</li>
           <li>Web Hosting</li>
+          <li>Content Management</li>
           <li>Analytics</li>
           <li>Security Monitoring</li>
           <li>Domain Registration</li>
