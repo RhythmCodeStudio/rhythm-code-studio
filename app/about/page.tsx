@@ -30,9 +30,8 @@ export default function About() {
         <div className="order-2 lg:order-3 place-content-center max-w-400">
           <p className="p-6 xl:mr-36 3xl:mr-96 lg:p-0 lg:text-lg 3xl:text-xl">
             Rhythm Code founder and lead developer, Kevin Long is attuned to the
-            pulse of his hometown. He is immersed in the arts scene and serves
-            small business, musicians, creatives, and organizations in St. Louis
-            and beyond.
+            pulse of his hometown. He serves small businesses, musicians, creatives, 
+            and organizations in St. Louis and beyond.
           </p>
         </div>
         <div className="order-4 place-content-center max-w-400">
