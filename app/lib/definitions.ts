@@ -1,4 +1,5 @@
 export type Project = {
+  id: string;
   client: string;
   project: string;
   description: string;
@@ -9,13 +10,16 @@ export type Project = {
 };
 
 export type Client = {
+  id: string;
   name: string;
   url: string;
 };
 
 export type Message = {
+  id: string;
   first_name: string;
   last_name: string;
   email: string;
   message: string;
+  date: string;
 }
