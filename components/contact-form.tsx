@@ -11,7 +11,7 @@ import {
   validateName,
   // validatePhone,
   validateMessage,
-} from "../app/lib/utils";
+} from "../utils/utils";
 // import from emailjs
 import emailjs from "@emailjs/browser";
 

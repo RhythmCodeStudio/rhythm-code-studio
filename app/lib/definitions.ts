@@ -12,3 +12,10 @@ export type Client = {
   name: string;
   url: string;
 };
+
+export type Message = {
+  first_name: string;
+  last_name: string;
+  email: string;
+  message: string;
+}
