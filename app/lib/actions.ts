@@ -1,7 +1,7 @@
 "use server";
 
-import { sql } from '@vercel/postgres';
-import { z } from 'zod';
+import { sql } from "@vercel/postgres";
+import { z } from "zod";
 
 const FormSchema = z.object({
   first_name: z.string(),
@@ -9,4 +9,3 @@ const FormSchema = z.object({
   email: z.string().email(),
   message: z.string(),
 });
-
