@@ -1,5 +1,4 @@
 export type Project = {
-  id: string;
   client: string;
   project: string;
   description: string;
