@@ -6,14 +6,14 @@ import ContactForm from "../../components/contact-form";
 // import copy
 import { contactPageCopy } from "../lib/copy/contact-page-copy";
 
-export const metadata = {
-  title: "Sync Up | Rhythm Code Studio",
-  description:
-    "Sync up with Rhythm Code Studio. Custom web solutions to match your beat. Contact Rhythm Code Studio to get started on your custom web project.",
-  alternates: {
-    canonical: "/contact",
-  },
-};
+// export const metadata = {
+//   title: "Sync Up | Rhythm Code Studio",
+//   description:
+//     "Sync up with Rhythm Code Studio. Custom web solutions to match your beat. Contact Rhythm Code Studio to get started on your custom web project.",
+//   alternates: {
+//     canonical: "/contact",
+//   },
+// };
 
 export default function ContactPage() {
   const [formSubmitted, setFormSubmitted] = useState(false);
