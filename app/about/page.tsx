@@ -3,6 +3,15 @@ import Services from "@/components/services";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "About Rhythm Code Studio",
+  description:
+    "Rhythm Code Studio develops high-performing custom websites and web applications for small businesses, musicians, artists, creatives, and organizations in St. Louis, Missouri and beyond. Rhythm Code Studio. Custom web solutions to match your beat.",
+    alternates: {
+      canonical: "/about",
+    },
+};
+
 export default function About() {
   return (
     <div className="flex flex-col">

@@ -1,6 +1,15 @@
 // import components
 import ProjectGallery from "../../components/project-gallery";
 
+export const metadata = {
+  title: "Portfolio | Rhythm Code Studio",
+  description:
+    "Rhythm Code Studio's portfolio showcases custom web solutions for small businesses, musicians, artists, creatives, and organizations in St. Louis, Missouri and beyond.",
+  alternates: {
+    canonical: "/portfolio",
+  },
+};
+
 export default function Portfolio() {
   return (
     <section>
