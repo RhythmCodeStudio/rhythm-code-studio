@@ -26,7 +26,7 @@ const karla = Karla({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rhythmcodestudio.tech"),
+  metadataBase: new URL("https://www.rhythmcodestudio.tech"),
   alternates: {
     canonical: "/",
     languages: {
