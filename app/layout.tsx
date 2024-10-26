@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   title: {
     template:
-      "%s | Rhythm Code Studio | Custom web solutions to match your beat",
+      "%s | Custom web solutions to match your beat",
     default: "Rhythm Code Studio | Custom web solutions to match your beat",
   },
   description:
