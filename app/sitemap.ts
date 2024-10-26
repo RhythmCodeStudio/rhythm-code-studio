@@ -37,11 +37,11 @@ function generateUrls(directory: string, baseUrl: string = ''): Url[] {
       // Recursively include files in subdirectories
       urls = urls.concat(generateUrls(filePath, `${baseUrl}/${file}`));
     } else if (file.endsWith('page.tsx')) {
-      // Include only files that end with 'page.js'
+      // Include only files that end with 'page.tsx'
       const urlPath = file === 'page.tsx' ? baseUrl : `${baseUrl}/${file.replace('/page.tsx', '')}`;
       const config = urlConfig[urlPath] || { changeFrequency: 'yearly', priority: 0.8 }; // Default values
       urls.push({
-        url: `https://www.rhythmcodestudio.tech${urlPath}`,
+        url: `https://rhythmcodestudio.tech${urlPath}`,
         lastModified: getLastModified(filePath),
         changeFrequency: config.changeFrequency,
         priority: config.priority,
@@ -50,6 +50,23 @@ function generateUrls(directory: string, baseUrl: string = ''): Url[] {
   });
 
   return urls;
+}
+
+// Function to generate the sitemap XML
+function generateSitemapXml(urls: Url[]): string {
+  const urlset = urls.map(url => `
+    <url>
+      <loc>${url.url}</loc>
+      <lastmod>${url.lastModified.toISOString()}</lastmod>
+      <changefreq>${url.changeFrequency}</changefreq>
+      <priority>${url.priority}</priority>
+    </url>
+  `).join('');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      ${urlset}
+    </urlset>`;
 }
 
 export default function sitemap(): Url[] {
