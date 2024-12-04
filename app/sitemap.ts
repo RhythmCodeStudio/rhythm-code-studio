@@ -47,7 +47,7 @@ function generateUrls(directory: string, baseUrl: string = ""): Url[] {
         priority: 0.8,
       }; // Default values
       urls.push({
-        url: `https://rhythmcodestudio.tech${urlPath}`,
+        url: `https://www.rhythmcodestudio.tech${urlPath}`,
         lastModified: getLastModified(filePath),
         changeFrequency: config.changeFrequency,
         priority: config.priority,
@@ -59,25 +59,25 @@ function generateUrls(directory: string, baseUrl: string = ""): Url[] {
 }
 
 // Function to generate the sitemap XML
-function generateSitemapXml(urls: Url[]): string {
-  const urlset = urls
-    .map(
-      (url) => `
-    <url>
-      <loc>${url.url}</loc>
-      <lastmod>${url.lastModified.toISOString()}</lastmod>
-      <changefreq>${url.changeFrequency}</changefreq>
-      <priority>${url.priority}</priority>
-    </url>
-  `
-    )
-    .join("");
+// function generateSitemapXml(urls: Url[]): string {
+//   const urlset = urls
+//     .map(
+//       (url) => `
+//     <url>
+//       <loc>${url.url}</loc>
+//       <lastmod>${url.lastModified.toISOString()}</lastmod>
+//       <changefreq>${url.changeFrequency}</changefreq>
+//       <priority>${url.priority}</priority>
+//     </url>
+//   `
+//     )
+//     .join("");
 
-  return `<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      ${urlset}
-    </urlset>`;
-}
+//   return `<?xml version="1.0" encoding="UTF-8"?>
+//     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+//       ${urlset}
+//     </urlset>`;
+// }
 
 export default function sitemap(): Url[] {
   const appDirectory = path.join(process.cwd(), "app");
