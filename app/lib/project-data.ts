@@ -75,6 +75,7 @@ export const projects = [
       "/images/projects/vain-mainstream/mobile/radio.jpg",
       "/images/projects/vain-mainstream/mobile/radio-1.jpg",
       "/images/projects/vain-mainstream/mobile/audio.jpg",
+      "/images/projects/vain-mainstream/mobile/video.jpg",
       "/images/projects/vain-mainstream/mobile/video-1.jpg",
       "/images/projects/vain-mainstream/mobile/video-2.jpg",
       "/images/projects/vain-mainstream/mobile/video-3.jpg",
