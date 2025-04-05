@@ -44,10 +44,10 @@ function generateUrls(directory: string, baseUrl: string = ""): Url[] {
           : `${baseUrl}/${file.replace("/page.tsx", "")}`;
       const config = urlConfig[urlPath] || {
         changeFrequency: "yearly",
-        priority: 0.8,
+        priority: 1.0,
       }; // Default values
       urls.push({
-        url: `https://rhythmcodestudio.tech${urlPath}`,
+        url: `https://www.rhythmcodestudio.tech${urlPath}`,
         lastModified: getLastModified(filePath),
         changeFrequency: config.changeFrequency,
         priority: config.priority,
