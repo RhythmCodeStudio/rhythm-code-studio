@@ -17,7 +17,7 @@ export default function ScheduleConsultation() {
         <div className="mb-2 flex justify-center items-center hover:transform hover:scale-110 transition-transform">
           <FaCalendarDays size={36} />
         </div>
-        <h3>Schedule a free consultation.</h3>
+        <span>Schedule a free consultation.</span>
       </a>
     </section>
   );
