@@ -43,23 +43,23 @@ export default function MobileCarousel(props: PropType) {
               return (
                 <div className="embla__slide" key={index}>
                   {isVideo ? (
-                    <video
-                      src={slide}
-                      // alt={`Slide ${index + 1}`}
-                      width={1080}
-                      height={1920}
-                      autoPlay
-                      loop
-                      muted
-                    />
+                  <video
+                    src={slide}
+                    width={1080}
+                    height={1920}
+                    autoPlay
+                    loop
+                    muted
+                  />
                   ) : (
-                    <Image
-                      priority
-                      src={slide}
-                      alt={`Slide ${index + 1}`}
-                      width={1080}
-                      height={1920}
-                    />
+                  <Image
+                    priority
+                    src={slide}
+                    alt={`Slide ${index + 1}`}
+                    width={1080}
+                    height={1920}
+                    {...(slide.endsWith(".gif") ? { unoptimized: true } : {})}
+                  />
                   )}
                 </div>
               );
