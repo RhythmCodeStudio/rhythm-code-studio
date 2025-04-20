@@ -7,16 +7,16 @@ export const metadata = {
   title: "About Rhythm Code Studio",
   description:
     "Rhythm Code Studio develops high-performing custom websites and web applications for small businesses, musicians, artists, creatives, and organizations in St. Louis, Missouri and beyond. Rhythm Code Studio. Custom web solutions to match your beat.",
-    alternates: {
-      canonical: "/about",
-    },
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function About() {
   return (
     <div className="flex flex-col">
       <h1 className="text-center text-3xl xs:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-blenny pb-2 3xl:mb-12">
-          Rhythm Code Studio
+        Rhythm Code Studio
       </h1>
       <section className="grid grid-cols-1 lg:grid-rows-4 lg:grid-cols-2 ">
         <div className="order-3 lg:order-1 row-span-4 flex justify-center lg:justify-end items-center lg:mx-12">
@@ -39,8 +39,8 @@ export default function About() {
         <div className="order-2 lg:order-3 place-content-center max-w-400">
           <p className="p-6 xl:mr-36 3xl:mr-96 lg:p-0 lg:text-lg 3xl:text-xl">
             Rhythm Code founder and lead developer, Kevin Long is attuned to the
-            pulse of his hometown. He serves small businesses, musicians, creatives, 
-            and organizations in St. Louis and beyond.
+            pulse of his hometown. He serves small businesses, musicians,
+            creatives, and organizations in St. Louis and beyond.
           </p>
         </div>
         <div className="order-4 place-content-center max-w-400">
@@ -113,7 +113,9 @@ export default function About() {
           subHeadingLevel="h3"
           subHeadingText="Services Offered"
           headingClassName={"font-bold text-lg md:text-2xl xl:text-3xl mt-4"}
-          subHeadingClassName={"font-bold text-lg md:text-xl xl:text-2xl mt-6 md:mt-12 mb-2"}
+          subHeadingClassName={
+            "font-bold text-lg md:text-xl xl:text-2xl mt-6 md:mt-12 mb-2"
+          }
         />
       </div>
     </div>

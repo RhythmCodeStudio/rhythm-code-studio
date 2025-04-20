@@ -25,14 +25,6 @@ export default function ContactLinks() {
         name="Link to Rhythm Code Studio on Instagram"
       />
       </div>
-      <div className="sm:hover:transform hover:scale-125 transition-transform">
-      <IconLink
-        href="https://www.facebook.com/rhythm.code.studio"
-        icon={<FaFacebook size={32} />}
-        label="Link to Rhythm Code Studio on Facebook"
-        name="Link to Rhythm Code Studio on Facebook"
-      />
-      </div>
       <div className="sm: hover:transform hover:scale-125 transition-transform">
       <IconLink
         href="https://www.linkedin.com/company/rhythm-code-studio/"
