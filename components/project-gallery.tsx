@@ -15,7 +15,7 @@ export default function ProjectGallery() {
       <h2 className="font-semibold tracking-tight text-center xs:text-lg sm:text-xl md:text-2xl lg:text-3xl 3xl:text-5xl ">
         CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT
       </h2>
-      <ul className="grid grid-cols-1 md:grid-cols-2 gap-">
+      <ul className="grid grid-cols-1 md:grid-cols-2 ">
         {projects.map((project: Project) => (
           <li
             key={project.client}
