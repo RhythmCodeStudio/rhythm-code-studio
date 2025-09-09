@@ -6,15 +6,13 @@ export const projects = [
       "Mike Martin Media is an multi media production company based in St Louis, Missouri and working all around the world. They have trusted me with their website since 2023. This is the third iteration of their site that I have worked on. Fully responsive and accessible, mikemartinmedia.com features a sortable video and photo gallery, embedded video content, a blog, and a contact form. Integrated with Google Tag Manager and Google Analytics for running ads and monitoring site traffic. Cookie consent management is handled with Cookie Yes. The website was designed by Seafoam Media.",
     features: [
       "Responsive",
+      "Accessible",
       "Analytics",
-      "Tag Manager",
       "Cookie Consent",
       "Embedded Video",
       "Video Galleries",
-      "Photo Galleries",
       "Blog",
       "Contact Form",
-      "Embedded Map",
     ],
     mobile_images: [
       "/images/projects/mmm/mobile/home.jpg",
@@ -36,34 +34,36 @@ export const projects = [
   {
     client: "The Long Emergency",
     project: "Band Website",
-    description:  "The Long Emergency is a rock band in St. Louis, Missouri. Their website features a gig calendar, music player, audio downloads, merch store, blog, and contact form. Fully responsive and accessible. Integrated with Vercel Analytics for monitoring site traffic. Built with Next.js and Tailwind CSS.",
+    description:
+      "The Long Emergency is a rock band in St. Louis, Missouri. Their website features a gig calendar, music player, audio downloads, merch store, blog, and contact form. Fully responsive and accessible. Integrated with Vercel Analytics for monitoring site traffic. Built with Next.js and Tailwind CSS.",
     mobile_images: [
-      "/images/projects/the-long-emergency/mobile/landing.jpg",
-      "/images/projects/the-long-emergency/mobile/merch.jpg",
-      // "/images/projects/the-long-emergency/mobile/menu.jpg",
+      "/images/projects/the-long-emergency/mobile/home.jpg",
+      "/images/projects/the-long-emergency/mobile/lyrics.jpg",
       "/images/projects/the-long-emergency/mobile/music.jpg",
-      "/images/projects/the-long-emergency/mobile/shows.jpg",
-      "/images/projects/the-long-emergency/mobile/music-player-sing-me-to-sleep.jpg",
+      "/images/projects/the-long-emergency/mobile/music-2.jpg",
+      "/images/projects/the-long-emergency/mobile/music-player.jpg",
+      "/images/projects/the-long-emergency/mobile/shows-future.jpg",
+      "/images/projects/the-long-emergency/mobile/shows-past.jpg",
+      "/images/projects/the-long-emergency/mobile/contact.jpg",
     ],
     desktop_image: [
-      "/images/projects/the-long-emergency/desktop/desktop.png",
-      "/images/projects/the-long-emergency/desktop/about-desktop.png",
-      "/images/projects/the-long-emergency/desktop/music-desktop.png",
-      "/images/projects/the-long-emergency/desktop/shows-desktop.png",
-      "/images/projects/the-long-emergency/desktop/merch-desktop.png",
-      "/images/projects/the-long-emergency/desktop/contact-desktop.png",
+      "/images/projects/the-long-emergency/desktop/home.png",
+      "/images/projects/the-long-emergency/desktop/music.png",
+      "/images/projects/the-long-emergency/desktop/lyrics.png",
+      "/images/projects/the-long-emergency/desktop/contact.png",
+      "/images/projects/the-long-emergency/desktop/shows-past.png",
+      "/images/projects/the-long-emergency/desktop/shows-future.png",
     ],
     url: "thelongemergency.net",
     features: [
       "Responsive",
+      "Accessible",
       "Analytics",
       "Gig Calendar",
       "Audio Player",
       "Audio Downloads",
       "Merch Store",
-      "Blog",
       "Contact Form",
-      "Mailing List",
     ],
   },
   // {
@@ -94,4 +94,4 @@ export const projects = [
   //     "Animation"
   //   ],
   // },
-]
+];
