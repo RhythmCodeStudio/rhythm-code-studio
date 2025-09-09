@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 // import from headlessui
-import { Dialog } from "@headlessui/react"
+import { Dialog } from "@headlessui/react";
 // import icons
 import { MdDehaze } from "react-icons/md";
 import { HiX } from "react-icons/hi";
@@ -32,7 +32,6 @@ const navLinks = [
     label: "Contact",
     icon: "",
   },
-
 ];
 
 export default function Nav() {
@@ -56,16 +55,14 @@ export default function Nav() {
               <h1 className="font-blenny text-3xl">Rhythm Code Studio</h1>
               {/* Logo */}
               <div className=" w-36 h-auto">
-                <Link href="/"
-                  onClick={() => setMenuOpen(false)}
-                >
-                <Image
-                  src="/images/logos/mark-only-full.png"
-                  width={294}
-                  height={95}
-                  alt="Rhythm Code Studio"
-                  priority
-                />
+                <Link href="/" onClick={() => setMenuOpen(false)}>
+                  <Image
+                    src="/images/logos/mark-only-full.png"
+                    width={294}
+                    height={95}
+                    alt="Rhythm Code Studio"
+                    priority
+                  />
                 </Link>
               </div>
               {/* Nav Links */}
@@ -73,16 +70,15 @@ export default function Nav() {
                 {navLinks.map((link) => (
                   <li
                     key={link.label}
-                    className={`text-center w-full p-2 ${
-                      pathname === link.href ? "font-bold" : ""
+                    className={`flex flex-col items-center justify-center ${
+                      pathname === link.href
+                        ? "font-bold pointer-events-none"
+                        : ""
                     }`}>
                     <Link href={link.href}>
-                      <div
-                        className="flex flex-col items-center justify-center cursor-pointer"
-                        onClick={() => setMenuOpen(false)}>
-                        {link.icon}
-                        <span>{link.label}</span>
-                      </div>
+                      <span className="text-lg lg:text-xl xl:text-2xl 3xl:text-3xl mt-2 transform transition-transform duration-400 ease-in-out hover:scale-110 cursor-pointer">
+                        {link.label}
+                      </span>
                     </Link>
                   </li>
                 ))}
@@ -108,12 +104,14 @@ export default function Nav() {
             <li
               key={link.label}
               className={`flex flex-col items-center justify-center  ${
-                pathname === link.href ? "font-bold" : "hover:scale-110"
+                pathname === link.href
+                  ? "font-bold pointer-events-none"
+                  : "transform transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
               }`}>
               <Link href={link.href}>
-                  <span className="text-lg lg:text-xl xl:text-2xl 3xl:text-3xl mt-2 hover:scale-110 hover:transform transition-transform cursor-pointer">
-                    {link.label}
-                  </span>
+                <span className="text-lg lg:text-xl xl:text-2xl 3xl:text-3xl mt-2">
+                  {link.label}
+                </span>
               </Link>
             </li>
           ))}
