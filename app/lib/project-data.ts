@@ -10,7 +10,7 @@ export const projects = [
       "Analytics",
       "Cookie Consent",
       "Embedded Video",
-      "Video Galleries",
+      "Video Gallery",
       "Blog",
       "Contact Form",
     ],
