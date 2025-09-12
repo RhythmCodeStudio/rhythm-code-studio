@@ -4,12 +4,12 @@ import { useState } from "react";
 // import components
 import ContactForm from "../components/contact-form";
 // import copy
-import { contactPageCopy } from "@/app/lib/copy/contact-page-copy";
+import { contactPageCopy } from "@/lib/copy/contact-page-copy";
 
 export default function ContactFormContainer() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   return (
-    <div className="flex flex-col items-center sm:text-lg xl:text-xl 2xl:text-2xl">
+    <div className="flex flex-col items-center sm:text-lg xl:text-xl">
       {formSubmitted ? (
         <div className="items-center justify-center ">
           <h1 className="text-6xl lg:text-8xl 2xl:text-10xl font-blenny text-center">
@@ -22,12 +22,12 @@ export default function ContactFormContainer() {
         </div>
       ) : (
         <>
-        <h1 className="text-center text-3xl xs:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-blenny pb-2">
-          Sync Up
-        </h1>
+          <h1 className="text-center text-3xl xs:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-blenny pb-2">
+            Sync Up
+          </h1>
           <div className=" items-center justify-center max-w-200">
-            <p className="px-8 py-4">{contactPageCopy.text_block_one}</p>
-            <p className=" px-8 p-4">{contactPageCopy.text_block_two}</p>
+            <p className="px-12 py-4">{contactPageCopy.text_block_one}</p>
+            <p className=" px-12 p-4">{contactPageCopy.text_block_two}</p>
           </div>
           <ContactForm setFormSubmitted={setFormSubmitted} />
         </>

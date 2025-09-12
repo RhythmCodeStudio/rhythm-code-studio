@@ -75,7 +75,9 @@ export default function Nav() {
                         ? "font-bold pointer-events-none"
                         : ""
                     }`}>
-                    <Link href={link.href}>
+                    <Link href={link.href}
+                      onClick={() => setMenuOpen(false)}
+                    >
                       <span className="text-lg lg:text-xl xl:text-2xl 3xl:text-3xl mt-2 transform transition-transform duration-400 ease-in-out hover:scale-110 cursor-pointer">
                         {link.label}
                       </span>

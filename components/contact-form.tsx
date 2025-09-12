@@ -485,10 +485,10 @@ export default function ContactForm({
                 "text-shadow-black border border-2 rounded-2xl py-1 px-6 transition-colors transition-shadow transition-transform duration-700 ease-in-out font-semibold tracking-widest will-change-transform",
                 {
                   // enabled styles
-                  "bg-neutral-800 text-green-500 border-green-500 hover:border-neutral-800 hover:bg-green-500 hover:text-white cursor-pointer shadow-lg shadow-green-500/50 hover:scale-105 active:scale-95":
+                  "bg-black text-yellow-500 border-yellow-500 hover:border-black hover:bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 hover:text-black cursor-pointer shadow-md shadow-black hover:scale-105 active:scale-95":
                     isFormValid && !buttonSubmitted,
                   // disabled styles
-                  "border-green-600 text-green-600 cursor-not-allowed":
+                  "border-neutral-600 text-neutral-600 cursor-not-allowed":
                     !isFormValid || buttonSubmitted,
                 }
               )}>

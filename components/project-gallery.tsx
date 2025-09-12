@@ -1,8 +1,8 @@
 "use client";
 // import data
-import { projects } from "../app/lib/project-data";
+import { projects } from "../lib/project-data";
 // import types
-import { Project } from "../app/lib/definitions";
+import { Project } from "../lib/definitions";
 // import from next
 import Image from "next/image";
 // import components
