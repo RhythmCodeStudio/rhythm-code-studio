@@ -4,7 +4,7 @@ import Link from "next/link";
 // import nav component
 import Nav from "./nav";
 
-export const Header = () => {
+export default function Header() {
   return (
     <header className="m-4">
       <div className="flex justify-between items-center">

@@ -17,8 +17,9 @@ import { Karla } from "next/font/google";
 // import css
 import "./globals.css";
 // import components
-import { Footer } from "../components/footer";
-import { Header } from "../components/header";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import ScrollToTopButton from "../components/scroll-to-top-button";
 // import fonts
 const karla = Karla({
   subsets: ["latin"],
@@ -69,6 +70,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </div>
+        <ScrollToTopButton />
         <Analytics />
       </body>
       {/* <GoogleAnalytics gaId={process.env.GA_ID || ""} /> */}

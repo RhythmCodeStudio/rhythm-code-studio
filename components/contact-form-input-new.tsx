@@ -1,47 +1,3 @@
-// export default function ContactFormInput({
-//   label,
-//   name,
-//   type,
-//   placeholder,
-//   value,
-//   required,
-//   errorMessage,
-//   handleChange,
-//   setStateVariable,
-// }: {
-//   label: string;
-//   name: string;
-//   type: string;
-//   placeholder: string;
-//   value: any;
-//   required: boolean;
-//   errorMessage: string;
-//   handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, setState: React.Dispatch<React.SetStateAction<any>>) => void;
-//   setStateVariable: React.Dispatch<React.SetStateAction<any>>;
-// }) {
-//   return (
-//     <div className="flex flex-col py-1">
-//       <label
-//         className="px-4 font-bold"
-//         htmlFor={name}>{label.toUpperCase()}
-//         {required && <><span>*</span><span className="text-xs"> (required)</span></>}
-//       </label>
-//       <input
-//         className="rounded-full px-4 opacity-75"
-//         type={type}
-//         id={name}
-//         name={name}
-//         placeholder={placeholder}
-//         value={value}
-//         required={required}
-//         onChange={(e) => handleChange(e, setStateVariable)}
-//       />
-//       <p>{errorMessage}</p>
-//     </div>
-//   );
-// }
-
-
 export default function ContactFormInput({
   inputType,
   label,
@@ -86,12 +42,12 @@ export default function ContactFormInput({
             name="message"
             id="message"
             // className="shadow-md shadow-green-500/50 border-2 border-green-500 p-2 w-full text-black placeholder-neutral-800 rounded-2xl bg-neutral-300 font-share-tech-mono tracking-wide text-shadow-green h-80 resize-none text-lg"
-             className="rounded-3xl px-4 opacity-75 h-80 resize-none p-4"
+             className="rounded-full px-4 opacity-75 h-80 resize-none"
           />
       ) : (
         <input
           // className="shadow-md shadow-green-500/50 border-2 border-green-500 p-2 w-full text-black placeholder-neutral-800 rounded-2xl bg-neutral-300 font-share-tech-mono tracking-wide text-shadow-green text-lg h-10"
-          className="rounded-3xl p-4 opacity-75 h-10"
+          className="rounded-full px-4 opacity-75"
           type={type}
           id={name}
           name={name}
@@ -103,7 +59,7 @@ export default function ContactFormInput({
         />
       )}
       <p
-        className="text-red-100 text-xs mt-1 ml-2 min-h-[1.25rem] transition-opacity duration-300"
+        className="text-red-200 text-xs mt-1 ml-2 min-h-[1.25rem] transition-opacity duration-300"
         style={{
           visibility: errorMessage ? "visible" : "hidden",
           opacity: errorMessage ? 1 : 0,

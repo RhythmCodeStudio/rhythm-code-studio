@@ -5,7 +5,7 @@ import Image from "next/image";
 import ContactLinks from "./contact-links";
 import ScheduleConsultation from "./schedule-consultation";
 
-export const Footer = () => {
+export default function Footer() {
   return (
     <footer className="text-center text-sm m-4">
       <div className="mb-12 md:mb-24">
