@@ -23,7 +23,7 @@ export default function Home() {
         />
       </div>
       <div className="px-8 lg:w-200 lg:text-lg xl:text-xl">
-        <h3 className="font-bold text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
+        <h3 className="font-bold text-2xl lg:text-3xl xl:text-4xl">
           WE SPECIALIZE IN CREATING CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT
         </h3>
         <p className="my-4">
@@ -34,7 +34,7 @@ export default function Home() {
         {/* <p className="my-4">These days it&apos;s pretty easy to make a website. That doesn&apos;t mean it is easy to do right. Platforms like WordPress, Squarespace, Wix, and others make it possibile to get a new website online pretty quickly. The thing is, those platforms are designed and developed to accomodate everyone. As a result they lock you in to certain technologies that may or may not be the best for your unique situation. These platforms are designed to be one size fits all. A website from Rhythm Code Studio is developed for you and only you.</p> 
         <p>We craft your website to have everything you need and nothing you don&apos;t, using modern web technologies that these other platforms simply can&apos;t match. A Rhythm Code website is fast, secure, fully responsive so it looks great on any screen, and fully accessible so everyone can receive the unique message you are sending out into the world.</p> */}
         <p className="my-4">
-          Our work is fast, secure, fully responsive, and fully accessible. We develop web solutions with a pulse, ones that match your personal rhythm and style.
+          Our work is <strong>fast, secure, fully responsive, and fully accessible.</strong> We develop web solutions with a pulse, ones that match your personal rhythm and style and look great on any device.
         </p>
         <p className="mt-4">
           <strong>AND</strong>, we manage it all for you, so you can focus on

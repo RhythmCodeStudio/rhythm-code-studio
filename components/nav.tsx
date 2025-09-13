@@ -22,11 +22,11 @@ const navLinks = [
     label: "About",
     icon: "",
   },
-  {
-    href: "/portfolio",
-    label: "Portfolio",
-    icon: "",
-  },
+  // {
+  //   href: "/portfolio",
+  //   label: "Portfolio",
+  //   icon: "",
+  // },
   {
     href: "/contact",
     label: "Contact",

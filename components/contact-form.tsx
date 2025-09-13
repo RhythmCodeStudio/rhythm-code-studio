@@ -469,7 +469,7 @@ export default function ContactForm({
           setStateVariable={setMessage}
         />
 
-        <div className="flex justify-center items-center p-6 mt-4">
+        <div className="flex justify-center items-center ">
           <span
             className={clsx(
               "transition-opacity duration-700",
