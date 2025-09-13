@@ -6,16 +6,31 @@ export function validateName(name: string) {
   const re = /^[a-zA-Z]+$/;
   return re.test(String(name));
 }
-export function validateMessage(message: string | any[]) {
-  return message.length > 0;
+export function validateMessage(message: string) {
+  const trimmed = message.trim();
+  // Must contain at least one alphanumeric character
+  return trimmed.length > 0 && /[a-zA-Z0-9]/.test(trimmed);
 }
 export function validatePhone(phone: string) {
-  // Regular expression to match all possible phone number formats
-  const re = /^(?:\+1\s?|001\s?)?(?:\(\d{3}\)\s?|\d{3}[-.\s]?)?\d{3}[-.\s]?\d{4}$/;
-  return phone === "" || re.test(String(phone));
+  if (!phone.trim()) {
+    return false;
+  }
+  const re =
+    /^(?:\+1\s?|001\s?)?(?:\(\d{3}\)\s?|\d{3}[-.\s]?)?\d{3}[-.\s]?\d{4}$/;
+  return re.test(String(phone));
 }
-export function validateForm(firstName: string, lastName: string, email: string, phone: string, message: any) {
-  return validateName(firstName) && validateName(lastName) && validateEmail(email) && validatePhone(phone) && validateMessage(message);
+export function validateForm(
+  name: string,
+  email: string,
+  phone: string,
+  message: string
+) {
+  return (
+    validateName(name) &&
+    validateEmail(email) &&
+    validatePhone(phone) &&
+    validateMessage(message)
+  );
 }
 
 export function formatDate(post_date: string | number | Date) {

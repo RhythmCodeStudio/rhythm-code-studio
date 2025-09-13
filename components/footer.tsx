@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="flex justify-center items-center mb-8 mt-0 md:my-12">
         <ContactLinks />
       </div>
-      <span className="">© 2024 Rhythm Code Studio</span>
+      <span className="">© 2025 Rhythm Code Studio</span>
       <div className="flex flex-col items-center justify-center mt-2">
         <Image
           src="/images/logos/mark-only-light.png"
