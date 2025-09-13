@@ -112,7 +112,7 @@ export default function About() {
           headingText="CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
           subHeadingLevel="h3"
           subHeadingText="Services Offered"
-          headingClassName={"font-bold text- md:text-lg lg:text-xl  xl:text-2xl mt-4"}
+          headingClassName={"font-bold text-center md:text-lg lg:text-xl xl:text-2xl mt-4"}
           subHeadingClassName={
             "font-bold text-lg md:text-xl xl:text-2xl mt-6 md:mt-12 mb-2"
           }
