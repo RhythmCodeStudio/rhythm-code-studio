@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-content space-y-16 mb-12">
+    <section className="flex flex-col items-center justify-content space-y-8 mb-6">
       <div>
         <h1 className="text-center text-3xl xs:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-blenny pb-2">
           Rhythm Code Studio
@@ -23,7 +23,7 @@ export default function Home() {
         />
       </div>
       <div className="px-8 lg:w-200 lg:text-lg xl:text-xl">
-        <h3 className="font-bold text-2xl lg:text-3xl xl:text-4xl">
+        <h3 className="font-bold text-lg lg:text-xl xl:text-2xl text-center text-balance">
           WE SPECIALIZE IN CREATING CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT
         </h3>
         <p className="my-4">

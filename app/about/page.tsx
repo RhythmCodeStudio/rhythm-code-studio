@@ -20,7 +20,7 @@ export default function About() {
       </h1>
       <section className="grid grid-cols-1 lg:grid-rows-4 lg:grid-cols-2 ">
         <div className="order-3 lg:order-1 row-span-4 flex justify-center lg:justify-end items-center lg:mx-12">
-          <div className="w-[279px] h-[286px] xl:w-[318px] xl:h-[326px] 2xl:w-[398px] 2xl:h-[408px] 3xl:w-[597px] 3xl:h-[612px] flex justify-center items-center ">
+          <div className="w-[209px] h-[215px] md:w-[279px] md:h-[286px] xl:w-[318px] xl:h-[326px] 2xl:w-[398px] 2xl:h-[408px] 3xl:w-[597px] 3xl:h-[612px] flex justify-center items-center ">
             <Image
               priority
               className="expand-on-load"
@@ -112,7 +112,7 @@ export default function About() {
           headingText="CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
           subHeadingLevel="h3"
           subHeadingText="Services Offered"
-          headingClassName={"font-bold text-lg md:text-2xl xl:text-3xl mt-4"}
+          headingClassName={"font-bold text- md:text-lg lg:text-xl  xl:text-2xl mt-4"}
           subHeadingClassName={
             "font-bold text-lg md:text-xl xl:text-2xl mt-6 md:mt-12 mb-2"
           }
