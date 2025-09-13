@@ -15,7 +15,7 @@ export default function ContactFormContainer() {
           <h1 className="text-6xl lg:text-8xl 2xl:text-10xl font-blenny text-center">
             Rock On!
           </h1>
-          <p className="mt-4 max-w-128">
+          <p className="m-4 max-w-128">
             Thanks for your inquiry. Your request to sync up was received.
             Rhythm Code Studio will reach out to you shortly.
           </p>
