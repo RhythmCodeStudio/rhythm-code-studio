@@ -4,7 +4,11 @@
 @tailwind components;
 @tailwind utilities; */
 
-@import url("https://use.typekit.net/afh1ney.css");
+/* @import url("https://use.typekit.net/afh1ney.css"); */
+
+.font-blenny {
+  font-family: var(--font-blenny), sans-serif;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;

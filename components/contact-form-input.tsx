@@ -85,11 +85,11 @@ export default function ContactFormInput({
             required
             name="message"
             id="message"
-            className="rounded-3xl px-4 opacity-75 h-80 resize-none p-4 border-2 border-yellow-500 bg-white text-black shadow-md shadow-black"
+            className="rounded-3xl px-4 opacity-75 h-80 resize-none p-4 border-2 border-yellow-500 bg-yellow-50 text-black shadow-md shadow-black"
           />
       ) : (
         <input
-          className="rounded-3xl px-4 opacity-75 h-10 resize-none p-4 border-2 border-yellow-500 bg-white text-black shadow-md shadow-black"
+          className="rounded-3xl px-4 opacity-75 h-10 resize-none p-4 border-2 border-yellow-500 bg-yellow-50 text-black shadow-md shadow-black"
           type={type}
           id={name}
           name={name}
