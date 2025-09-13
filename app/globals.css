@@ -1,6 +1,8 @@
-@tailwind base;
+@import "tailwindcss";
+
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 @import url("https://use.typekit.net/afh1ney.css");
 
@@ -34,9 +36,9 @@ body {
   }
 }
 
-.expand-on-load {
+/* .expand-on-load {
   @apply animate-expand;
-}
+} */
 
 
 /* embla styles */

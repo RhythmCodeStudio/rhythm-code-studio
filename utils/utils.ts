@@ -47,3 +47,7 @@ export function formatDate(post_date: string | number | Date) {
 
   return `${monthNames[monthIndex]} ${day}, ${year}`;
 }
+
+export function delayPageLoad(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}

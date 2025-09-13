@@ -85,13 +85,11 @@ export default function ContactFormInput({
             required
             name="message"
             id="message"
-            // className="shadow-md shadow-green-500/50 border-2 border-green-500 p-2 w-full text-black placeholder-neutral-800 rounded-2xl bg-neutral-300 font-share-tech-mono tracking-wide text-shadow-green h-80 resize-none text-lg"
-             className="rounded-3xl px-4 opacity-75 h-80 resize-none p-4"
+            className="rounded-3xl px-4 opacity-75 h-80 resize-none p-4 border-2 border-yellow-500 bg-white text-black shadow-md shadow-black"
           />
       ) : (
         <input
-          // className="shadow-md shadow-green-500/50 border-2 border-green-500 p-2 w-full text-black placeholder-neutral-800 rounded-2xl bg-neutral-300 font-share-tech-mono tracking-wide text-shadow-green text-lg h-10"
-          className="rounded-3xl p-4 opacity-75 h-10"
+          className="rounded-3xl px-4 opacity-75 h-10 resize-none p-4 border-2 border-yellow-500 bg-white text-black shadow-md shadow-black"
           type={type}
           id={name}
           name={name}

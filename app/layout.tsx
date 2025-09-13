@@ -9,22 +9,13 @@ const blenny = localFont({
   variable: "--font-blenny",
 });
 // import fonts
-import { Karla } from "next/font/google";
+import { karla } from "@/fonts";
 
-// import from google
-// import { GoogleTagManager } from "@next/third-parties/google";
-// import { GoogleAnalytics } from "@next/third-parties/google";
-// import css
 import "./globals.css";
 // import components
 import Footer from "../components/footer";
 import Header from "../components/header";
 import ScrollToTopButton from "../components/scroll-to-top-button";
-// import fonts
-const karla = Karla({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.rhythmcodestudio.tech"),
