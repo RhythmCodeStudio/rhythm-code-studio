@@ -14,8 +14,11 @@ export default function ScheduleConsultation() {
         onClick={() => {
           track(`Calendar link clicked`);
         }}>
-        <div className="mb-2 flex justify-center items-center hover:transform hover:scale-110 transition-transform">
-          <FaCalendarDays size={36} />
+        <div className="mb-2 flex justify-center items-center  transition-colors duration-700">
+          <FaCalendarDays 
+            size={36}
+            className="icon-link md:hover:text-stone-600 " 
+          />
         </div>
         <span>Schedule a free consultation.</span>
       </a>

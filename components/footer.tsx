@@ -2,7 +2,7 @@
 // import from next
 import Image from "next/image";
 // import components
-import ContactLinks from "./contact-links";
+import ContactIconLinks from "./contact-icon-links";
 import ScheduleConsultation from "./schedule-consultation";
 
 export default function Footer() {
@@ -12,7 +12,11 @@ export default function Footer() {
         <ScheduleConsultation />
       </div>
       <div className="flex justify-center items-center mb-8 mt-0 md:my-12">
-        <ContactLinks />
+        <ContactIconLinks
+          orientation="horizontal"
+          include={["GitHub", "LinkedIn", "Email", "Phone"]}
+          size={32}
+        />
       </div>
       <span className="">© 2025 Rhythm Code Studio</span>
       <div className="flex flex-col items-center justify-center mt-2">

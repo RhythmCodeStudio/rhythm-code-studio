@@ -489,7 +489,7 @@ export default function ContactForm({
                   "bg-black text-yellow-500 border-yellow-500 md:hover:border-black md:hover:bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 md:hover:text-black cursor-pointer shadow-md shadow-black md:hover:scale-105 md:active:scale-95":
                     isFormValid && !buttonSubmitted,
                   // disabled styles
-                  "border-neutral-600 text-neutral-600 cursor-not-allowed":
+                  "border-stone-600 text-stone-600 bg-orange-100 cursor-not-allowed":
                     !isFormValid || buttonSubmitted,
                 }
               )}>

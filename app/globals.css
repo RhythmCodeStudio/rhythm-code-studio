@@ -39,18 +39,18 @@ a, button {
 }
 
 .icon-link {
-  filter: drop-shadow(2px 2px 0 #000);
-  transition: transform 0.6s ease-in-out;
+  filter: drop-shadow(2px 2px 0 oklch(79.5% 0.184 86.047));
+  transition: transform 0.6s ease-in-out, color 0.6s ease-in-out;
 }
 
 .icon-link:hover {
   transform: scale(1.15);
+  color: oklch(26.8% 0.007 34.298)
 }
 
 .icon-link:active {
   transform: scale(0.95);
 }
-
 
 @layer utilities {
   .text-balance {
