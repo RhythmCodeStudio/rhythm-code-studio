@@ -1,10 +1,23 @@
+"use client";
+// import from next
+import { usePathname } from "next/navigation";
 // import from next
 import Image from "next/image";
 import Link from "next/link";
-// import nav component
+// import clsx
+import clsx from "clsx";
+// import navList items
+import { navListItems } from "@/lib/nav-list-items";
+// import components
 import Nav from "./nav";
+import DesktopNav from "./desktop-nav";
+import MobileNav from "./mobile-nav";
+import ContactIconLinks from "./contact-icon-links";
 
 export default function Header() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+  
   return (
     <header className="m-4">
       <div className="flex justify-between items-center">
