@@ -10,7 +10,7 @@ export default async function NotFound() {
   return (
     <div className="p-8 text-center flex flex-col items-center justify-center">
       <h1 className="text-2xl font-bold">Page Not Found</h1>
-      <p className="mt-4">The page you are looking for does not exist.</p>
+      <p className="m-4">The page you are looking for does not exist.</p>
       <Link href="/">
         <Image
           className="w-full h-auto max-w-40 xl:max-w-48 3xl:max-w-64 3xl:m-4"
