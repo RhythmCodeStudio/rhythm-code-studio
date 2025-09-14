@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
 /* @import url("https://use.typekit.net/afh1ney.css"); */
 
 .font-blenny {
@@ -24,6 +20,10 @@
   }
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -34,6 +34,24 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
+a, button {
+  cursor: pointer;
+}
+
+.icon-link {
+  filter: drop-shadow(2px 2px 0 #000);
+  transition: transform 0.6s ease-in-out;
+}
+
+.icon-link:hover {
+  transform: scale(1.15);
+}
+
+.icon-link:active {
+  transform: scale(0.95);
+}
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -43,6 +61,15 @@ body {
 /* .expand-on-load {
   @apply animate-expand;
 } */
+
+@keyframes expand {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+.expand-on-load {
+  animation: expand 1s ease-out;
+}
 
 
 /* embla styles */

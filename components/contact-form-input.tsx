@@ -60,12 +60,12 @@ export default function ContactFormInput({
   name: string;
   type: string;
   placeholder: string;
-  value: any;
+  value: string;
   required: boolean;
   autoComplete: string;
   errorMessage: string;
-  handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, setState: React.Dispatch<React.SetStateAction<any>>) => void;
-  setStateVariable: React.Dispatch<React.SetStateAction<any>>;
+  handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, setState: React.Dispatch<React.SetStateAction<string>>) => void;
+  setStateVariable: React.Dispatch<React.SetStateAction<string>>;
 }) {
   return (
     // <div className="flex flex-col justify-start">

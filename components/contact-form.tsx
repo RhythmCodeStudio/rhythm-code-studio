@@ -237,7 +237,7 @@ export default function ContactForm({
   const [firstNameErrorMessage, setFirstNameErrorMessage] = useState("");
   const [lastNameErrorMessage, setLastNameErrorMessage] = useState("");
   const [messageErrorMessage, setMessageErrorMessage] = useState("");
-  const [deliveryErrorMessage, setDeliveryErrorMessage] = useState("");
+  const [, setDeliveryErrorMessage] = useState("");
   const [buttonSubmitted, setButtonSubmitted] = useState(false);
 
   const isFormValid =

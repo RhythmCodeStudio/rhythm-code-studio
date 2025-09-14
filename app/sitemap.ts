@@ -27,7 +27,7 @@ function getLastModified(filePath: string): Date {
 // Function to generate URLs from filenames
 function generateUrls(directory: string, baseUrl: string = ""): Url[] {
   const files = fs.readdirSync(directory);
-  let urls: Url[] = [];
+  const urls: Url[] = [];
 
   files.forEach((file) => {
     const filePath = path.join(directory, file);
@@ -35,7 +35,7 @@ function generateUrls(directory: string, baseUrl: string = ""): Url[] {
 
     if (stat.isDirectory()) {
       // Recursively include files in subdirectories
-      urls = urls.concat(generateUrls(filePath, `${baseUrl}/${file}`));
+      urls.push(...generateUrls(filePath, `${baseUrl}/${file}`));
     } else if (file.endsWith("page.tsx")) {
       // Include only files that end with 'page.tsx'
       const urlPath =
@@ -47,7 +47,7 @@ function generateUrls(directory: string, baseUrl: string = ""): Url[] {
         priority: 1.0,
       }; // Default values
       urls.push({
-        url: `https://www.rhythmcodestudio.tech${urlPath}`,
+        url: `https://www.kevinlong.dev${urlPath}`,
         lastModified: getLastModified(filePath),
         changeFrequency: config.changeFrequency,
         priority: config.priority,
@@ -58,31 +58,10 @@ function generateUrls(directory: string, baseUrl: string = ""): Url[] {
   return urls;
 }
 
-// Function to generate the sitemap XML
-function generateSitemapXml(urls: Url[]): string {
-  const urlset = urls
-    .map(
-      (url) => `
-    <url>
-      <loc>${url.url}</loc>
-      <lastmod>${url.lastModified.toISOString()}</lastmod>
-      <changefreq>${url.changeFrequency}</changefreq>
-      <priority>${url.priority}</priority>
-    </url>
-  `
-    )
-    .join("");
-
-  return `<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      ${urlset}
-    </urlset>`;
-}
-
 export default function sitemap(): Url[] {
   const appDirectory = path.join(process.cwd(), "app");
   // Generate URLs from the app directory
-  let urls = generateUrls(appDirectory);
+  const urls = generateUrls(appDirectory);
 
   return urls;
 }
