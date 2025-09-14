@@ -10,9 +10,6 @@ import clsx from "clsx";
 import { navListItems } from "@/lib/nav-list-items";
 // import components
 import Nav from "./nav";
-import DesktopNav from "./desktop-nav";
-import MobileNav from "./mobile-nav";
-import ContactIconLinks from "./contact-icon-links";
 
 export default function Header() {
   const pathname = usePathname();
