@@ -1,5 +1,5 @@
 // import from vercel
-import { Analytics } from "@vercel/analytics/react";
+// import { Analytics } from "@vercel/analytics/react";
 // import from next
 import type { Metadata } from "next";
 import localFont from "next/font/local";
@@ -60,7 +60,7 @@ export default function RootLayout({
           <Footer />
         </div>
         <ScrollToTopButton />
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
       {/* <GoogleAnalytics gaId={process.env.GA_ID || ""} /> */}
     </html>
