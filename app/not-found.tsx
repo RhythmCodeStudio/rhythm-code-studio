@@ -1,14 +1,10 @@
 "use client";
 // import from next
 import { connection } from "next/server";
-// import from react
-import { useEffect } from "react";
+
 
 export default async function NotFound() {
   await connection();
-  useEffect(() => {
-    window.location.href = "/";
-  }, []);
 
   return (
     <div className="p-8 text-center">
