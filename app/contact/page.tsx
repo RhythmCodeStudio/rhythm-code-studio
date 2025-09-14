@@ -1,10 +1,7 @@
-// "use client";
-// // import from react
-// import { useState } from "react";
+// import from next
+import { connection } from "next/server";
 // import components
 import ContactFormContainer from "../../components/contact-form-container";
-// // import copy
-// import { contactPageCopy } from "../lib/copy/contact-page-copy";
 
 export const metadata = {
   title: "Sync Up | Rhythm Code Studio",
@@ -15,7 +12,8 @@ export const metadata = {
   },
 };
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  await connection();
   return (
     <ContactFormContainer />
   )

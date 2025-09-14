@@ -11,13 +11,13 @@ export function middleware(request: NextRequest) {
     font-src 'self';
     style-src 'self' 'unsafe-inline';
     script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com;
-    connect-src 'self' https://api.emailjs.com/ https://github-contributions-api.jogruber.de/v4/KLong75;
+    connect-src 'self' https://api.emailjs.com/;
     img-src 'self' data: blob:;
     frame-src 'none';
   `;
   const previewCspHeader = `
     default-src 'self';
-    connect-src 'self' https://api.emailjs.com/ https://vercel.live https://github-contributions-api.jogruber.de/v4/KLong75;
+    connect-src 'self' https://api.emailjs.com/ https://vercel.live;
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://vercel.live/ wss://ws-us3.pusher.com https://va.vercel-scripts.com;
     style-src 'self' 'unsafe-inline' https://vercel.live;
     img-src 'self' data: blob: https://vercel.live https://vercel.com;
@@ -32,8 +32,8 @@ export function middleware(request: NextRequest) {
   const productionCspHeader = `
     default-src 'self';
     script-src 'self' 'nonce-${nonce}' https://vercel.live/;
-    connect-src 'self' https://api.emailjs.com/ https://github-contributions-api.jogruber.de/v4/KLong75;
-    style-src 'self' 'unsafe-inline';
+    connect-src 'self' https://api.emailjs.com/;
+    style-src 'self';
     img-src 'self' https://vercel.live https://vercel.com data: blob:;
     font-src 'self';
     object-src 'none';
