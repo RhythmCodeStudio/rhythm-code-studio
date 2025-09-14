@@ -12,17 +12,19 @@ export default async function NotFound() {
       <h1 className="text-2xl font-bold">Page Not Found</h1>
       <p className="m-4">The page you are looking for does not exist.</p>
       <Link href="/">
-        <Image
-          className="w-full h-auto max-w-40 xl:max-w-48 3xl:max-w-64 3xl:m-4"
-          src="/images/logos/mark-only-full.png"
-          width={1000}
-          height={54}
-          alt="Rhythm Code Studio - Custom web solutions to match your beat"
-          priority
-        />
-        </Link>
-        <h2 className="font-blenny text-2xl mt-4">Rhythm Code Studio</h2>
-        <h3 className="text-lg">Custom web solutions to match your beat</h3>
+        <div className="flex flex-col justify-center items-center expand-on-load">
+          <Image
+            className="w-2/5 h-auto max-w-180"
+            src="/images/logos/mark-only-full.png"
+            width={796}
+            height={816}
+            alt="Rhythm Code Studio logo"
+            priority
+          />
+        </div>
+      </Link>
+      <h2 className="font-blenny text-2xl mt-4">Rhythm Code Studio</h2>
+      <h3 className="text-lg">Custom web solutions to match your beat</h3>
     </div>
   );
 }
