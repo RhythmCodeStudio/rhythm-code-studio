@@ -57,9 +57,7 @@ export default function RootLayout({
             {children}
           </main>
           {/* Footer will be positioned at the bottom */}
-          <div className="lg:mt-6 xl:mt-12">
-            <Footer />
-          </div>
+          <Footer />
         </div>
         <ScrollToTopButton />
         <Analytics />

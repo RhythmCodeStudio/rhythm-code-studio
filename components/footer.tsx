@@ -7,7 +7,7 @@ import ScheduleConsultation from "./schedule-consultation";
 
 export default function Footer() {
   return (
-    <footer className="text-center text-sm m-4">
+    <footer className="text-center text-sm m-4 lg:mt-6 xl:mt-12">
       <div className="mb-12 md:mb-24">
         <ScheduleConsultation />
       </div>
