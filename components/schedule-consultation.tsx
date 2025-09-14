@@ -11,10 +11,11 @@ export default function ScheduleConsultation() {
         href="https://calendly.com/kevin-jnxz/30min"
         target="_blank"
         rel="noopener noreferrer"
+        title="Schedule a free consultation with Rhythm Code Studio"
         onClick={() => {
           track(`Calendar link clicked`);
         }}>
-        <div className="mb-2 flex justify-center items-center  transition-colors duration-700">
+        <div className="mb-2 flex justify-center items-center transition-colors duration-700">
           <FaCalendarDays 
             size={36}
             className="icon-link md:hover:text-stone-600 " 
