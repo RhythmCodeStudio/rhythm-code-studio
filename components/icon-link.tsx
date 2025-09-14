@@ -1,5 +1,6 @@
 // import from vercel
 import { track } from "@vercel/analytics";
+import { JSX } from "react";
 
 export default function IconLink({
   href,
