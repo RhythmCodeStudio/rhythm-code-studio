@@ -259,7 +259,7 @@ export default function ContactForm({
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-    setState: React.Dispatch<React.SetStateAction<any>>
+    setState: React.Dispatch<React.SetStateAction<string>>
   ) => {
     const { name, value } = e.target;
     setState(value);
@@ -352,6 +352,7 @@ export default function ContactForm({
         }, 5000);
         // });
       } catch (error) {
+        console.error("Error sending email:", error);
         setDeliveryErrorMessage(
           "There was an error delivering your message. Please email me at kevinlong.dev@gmail.com. My apologies for the inconvenience."
         );
