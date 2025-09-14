@@ -1,9 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export function middleware(request: NextRequest) {
-  if (request.nextUrl.pathname === "/not-found") {
-    return NextResponse.redirect(new URL("/", request.url));
-  }
   let cspHeader = "";
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
   const environment = process.env.NEXT_PUBLIC_ENV || process.env.NODE_ENV;
@@ -36,7 +33,7 @@ export function middleware(request: NextRequest) {
     default-src 'self';
     script-src 'self' 'nonce-${nonce}';
     connect-src 'self' https://api.emailjs.com/;
-    style-src 'self';
+    style-src 'self' 'unsafe-inline';
     img-src 'self' data: blob:;
     font-src 'self';
     object-src 'none';
