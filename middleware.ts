@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export function middleware(request: NextRequest) {
+  if (request.nextUrl.pathname === "/not-found") {
+    return NextResponse.redirect(new URL("/", request.url));
+  }
   let cspHeader = "";
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
   const environment = process.env.NEXT_PUBLIC_ENV || process.env.NODE_ENV;
