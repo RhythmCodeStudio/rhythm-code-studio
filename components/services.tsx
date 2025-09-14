@@ -27,7 +27,9 @@ export default function Services({
         )}
         <p className="m-4 md:text-xl md:text-center">
           We use modern web technologies to craft custom solutions tailored to
-          fit your unique needs. We manage it all for you so you can spend time
+          fit your unique needs.
+          <br />
+          We manage it all for you so you can spend time
           focusing on doing what you do best.
         </p>
         {/* {React.createElement(

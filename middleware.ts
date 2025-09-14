@@ -31,16 +31,16 @@ export function middleware(request: NextRequest) {
   `;
   const productionCspHeader = `
     default-src 'self';
-    script-src 'self' 'nonce-${nonce}' https://vercel.live/;
+    script-src 'self' 'nonce-${nonce}';
     connect-src 'self' https://api.emailjs.com/;
     style-src 'self';
-    img-src 'self' https://vercel.live https://vercel.com data: blob:;
+    img-src 'self' data: blob:;
     font-src 'self';
     object-src 'none';
     base-uri 'self';
     form-action 'self';
     frame-ancestors 'none';
-    frame-src 'self' https://vercel.live;
+    frame-src 'self';
     upgrade-insecure-requests;
   `;
 
