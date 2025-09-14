@@ -41,7 +41,6 @@
 //   );
 // }
 
-
 export default function ContactFormInput({
   inputType,
   label,
@@ -64,7 +63,10 @@ export default function ContactFormInput({
   required: boolean;
   autoComplete: string;
   errorMessage: string;
-  handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, setState: React.Dispatch<React.SetStateAction<string>>) => void;
+  handleChange: (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    setState: React.Dispatch<React.SetStateAction<string>>
+  ) => void;
   setStateVariable: React.Dispatch<React.SetStateAction<string>>;
 }) {
   return (
@@ -73,20 +75,26 @@ export default function ContactFormInput({
       <label
         // className="m-2 text-left text-base"
         className="px-4 font-bold"
-        htmlFor={name}>{label}
-        {required && <><span>*</span><span className="text-xs"> (required)</span></>}
+        htmlFor={name}>
+        {label}
+        {required && (
+          <>
+            <span>*</span>
+            <span className="text-xs"> (required)</span>
+          </>
+        )}
       </label>
       {inputType === "textarea" ? (
         <textarea
-            autoComplete="off"
-            maxLength={1000}
-            onChange={(e) => handleChange(e, setStateVariable)}
-            value={value}
-            required
-            name="message"
-            id="message"
-            className="rounded-3xl px-4 opacity-75 h-80 resize-none p-4 border-2 border-yellow-500 bg-yellow-50 text-black shadow-md shadow-black"
-          />
+          autoComplete="off"
+          maxLength={1000}
+          onChange={(e) => handleChange(e, setStateVariable)}
+          value={value}
+          required
+          name="message"
+          id="message"
+          className="rounded-3xl px-4 opacity-75 h-80 resize-none p-4 border-2 border-yellow-500 bg-yellow-50 text-black shadow-md shadow-black"
+        />
       ) : (
         <input
           className="rounded-3xl px-4 opacity-75 h-10 resize-none p-4 border-2 border-yellow-500 bg-yellow-50 text-black shadow-md shadow-black"
@@ -101,11 +109,9 @@ export default function ContactFormInput({
         />
       )}
       <p
-        className="text-red-100 text-xs mt-1 ml-2 min-h-[1.25rem] transition-opacity duration-300"
-        style={{
-          visibility: errorMessage ? "visible" : "hidden",
-          opacity: errorMessage ? 1 : 0,
-        }}
+        className={`text-red-100 text-xs mt-1 ml-2 min-h-[1.25rem] transition-opacity duration-300
+          ${errorMessage ? "opacity-100 visible" : "opacity-0 invisible"}
+        `}
       >
         {errorMessage || " "}
       </p>
