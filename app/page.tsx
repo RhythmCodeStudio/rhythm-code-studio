@@ -1,7 +1,9 @@
 // import from next
+import { connection } from "next/server";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+  await connection();
   return (
     <section className="flex flex-col items-center justify-content space-y-8 mb-6">
       <div>

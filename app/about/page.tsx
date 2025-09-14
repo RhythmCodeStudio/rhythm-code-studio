@@ -1,7 +1,9 @@
 // import from next
-import Services from "@/components/services";
+import { connection } from "next/server";
 import Image from "next/image";
 import Link from "next/link";
+// import components 
+import Services from "@/components/services";
 
 export const metadata = {
   title: "About Rhythm Code Studio",
@@ -12,7 +14,8 @@ export const metadata = {
   },
 };
 
-export default function About() {
+export default async function About() {
+  await connection();
   return (
     <div className="flex flex-col">
       <h1 className="text-center text-3xl xs:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-blenny pb-2 3xl:mb-12">

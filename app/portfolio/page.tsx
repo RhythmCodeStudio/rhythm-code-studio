@@ -1,3 +1,5 @@
+// import from next
+import { connection } from "next/server";
 // import components
 import ProjectGallery from "../../components/project-gallery";
 
@@ -10,7 +12,8 @@ export const metadata = {
   },
 };
 
-export default function Portfolio() {
+export default async function Portfolio() {
+  await connection();
   return (
     <section>
       <h1 className="text-center text-3xl xs:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-blenny pb-2">
