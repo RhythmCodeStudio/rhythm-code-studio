@@ -7,8 +7,8 @@ import ScheduleConsultation from "./schedule-consultation";
 
 export default function Footer() {
   return (
-    <footer className="text-center text-sm m-4 lg:mt-6 xl:mt-12">
-      <div className="mb-12 md:mb-24">
+    <footer className="text-center text-sm m-4">
+      <div className="my-6">
         <ScheduleConsultation />
       </div>
       <div className="flex justify-center items-center mb-8 mt-0 md:my-12">

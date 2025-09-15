@@ -18,7 +18,7 @@ export default async function About() {
   await connection();
   return (
     <div className="flex flex-col">
-      <h1 className="text-center text-3xl xs:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-blenny pb-2 3xl:mb-12">
+      <h1 className="text-center text-3xl xs:text-4xl md:text-5xl lg:text-6xl 3xl:text-8xl font-blenny pb-2 ">
         Rhythm Code Studio
       </h1>
       <section className="grid grid-cols-1 lg:grid-rows-4 lg:grid-cols-2 ">
@@ -39,14 +39,14 @@ export default async function About() {
             ABOUT RHYTHM CODE STUDIO
           </h1>
         </div>
-        <div className="order-2 lg:order-3 place-content-center max-w-400">
+        <div className="order-2 lg:order-3 place-content-center max-w-4xl">
           <p className="p-6 xl:mr-36 3xl:mr-96 lg:p-0 lg:text-lg 3xl:text-xl">
             Rhythm Code founder and lead developer, Kevin Long is attuned to the
             pulse of his hometown. He serves small businesses, musicians,
             creatives, and organizations in St. Louis and beyond.
           </p>
         </div>
-        <div className="order-4 place-content-center max-w-400">
+        <div className="order-4 place-content-center max-w-4xl">
           <p className="p-6 xl:mr-36 3xl:mr-96 lg:p-0 lg:text-lg 3xl:text-xl">
             Kevin brings the passion and imagination of an artist, along with
             the patient persistence of an educator to every job he touches. His
@@ -58,7 +58,7 @@ export default async function About() {
         </div>
         <div className="order-5 px-6 lg:px-0 flex justify-center lg:justify-start mb-4 lg:mt-8 ">
           <Link href="/contact">
-            <span className="tracking-wider border-2 border-white text-white rounded-full text-xl px-4 py-1 hover:bg-white hover:text-black hover:font-bold">
+            <span className="tracking-wider border-2 border-  rounded-full text-xl px-4 py-1 hover:bg-white hover:text-black hover:font-bold">
               SYNC UP TODAY
             </span>
           </Link>
