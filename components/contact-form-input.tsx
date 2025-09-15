@@ -109,7 +109,7 @@ export default function ContactFormInput({
         />
       )}
       <p
-        className={`text-red-100 text-xs mt-1 ml-2 min-h-[1.25rem] transition-opacity duration-300
+        className={`text-red-500 text-xs mt-1 ml-2 min-h-[1.25rem] transition-opacity duration-300
           ${errorMessage ? "opacity-100 visible" : "opacity-0 invisible"}
         `}
       >

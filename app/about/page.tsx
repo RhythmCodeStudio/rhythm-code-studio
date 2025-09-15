@@ -35,9 +35,9 @@ export default async function About() {
           </div>
         </div>
         <div className="order-1 lg:order-2 text-center lg:text-start place-content-end">
-          <h1 className="font-bold text-2xl lg:text-3xl 2xl:text-4xl 3xl:text-5xl">
+          <h2 className="font-bold text-2xl lg:text-3xl 2xl:text-4xl 3xl:text-5xl">
             ABOUT RHYTHM CODE STUDIO
-          </h1>
+          </h2>
         </div>
         <div className="order-2 lg:order-3 place-content-center max-w-4xl">
           <p className="p-6 xl:mr-36 3xl:mr-96 lg:p-0 lg:text-lg 3xl:text-xl">
@@ -58,7 +58,7 @@ export default async function About() {
         </div>
         <div className="order-5 px-6 lg:px-0 flex justify-center lg:justify-start mb-4 lg:mt-8 ">
           <Link href="/contact">
-            <span className="tracking-wider border-2 border-  rounded-full text-xl px-4 py-1 hover:bg-white hover:text-black hover:font-bold">
+            <span className="tracking-wider border-2 border-white text-white rounded-full text-xl px-4 py-1 hover:bg-white hover:text-black hover:border-black font-bold shadow-md shadow-black">
               SYNC UP TODAY
             </span>
           </Link>
@@ -111,7 +111,7 @@ export default async function About() {
   </section> */}
       <div className="flex justify-center 3xl:mt-24">
         <Services
-          headingLevel="h2"
+          headingLevel="h3"
           headingText="CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
           subHeadingLevel="h3"
           subHeadingText="Services Offered"
