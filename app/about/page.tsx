@@ -58,7 +58,7 @@ export default async function About() {
         </div>
         <div className="order-5 px-6 lg:px-0 flex justify-center lg:justify-start mb-4 lg:mt-8 ">
           <Link href="/contact">
-            <span className="tracking-wider border-2 border-white text-white rounded-full text-xl px-4 py-1 hover:bg-white hover:text-black hover:border-black font-bold shadow-md shadow-black">
+            <span className="tracking-wider border-2 border-white text-white rounded-full text-xl px-4 py-1 hover:bg-white hover:text-black hover:border-black font-bold shadow-md shadow-black transition-all duration-300 ease-in-out">
               SYNC UP TODAY
             </span>
           </Link>
