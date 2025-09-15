@@ -284,7 +284,7 @@ export default function ContactForm({
                 "text-shadow-black border border-2 rounded-2xl py-1 px-6 transition-colors transition-shadow transition-transform duration-700 ease-in-out font-semibold tracking-widest will-change-transform",
                 {
                   // enabled styles
-                  "bg-black text-yellow-500 border-yellow-500 md:hover:border-black md:hover:bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 md:hover:text-black cursor-pointer shadow-md shadow-black md:hover:scale-105 md:active:scale-95":
+                  "bg-cyan-100 shadow-md shadow-black md:hover:scale-105 md:active:scale-95":
                     isFormValid && !buttonSubmitted,
                   // disabled styles
                   "border-stone-600 text-stone-600 bg-orange-100 cursor-not-allowed":
