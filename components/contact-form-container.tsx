@@ -27,7 +27,7 @@ export default function ContactFormContainer() {
           </h1>
           <div className=" items-center justify-center max-w-200">
             <p className="px-12 py-4">{contactPageCopy.text_block_one}</p>
-            <p className=" px-12 p-4">{contactPageCopy.text_block_two}</p>
+            <p className=" px-12 py-4">{contactPageCopy.text_block_two}</p>
           </div>
           <ContactForm setFormSubmitted={setFormSubmitted} />
         </>

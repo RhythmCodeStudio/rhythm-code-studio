@@ -41,7 +41,6 @@ export default async function Home() {
           doing what you love and sharing it with the world.
         </p>
       </div>
-      
     </section>
   );
 }

@@ -201,7 +201,7 @@ export default function ContactForm({
     <div className="w-full text-base">
       <form
         onSubmit={handleFormSubmit}
-        className="px-12 py-6 max-w-200 mx-auto relative ">
+        className="px-12 py-2 max-w-200 mx-auto relative ">
         <ContactFormInput
           inputType="input"
           label="First Name"
