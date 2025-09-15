@@ -15,7 +15,8 @@ export default function Background() {
   return (
     <>
       <div
-        className="fixed top-0 left-0 w-full h-full -z-10 bg-cover bg-center"
+        // className="fixed top-0 left-0 w-full h-full -z-10 bg-cover bg-center"
+         className="fixed top-0 left-0 w-screen min-h-screen -z-10 bg-cover bg-center bg-black"
         // style={{
         //   backgroundImage: `url(${bgImage === "funk" ? funk.src : blues.src})`,
         // }}
