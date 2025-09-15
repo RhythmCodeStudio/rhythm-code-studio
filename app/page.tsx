@@ -33,8 +33,6 @@ export default async function Home() {
           applications for small businesses, musicians, artists, creatives, and
           organizations in St. Louis, Missouri and beyond.
         </p>
-        {/* <p className="my-4">These days it&apos;s pretty easy to make a website. That doesn&apos;t mean it is easy to do right. Platforms like WordPress, Squarespace, Wix, and others make it possibile to get a new website online pretty quickly. The thing is, those platforms are designed and developed to accomodate everyone. As a result they lock you in to certain technologies that may or may not be the best for your unique situation. These platforms are designed to be one size fits all. A website from Rhythm Code Studio is developed for you and only you.</p> 
-        <p>We craft your website to have everything you need and nothing you don&apos;t, using modern web technologies that these other platforms simply can&apos;t match. A Rhythm Code website is fast, secure, fully responsive so it looks great on any screen, and fully accessible so everyone can receive the unique message you are sending out into the world.</p> */}
         <p className="my-4">
           Our work is <strong>fast, secure, fully responsive, and fully accessible.</strong> We develop web solutions with a pulse, ones that match your personal rhythm and style and look great on any device.
         </p>
@@ -43,21 +41,6 @@ export default async function Home() {
           doing what you love and sharing it with the world.
         </p>
       </div>
-      {/* <div className="flex justify-center">
-      <ul className="grid grid-cols-1 md:grid-cols-2 gap-0">
-        <li>Website Development</li>
-        <li>Website Design</li>
-        <li>Website Repair</li>
-        <li>Application Development</li>
-        <li>Application Design</li>
-        <li>Web Maintenance</li>
-        <li>Web Hosting</li>
-        <li>Analytics</li>
-        <li>Domain Registration</li>
-      </ul>
-      </div>  */}
     </section>
   );
 }
-
-// They were not designed or developed for you and your unique situation.
