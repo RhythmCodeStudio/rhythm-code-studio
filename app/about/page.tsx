@@ -2,7 +2,7 @@
 import { connection } from "next/server";
 import Image from "next/image";
 import Link from "next/link";
-// import components 
+// import components
 import Services from "@/components/services";
 
 export const metadata = {
@@ -56,9 +56,16 @@ export default async function About() {
             your own distinctive voice.
           </p>
         </div>
-        <div className="order-5 px-6 lg:px-0 flex justify-center lg:justify-start mb-4 lg:mt-8 ">
-          <Link href="/contact">
-            <span className="tracking-wider border-2 border-white text-white rounded-full text-xl px-4 py-1 hover:bg-white hover:text-black hover:border-black font-bold shadow-md shadow-black transition-all duration-300 ease-in-out">
+        {/* <div className="order-5 px-6 lg:px-0 flex justify-center lg:justify-start mb-4 lg:mt-8 ">
+          <Link href="/contact" className="inline-block">
+            <span className="tracking-wider border-2 rounded-full text-xl px-4 py-1 hover:bg-white font-bold shadow-md shadow-black transition-all duration-300 ease-in-out">
+              SYNC UP TODAY
+            </span>
+          </Link>
+        </div> */}
+        <div className="order-5 px-6 lg:px-0 flex justify-center lg:justify-start items-center mb-4 lg:mt-8">
+          <Link href="/contact" className="inline-block">
+            <span className="tracking-wider border-2 rounded-full text-xl px-4 py-1 hover:bg-white font-bold shadow-md shadow-black transition-all duration-300 ease-in-out">
               SYNC UP TODAY
             </span>
           </Link>
@@ -115,7 +122,9 @@ export default async function About() {
           headingText="CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
           subHeadingLevel="h3"
           subHeadingText="Services Offered"
-          headingClassName={"font-bold text-center md:text-lg lg:text-xl xl:text-2xl mt-4"}
+          headingClassName={
+            "font-bold text-center md:text-lg lg:text-xl xl:text-2xl mt-4"
+          }
           subHeadingClassName={
             "font-bold text-lg md:text-xl xl:text-2xl mt-6 md:mt-12 mb-2"
           }
