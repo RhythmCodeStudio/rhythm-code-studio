@@ -16,7 +16,7 @@ export default async function Home() {
       </div>
       <div className="flex flex-col justify-center items-center expand-on-load">
         <Image
-          className="w-2/5 h-auto max-w-180"
+          className="w-full h-auto max-w-40 xl:max-w-48 3xl:max-w-64 3xl:m-4"
           src="/images/logos/mark-only-full.png"
           width={796}
           height={816}
