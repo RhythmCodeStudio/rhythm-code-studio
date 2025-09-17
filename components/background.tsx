@@ -2,7 +2,7 @@
 // import from react
 // import { useState } from "react";
 // import background images
-import funk from "/images/backgrounds/funk.png";
+// import funk from "/images/backgrounds/funk.png";
 // import blues from "/images/backgrounds/blues.png";
 
 export default function Background() {
@@ -21,7 +21,7 @@ export default function Background() {
         //   backgroundImage: `url(${bgImage === "funk" ? funk.src : blues.src})`,
         // }}
         style={{
-          backgroundImage: `url(${funk.src})`,
+           backgroundImage: "url(/images/backgrounds/funk.avif), url(/images/backgrounds/funk.webp), url(/images/backgrounds/funk.png)",
         }}
       />
       <div className="fixed top-0 left-0 w-full h-full -z-20 bg-black opacity-50" />
