@@ -5,9 +5,9 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 // import clsx
-import clsx from "clsx";
+// import clsx from "clsx";
 // import navList items
-import { navListItems } from "@/lib/nav-list-items";
+// import { navListItems } from "@/lib/nav-list-items";
 // import components
 import Nav from "./nav";
 
