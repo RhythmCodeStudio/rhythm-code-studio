@@ -8,17 +8,17 @@ import ScheduleConsultation from "./schedule-consultation";
 export default function Footer() {
   return (
     <footer className="text-center text-sm m-4">
-      <div className="my-6">
+      {/* <div className="my-6">
         <ScheduleConsultation />
-      </div>
-      <div className="flex justify-center items-center mb-8 mt-0 md:my-12">
+      </div> */}
+      {/* <div className="flex justify-center items-center mb-8 mt-0 md:my-12">
         <ContactIconLinks
           orientation="horizontal"
           include={["GitHub", "LinkedIn", "Email", "Phone"]}
           size={32}
         />
-      </div>
-      <span className="">© 2025 Rhythm Code Studio</span>
+      </div> */}
+      {/* <span className="">© 2025 Rhythm Code Studio</span>
       <div className="flex flex-col items-center justify-center mt-2">
         <Image
           src="/images/logos/mark-only-light.png"
@@ -27,7 +27,7 @@ export default function Footer() {
           alt=""
           className="h-auto max-w-8"
         />
-      </div>
+      </div> */}
     </footer>
   );
 };
