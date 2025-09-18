@@ -1,9 +1,6 @@
-"use client";
+// "use client";
 // import from react
 // import { useState } from "react";
-// import background images
-// import funk from "/images/backgrounds/funk.png";
-// import blues from "/images/backgrounds/blues.png";
 
 export default function Background() {
   // const [bgImage, setBgImage] = useState("funk");

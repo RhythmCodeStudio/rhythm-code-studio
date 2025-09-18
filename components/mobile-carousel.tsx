@@ -8,6 +8,8 @@ import {
   NextButton,
   usePrevNextButtons,
 } from "./carousel-arrow-buttons";
+// import styles
+import styles from "./carousel.module.css";
 
 type PropType = {
   slides: string[];
@@ -29,19 +31,19 @@ export default function MobileCarousel(props: PropType) {
   return (
     <>
       <div className="grid grid-cols-3">
-        <div className="embla__buttons place-content-center ml-10">
+        <div className={`${styles.embla__buttons} place-content-center ml-10`}>
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
         </div>
 
         <div
-          className="embla__viewport rounded-2xl border-4 border-zinc-900 bg-zinc-800"
+          className={`${styles.embla__viewport} rounded-2xl border-4 border-zinc-900 bg-zinc-800`}
           ref={emblaRef}>
-          <div className="embla__container">
-            <div className="embla__controls"></div>
+          <div className={styles.embla__container}>
+            <div className={styles.embla__controls}></div>
             {slides.map((slide, index) => {
               const isVideo = /\.(mp4|webm|ogg)$/.test(slide);
               return (
-                <div className="embla__slide" key={index}>
+                <div className={styles.embla__slide} key={index}>
                   {isVideo ? (
                   <video
                     src={slide}
@@ -67,7 +69,7 @@ export default function MobileCarousel(props: PropType) {
           </div>
         </div>
 
-        <div className="embla__buttons place-content-center mr-10">
+        <div className={`${styles.embla__buttons} place-content-center mr-10`}>
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
       </div>

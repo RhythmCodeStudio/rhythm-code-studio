@@ -6,6 +6,8 @@ import {
   NextButton,
   usePrevNextButtons,
 } from "./carousel-arrow-buttons";
+// import styles
+import styles from "./carousel.module.css";
 
 type PropType = {
   slides: string[];
@@ -25,11 +27,11 @@ export default function DesktopCarousel(props: PropType) {
   return (
     <>
       <div
-        className="embla__viewport rounded-2xl border-4 border-zinc-900 bg-zinc-800"
+        className={`${styles.embla__viewport} rounded-2xl border-4 border-zinc-900 bg-zinc-800`}
         ref={emblaRef}>
-        <div className="embla__container">
+        <div className={styles.embla__container}>
           {slides.map((slide, index) => (
-            <div className="embla__slide" key={index}>
+            <div className={styles.embla__slide} key={index}>
               <Image
                 priority
                 src={slide}
@@ -42,11 +44,11 @@ export default function DesktopCarousel(props: PropType) {
         </div>
       </div>
       <div className="grid grid-cols-3 p-6">
-      <div className="embla__buttons place-content-center ">
+      <div className={`${styles.embla__buttons} place-content-center`}>
         <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
       </div>
       <div></div>
-      <div className="embla__buttons place-content-center ">
+      <div className={`${styles.embla__buttons} place-content-center`}>
         <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
       </div>
       </div>

@@ -57,40 +57,6 @@ a, button {
   animation: expand 1s ease-out;
 }
 
-/* embla styles */
-.embla {
-  overflow: hidden;
-}
-.embla__container {
-  display: flex;
-}
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
-}
-
-.embla__viewport {
-  overflow: hidden;
-}
-
-.embla__button {
-  touch-action: manipulation;
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.embla__button:disabled {
-  opacity: 0.2;
-}
-.embla__button__svg {
-  width: 20%;
-  height: 20%;
-}
-
 .text-shadow-black-background-black {
   text-shadow: 2px 2px 0 black;
   background-color: rgba(0, 0, 0, 1);
