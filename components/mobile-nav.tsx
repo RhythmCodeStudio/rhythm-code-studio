@@ -33,10 +33,10 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
       {/* Menu Button */}
       <button
         onClick={toggleMenu}
-        className="p-2 bg-green-500 rounded-lg"
+        className="p-2"
         value={isMenuOpen ? "Close menu" : "Open menu"}
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}>
-        <FiMenu size={16} className="text-black" />
+        <FiMenu size={28} className="text-black" />
       </button>
 
       {/* Dialog */}
@@ -50,31 +50,31 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
 
         {/* Dialog Content */}
         <div className="fixed inset-0 flex items-center justify-center p-4">
-          <DialogPanel className="relative  border-2 border-green-500 bg-neutral-800 text-black flex flex-col justify-center rounded-lg p-6">
+          <DialogPanel className="h-[90vh] relative border-2 border-black bg-neutral-800 text-black flex flex-col justify-center rounded-lg p-6">
             {/* Dialog Title */}
             <DialogTitle as="h2" className="">
               <div
-                className="flex items-center justify-center text-center text-green-500 p-4 mt-"
+                className="flex items-center justify-center text-center p-4"
                 onClick={toggleMenu}>
                 <Link href="/">
-                  <span className="text-xl">Kevin Long</span>
+                  <span className="font-blenny text-xl">Rhythm Code Studio</span>
                   <br />
-                  <span className="text-sm">Full Stack Developer</span>
+                  <span className="text-sm">Custom Web Solutions TO Match Your Beat</span>
                 </Link>
               </div>
             </DialogTitle>
-            <div className=" flex justify-center">
+            {/* <div className=" flex justify-center">
               <ContactIconLinks orientation="horizontal" />
-            </div>
+            </div> */}
             <button
               onClick={toggleMenu}
-              className="absolute top-2 right-2 text-black bg-green-500 rounded-full cursor-pointer"
+              className="absolute top-2 right-2 text-black bg-white rounded-full cursor-pointer"
               aria-label="Close menu">
               <RiCloseFill size={20} />
             </button>
 
             {/* Navigation */}
-            <nav className="my-10">
+            <nav className="">
               <ul className="flex flex-col gap-10 font-semibold text-black items-center">
                 {navListItems.map((item) => (
                   <NavListItem

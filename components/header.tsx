@@ -7,42 +7,50 @@ import Link from "next/link";
 // import clsx
 // import clsx from "clsx";
 // import navList items
-// import { navListItems } from "@/lib/nav-list-items";
+import { navListItems } from "@/lib/nav-list-items";
 // import components
-import Nav from "./nav";
+// import Nav from "./nav";
+import MobileNav from "./mobile-nav";
+import DesktopNav from "./desktop-nav";
 
 export default function Header() {
   const pathname = usePathname();
   const isHome = pathname === "/";
-  
+
   return (
-    <header className="m-4 p-4">
+    <header className="m-4 mb-12 lg:mb-6 lg:m-6 p-2 lg:p-6 ">
       <div className="flex justify-between items-center">
         {isHome ? (
           <Image
-          className="w-full h-auto max-w-40 xl:max-w-48 3xl:max-w-64 3xl:m-4"
-          src="/images/logos/horizontal-full-no-tag.png"
-          width={1000}
-          height={54}
-          alt="Rhythm Code Studio - Custom web solutions to match your beat"
-          priority
-        />
+            className="w-full h-auto max-w-40 md:max-w-48 lg:max-w-50 2xl:max-w-64"
+            src="/images/logos/horizontal-full-no-tag.png"
+            width={1000}
+            height={54}
+            alt="Rhythm Code Studio - Custom web solutions to match your beat"
+            priority
+          />
         ) : (
-        <Link href="/"> 
-        <Image
-          className="w-full h-auto max-w-40 xl:max-w-48 3xl:max-w-64 3xl:m-4"
-          src="/images/logos/horizontal-full-no-tag.png"
-          width={1000}
-          height={54}
-          alt="Rhythm Code Studio - Custom web solutions to match your beat"
-          priority
-        />
-        </Link>
+          <Link href="/">
+            <Image
+              className="w-full h-auto max-w-40 md:max-w-48 lg:max-w-50 2xl:max-w-64"
+              src="/images/logos/horizontal-full-no-tag.png"
+              width={1000}
+              height={54}
+              alt="Rhythm Code Studio - Custom web solutions to match your beat"
+              priority
+            />
+          </Link>
         )}
-        <div className="3xl:mr-12">
-        <Nav />
+        {/* <div className="3xl:mr-12">
+          {/* <Nav /> *
+        </div> */}
+        <div className="hidden lg:flex items-center">
+          <DesktopNav navListItems={navListItems} />
+        </div>
+        <div className="flex lg:hidden items-center">
+          <MobileNav navListItems={navListItems} />
         </div>
       </div>
     </header>
   );
-};
+}

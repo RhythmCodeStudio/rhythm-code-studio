@@ -5,9 +5,9 @@ import { navListItems } from "@/lib/nav-list-items";
 import NavListItem from "./nav-list-item";
 
 export default function DesktopNav({
-  navItems,
+  navListItems,
 }: {
-  navItems: {
+  navListItems: {
     label: string;
     href: string;
     htmlElement: string;
@@ -16,8 +16,8 @@ export default function DesktopNav({
 }) {
   return (
     <nav className="">
-      <ul className="w-full flex gap-12 md:gap-16 lg:gap-24 justify-between 2xl:text-lg ">
-        {navItems.map((item) => (
+      <ul className="w-full flex gap-12 md:gap-16 lg:gap-24 justify-between text-lg xl:text-xl 2xl:text-2xl">
+        {navListItems.map((item) => (
           <NavListItem 
             key={item.label}
             label={item.label}
