@@ -24,7 +24,7 @@ export default async function Home() {
           priority
         />
       </div>
-      {/* <div className="px-8 lg:w-200 lg:text-lg xl:text-xl">
+      <div className="px-8 lg:w-200 lg:text-lg xl:text-xl">
         <h3 className="font-bold text-lg lg:text-xl xl:text-2xl text-center text-balance">
           WE SPECIALIZE IN CREATING CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT
         </h3>
@@ -40,7 +40,7 @@ export default async function Home() {
           <strong>AND</strong>, we manage it all for you, so you can focus on
           doing what you love and sharing it with the world.
         </p>
-      </div> */}
+      </div>
     </section>
   );
 }
