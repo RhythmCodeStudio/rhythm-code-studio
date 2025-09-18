@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* @import url("https://use.typekit.net/afh1ney.css"); */
+@import url("https://use.typekit.net/afh1ney.css");
 
 .font-blenny {
   font-family: var(--font-blenny), sans-serif;
@@ -48,14 +48,14 @@ a, button {
   }
 }
 
-@keyframes expand {
+/* @keyframes expand {
   0% { transform: scale(0); }
   100% { transform: scale(1); }
 }
 
 .expand-on-load {
   animation: expand 1s ease-out;
-}
+} */
 
 .text-shadow-black-background-black {
   text-shadow: 2px 2px 0 black;
@@ -71,13 +71,12 @@ span.hover\:text-shadow-black-background-black:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  /* transform: scale(1.05); */
 }
 
-.text-shadow-white-background-black {
+/* .text-shadow-white-background-black {
   text-shadow: 2px 2px 0 white;
   background-color: rgba(0, 0, 0, 1);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-}
+} */
