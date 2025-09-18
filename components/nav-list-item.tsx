@@ -31,7 +31,9 @@ export default function NavListItem({
           <Link
             href="/contact"
             className=" hover:scale-105 transform-gpu will-change-transform transition-all duration-300 ease-in-out">
-            <span className=" tracking-wider border-2 rounded-full px-6 py-1 hover:bg-white shadow-md shadow-black transition-all duration-700 ease-in-out">
+            <span className=" tracking-wider border-2 rounded-full px-6 py-1 hover:bg-white shadow-md shadow-black transition-all duration-700 ease-in-out"
+            onClick={onClick}
+            >
               {label}
             </span>
           </Link>

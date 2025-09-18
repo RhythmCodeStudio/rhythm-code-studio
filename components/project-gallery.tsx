@@ -19,7 +19,7 @@ export default function ProjectGallery() {
         {projects.map((project: Project) => (
           <li
             key={project.client}
-            className="expand-on-load flex flex-col shadow-2xl m-4 max-w-200 border-2 border-zinc-900 rounded-2xl">
+            className="flex flex-col shadow-2xl m-4 max-w-200 border-2 border-zinc-900 rounded-2xl">
             <h3 className="text-center font-bold text-lg sm:text-xl md:text-2xl mt-4 font-blenny">
               {project.client}
             </h3>

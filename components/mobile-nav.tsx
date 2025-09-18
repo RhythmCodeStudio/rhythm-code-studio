@@ -3,9 +3,10 @@
 import { useState } from "react";
 // import from next
 import Link from "next/link";
+import Image from "next/image";
 //import icons
 import { FiMenu } from "react-icons/fi";
-import { RiCloseFill } from "react-icons/ri";
+import { FiXCircle } from "react-icons/fi";
 // import from headless ui
 import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 // import components
@@ -29,14 +30,14 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
   };
 
   return (
-    <div className="flex flex-col gap-4 items-center justify-center">
+    <div className="flex flex-col items-center justify-center">
       {/* Menu Button */}
       <button
         onClick={toggleMenu}
-        className="p-2"
+        className=""
         value={isMenuOpen ? "Close menu" : "Open menu"}
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}>
-        <FiMenu size={28} className="text-black" />
+        <FiMenu size={28} />
       </button>
 
       {/* Dialog */}
@@ -49,33 +50,52 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
         <div className="fixed inset-0 bg-black/50" aria-hidden="true"></div>
 
         {/* Dialog Content */}
-        <div className="fixed inset-0 flex items-center justify-center p-4">
-          <DialogPanel className="h-[90vh] relative border-2 border-black bg-neutral-800 text-black flex flex-col justify-center rounded-lg p-6">
+        <div className="fixed inset-0 flex items-center justify-center">
+          <DialogPanel
+            className="h-[100vh] w-[100vw] relative border-2 border-black bg-neutral-800 text-black flex flex-col justify-center p-6"
+            style={{
+              backgroundImage:
+                "url(/images/backgrounds/funk.avif), url(/images/backgrounds/funk.webp), url(/images/backgrounds/funk.png)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}>
+            {/* Close Button */}
+            <button
+              onClick={toggleMenu}
+              className="absolute top-12 right-5 text-black"
+              aria-label="Close menu">
+              <FiXCircle  size={28} />
+            </button>
+            {/* <div className="absolute inset-0 bg-black/30 rounded-lg"></div> */}
             {/* Dialog Title */}
             <DialogTitle as="h2" className="">
               <div
-                className="flex items-center justify-center text-center p-4"
+                className="flex items-center justify-center text-center p-4 mb-8"
                 onClick={toggleMenu}>
                 <Link href="/">
-                  <span className="font-blenny text-xl">Rhythm Code Studio</span>
+                  <span className="font-blenny text-2xl">
+                    Rhythm Code Studio
+                  </span>
                   <br />
-                  <span className="text-sm">Custom Web Solutions TO Match Your Beat</span>
+                  <span className="text-sm">
+                    Custom Web Solutions To Match Your Beat
+                  </span>
+                  <div className="flex justify-center mt-2">
+                    <Image
+                      src="/images/logos/mark-only-full.png"
+                      width={128}
+                      height={131}
+                      alt="Rhythm Code Studio"
+                      priority
+                    />
+                  </div>
                 </Link>
               </div>
             </DialogTitle>
-            {/* <div className=" flex justify-center">
-              <ContactIconLinks orientation="horizontal" />
-            </div> */}
-            <button
-              onClick={toggleMenu}
-              className="absolute top-2 right-2 text-black bg-white rounded-full cursor-pointer"
-              aria-label="Close menu">
-              <RiCloseFill size={20} />
-            </button>
 
             {/* Navigation */}
-            <nav className="">
-              <ul className="flex flex-col gap-10 font-semibold text-black items-center">
+            <nav>
+              <ul className="flex flex-col gap-12 font-semibold text-black items-center text-lg">
                 {navListItems.map((item) => (
                   <NavListItem
                     key={item.label}
@@ -87,6 +107,9 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
                 ))}
               </ul>
             </nav>
+            <div className="flex justify-center absolute bottom-12 left-0 w-full">
+              <ContactIconLinks orientation="horizontal" />
+            </div>
           </DialogPanel>
         </div>
       </Dialog>
