@@ -37,7 +37,7 @@ export default function Header() {
               width={1000}
               height={54}
               alt="Rhythm Code Studio - Custom web solutions to match your beat"
-              priority
+              priority={true}
             />
           </Link>
         )}

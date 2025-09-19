@@ -23,14 +23,14 @@ export default async function About() {
       </h1>
       <section className="grid grid-cols-1 lg:grid-rows-4 lg:grid-cols-2 ">
         <div className="order-3 lg:order-1 row-span-4 flex justify-center lg:justify-end items-center lg:mx-12">
-          <div className="w-[209px] h-[215px] md:w-[279px] md:h-[286px] xl:w-[318px] xl:h-[326px] 2xl:w-[398px] 2xl:h-[408px] 3xl:w-[597px] 3xl:h-[612px] flex justify-center items-center ">
+          <div className="w-[209px] h-[215px] md:w-[279px] md:h-[286px] xl:w-[318px] xl:h-[326px] 2xl:w-[398px] 2xl:h-[408px] flex justify-center items-center">
             <Image
-              priority
-              className=""
+              priority={true}
               src="/images/logos/mark-only-full.png"
               alt="Rhythm Code Studio"
-              width={597}
-              height={612}
+              width={796}
+              height={816}
+              sizes="(max-width: 768px) 209px, (max-width: 1280px) 279px, (max-width: 1536px) 318px, 398px"
             />
           </div>
         </div>
