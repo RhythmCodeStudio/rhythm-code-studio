@@ -21,11 +21,12 @@ export default function Footer() {
       <span className="">© 2025 Rhythm Code Studio</span>
       <div className="flex flex-col items-center justify-center mt-2">
         <Image
-          src="/images/logos/mark-only-light.png"
-          width={796}
-          height={816}
+          src="/images/logos/mark-only-light-32x33.png"
+          width={32}
+          height={33}
           alt=""
           className="h-auto max-w-8"
+          sizes="32px"
         />
       </div>
     </footer>

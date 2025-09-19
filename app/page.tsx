@@ -18,8 +18,8 @@ export default async function Home() {
         <Image
           className="w-full h-auto max-w-40 xl:max-w-48 3xl:max-w-64 3xl:m-4"
           src="/images/logos/mark-only-full-200x205.png"
-          width={796}
-          height={816}
+          width={200}
+          height={205}
           alt="Rhythm Code Studio logo"
           priority={true}
           sizes="(max-width: 768px) 160px, (max-width: 1280px) 192px"

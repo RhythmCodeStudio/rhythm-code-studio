@@ -24,8 +24,8 @@ export default function Header() {
           <Image
             className="w-full h-auto max-w-40 md:max-w-48 lg:max-w-50 2xl:max-w-64"
             src="/images/logos/horizontal-full-no-tag-256x138.png"
-            width={1000}
-            height={54}
+            width={256}
+            height={138}
             alt="Rhythm Code Studio - Custom web solutions to match your beat"
             priority
             sizes="(max-width: 768px) 160px, (max-width: 1280px) 192px, (max-width: 1536px) 200px, 256px"
@@ -35,8 +35,8 @@ export default function Header() {
             <Image
               className="w-full h-auto max-w-40 md:max-w-48 lg:max-w-50 2xl:max-w-64"
               src="/images/logos/horizontal-full-no-tag-256x138.png"
-              width={1000}
-              height={54}
+              width={256}
+              height={138}
               alt="Rhythm Code Studio - Custom web solutions to match your beat"
               priority={true}
               sizes="(max-width: 768px) 160px, (max-width: 1280px) 192px, (max-width: 1536px) 200px, 256px"

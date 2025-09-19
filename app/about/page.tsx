@@ -28,8 +28,8 @@ export default async function About() {
               priority={true}
               src="/images/logos/mark-only-full-398x408.png"
               alt="Rhythm Code Studio"
-              width={796}
-              height={816}
+              width={398}
+              height={408}
               sizes="(max-width: 768px) 209px, (max-width: 1280px) 279px, (max-width: 1536px) 318px, 398px"
             />
           </div>
