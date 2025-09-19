@@ -82,7 +82,7 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
                   </span>
                   <div className="flex justify-center mt-2">
                     <Image
-                      src="/images/logos/mark-only-full.png"
+                      src="/images/logos/mark-only-full-128x131.png"
                       width={128}
                       height={131}
                       alt="Rhythm Code Studio"
