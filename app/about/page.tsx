@@ -26,7 +26,7 @@ export default async function About() {
           <div className="w-[209px] h-[215px] md:w-[279px] md:h-[286px] xl:w-[318px] xl:h-[326px] 2xl:w-[398px] 2xl:h-[408px] flex justify-center items-center">
             <Image
               priority={true}
-              src="/images/logos/mark-only-full.png"
+              src="/images/logos/mark-only-full-398x408.png"
               alt="Rhythm Code Studio"
               width={796}
               height={816}
