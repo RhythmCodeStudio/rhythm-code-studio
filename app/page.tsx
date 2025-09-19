@@ -17,7 +17,7 @@ export default async function Home() {
       <div className="flex flex-col justify-center items-center w-40 h-40 xl:w-48 xl:h-48 3xl:w-64 3xl:h-64 3xl:m-4">
         <Image
           className="w-full h-auto max-w-40 xl:max-w-48 3xl:max-w-64 3xl:m-4"
-          src="/images/logos/mark-only-full.png"
+          src="/images/logos/mark-only-full-200x205.png"
           width={796}
           height={816}
           alt="Rhythm Code Studio logo"
