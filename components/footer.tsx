@@ -26,7 +26,7 @@ export default function Footer() {
           height={33}
           alt=""
           className="h-auto max-w-8"
-          sizes="32px"
+          // sizes="32px"
         />
       </div>
     </footer>
