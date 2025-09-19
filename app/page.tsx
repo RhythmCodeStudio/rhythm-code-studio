@@ -22,6 +22,7 @@ export default async function Home() {
           height={816}
           alt="Rhythm Code Studio logo"
           priority
+          sizes="(max-width: 768px) 160px, (max-width: 1280px) 192px"
         />
       </div>
       <div className="px-8 lg:w-200 lg:text-lg xl:text-xl">

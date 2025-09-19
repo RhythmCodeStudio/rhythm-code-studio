@@ -18,7 +18,8 @@ export default function Background() {
         //   backgroundImage: `url(${bgImage === "funk" ? funk.src : blues.src})`,
         // }}
         style={{
-           backgroundImage: "url(/images/backgrounds/funk.avif), url(/images/backgrounds/funk.webp), url(/images/backgrounds/funk.png)",
+           backgroundImage: "url(/images/backgrounds/funk.avif), url(/images/backgrounds/funk.webp)",
+          //  url(/images/backgrounds/funk.png)
         }}
       />
       <div className="fixed top-0 left-0 w-full h-full -z-20 bg-black opacity-50" />
