@@ -1,5 +1,7 @@
 // import from vercel
 import { Analytics } from "@vercel/analytics/react";
+// import client wrapper
+import ClientWrapper from "@/components/client-wrapper";
 // import from next
 import type { Metadata } from "next";
 import localFont from "next/font/local";
@@ -16,7 +18,7 @@ import "./globals.css";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import ScrollToTopButton from "../components/scroll-to-top-button";
-import Background from "@/components/background";
+import Background from "@/components/theme";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.rhythmcodestudio.tech"),
@@ -51,7 +53,7 @@ export default function RootLayout({
       {/* <GoogleTagManager gtmId={process.env.GTM_ID || ""} /> */}
       {/* <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 max-h-screen"> */}
       <body className="max-h-screen">
-        <Background />
+        <ClientWrapper>
         {/* Flex container that occupies at least the viewport height */}
         <div className="flex flex-col min-h-screen ">
           <Header />
@@ -64,6 +66,7 @@ export default function RootLayout({
         </div>
         <ScrollToTopButton />
         <Analytics />
+        </ClientWrapper>
       </body>
       {/* <GoogleAnalytics gaId={process.env.GA_ID || ""} /> */}
     </html>

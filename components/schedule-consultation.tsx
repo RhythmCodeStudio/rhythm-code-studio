@@ -1,10 +1,15 @@
 "use client";
 // import from vercel
 import { track } from "@vercel/analytics";
+// import from next
+import { usePathname } from "next/navigation";
 // import icons
 import { FaCalendarDays } from "react-icons/fa6";
 
 export default function ScheduleConsultation() {
+  const pathname = usePathname();
+  // only track on the homepage
+  if (pathname === "/") return null;
   return (
     <section className="text-md lg:text-lg 3xl:text-xl font-bold">
       <a

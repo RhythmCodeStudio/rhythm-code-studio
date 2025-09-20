@@ -1,6 +1,8 @@
 // import from next
 import { connection } from "next/server";
 import Image from "next/image";
+// import components
+import ThemeToggle from "../components/theme-toggle";
 
 export default async function Home() {
   await connection();
@@ -19,14 +21,42 @@ export default async function Home() {
           />
         </div>
         <div className="p-2 lg:p-0 lg:-ml-8">
-          <h1 className="text-center lg:text-left text-3xl text-4xl lg:text-6xl font-blenny pb-2">
-            Rhythm Code
-            <br className="hidden lg:block" /> Studio
-          </h1>
-          <h2 className="tracking-tight text-center lg:text-left lg:text-xl">
-            CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT
-          </h2>
-          
+          <div className="relative">
+            <h1 className="text-center lg:text-left text-3xl text-4xl lg:text-6xl font-blenny pb-2">
+              Rhythm Code
+              <br className="hidden lg:block" /> Studio
+            </h1>
+            <h2 className="text-center lg:text-left lg:text-xl">
+              CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT
+            </h2>
+          </div>
+          <div className="mt-6">
+            <ThemeToggle />
+          </div>
+
+          {/* <div className="absolute w-96 h-auto grid grid-cols-3 mt-12" id="theme-toggle">
+            <div className="flex flex-col justify-center items-end">
+              <Image
+                src="/images/design-elements/left-arrow.png"
+                alt="left arrow"
+                width={96}
+                height={175}
+                className="w-18 h-auto"
+              />
+            </div>
+            <div className="flex flex-col justify-center items-center">
+              <p className="text-3xl">FUNK</p>
+            </div>
+            <div className="flex flex-col justify-center items-start">
+              <Image
+                src="/images/design-elements/right-arrow.png"
+                alt="right arrow"
+                width={96}
+                height={175}
+                className="w-18 h-auto"
+              />
+            </div>
+          </div> */}
         </div>
       </div>
     </section>

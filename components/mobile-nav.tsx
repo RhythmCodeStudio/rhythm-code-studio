@@ -1,6 +1,9 @@
 "use client";
 // import from react
 import { useState } from "react";
+// import themes and context
+import { useTheme } from "../context/theme-context";
+import { themes } from "../lib/themes";
 // import from next
 import Link from "next/link";
 import Image from "next/image";
@@ -23,6 +26,8 @@ interface MobileMenuProps {
 }
 
 export default function MobileNav({ navListItems }: MobileMenuProps) {
+  const { theme } = useTheme();
+  const themeObj = themes[theme];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -54,8 +59,7 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
           <DialogPanel
             className="h-[100vh] w-[100vw] relative border-2 border-black bg-neutral-800 text-black flex flex-col justify-center p-6"
             style={{
-              backgroundImage:
-                "url(/images/backgrounds/funk.avif), url(/images/backgrounds/funk.webp), url(/images/backgrounds/funk.png)",
+               backgroundImage: `url(${themeObj.avif}), url(${themeObj.webp})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}>
@@ -64,7 +68,7 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
               onClick={toggleMenu}
               className="absolute top-12 right-5 text-black"
               aria-label="Close menu">
-              <FiXCircle  size={28} />
+              <FiXCircle size={28} />
             </button>
             {/* <div className="absolute inset-0 bg-black/30 rounded-lg"></div> */}
             {/* Dialog Title */}
