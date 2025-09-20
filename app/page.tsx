@@ -8,7 +8,7 @@ export default async function Home() {
   await connection();
   return (
     <section className="flex flex-col">
-      <div className="grid grid-cols-1 lg:grid-cols-2  justify-items-center items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 justify-items-center items-center">
         <div className="w-64 sm:w-72 md:w-80 lg:w-128 h-auto flex justify-center items-center lg:-mr-8">
           <Image
             className="w-full h-auto p-6 lg:p-0"
@@ -20,7 +20,7 @@ export default async function Home() {
             // sizes="(max-width: 768px) 480px, (max-width: 1280px) 480px"
           />
         </div>
-        <div className="p-2 lg:p-0 lg:-ml-8">
+        <div className="p-2 lg:p-0 lg:-ml-8 space-y-12 lg:space-y-0">
           <div className="relative">
             <h1 className="text-center lg:text-left text-3xl text-4xl lg:text-6xl font-blenny pb-2">
               Rhythm Code
@@ -30,33 +30,9 @@ export default async function Home() {
               CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT
             </h2>
           </div>
-          <div className="mt-6">
-            <ThemeToggle />
-          </div>
-
-          {/* <div className="absolute w-96 h-auto grid grid-cols-3 mt-12" id="theme-toggle">
-            <div className="flex flex-col justify-center items-end">
-              <Image
-                src="/images/design-elements/left-arrow.png"
-                alt="left arrow"
-                width={96}
-                height={175}
-                className="w-18 h-auto"
-              />
+            <div className="flex justify-center lg:absolute lg:bottom-80 lg:ml-12">
+              <ThemeToggle />
             </div>
-            <div className="flex flex-col justify-center items-center">
-              <p className="text-3xl">FUNK</p>
-            </div>
-            <div className="flex flex-col justify-center items-start">
-              <Image
-                src="/images/design-elements/right-arrow.png"
-                alt="right arrow"
-                width={96}
-                height={175}
-                className="w-18 h-auto"
-              />
-            </div>
-          </div> */}
         </div>
       </div>
     </section>
