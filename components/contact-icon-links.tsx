@@ -31,7 +31,7 @@ export default function ContactIconLinks({
 
   return (
     <div
-      className={`flex items-center space-x-6 md:space-x-8 lg:space-x-10 xl:space-x-12 ${
+      className={`flex items-center space-x-12 ${
         orientation === "vertical" ? "flex-col" : "flex-row"
       }`}
     >

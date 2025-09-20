@@ -8,10 +8,10 @@ import ScheduleConsultation from "./schedule-consultation";
 export default function Footer() {
   return (
     <footer className="text-center text-sm m-4">
-      <div className="my-6">
+      <div className="my-6 lg:my-0">
         <ScheduleConsultation />
       </div>
-      <div className="flex justify-center items-center mb-8 mt-0 md:my-12">
+      <div className="flex justify-center items-center m-8">
         <ContactIconLinks
           orientation="horizontal"
           include={["GitHub", "LinkedIn", "Email", "Phone"]}

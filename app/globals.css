@@ -29,7 +29,7 @@ a, button {
 }
 
 .icon-link {
-  filter: drop-shadow(2px 2px 0 oklch(79.5% 0.184 86.047));
+  /* filter: drop-shadow(2px 2px 0 oklch(79.5% 0.184 86.047)); */
   transition: transform 0.6s ease-in-out, color 0.6s ease-in-out;
 }
 

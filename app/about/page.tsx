@@ -25,7 +25,7 @@ export default async function About() {
         <div className="order-3 lg:order-1 row-span-4 flex justify-center lg:justify-end items-center lg:mx-12">
           <div className="w-[209px] h-[215px] md:w-[279px] md:h-[286px] xl:w-[318px] xl:h-[326px] 2xl:w-[398px] 2xl:h-[408px] flex justify-center items-center">
             <Image
-              priority={true}
+              priority
               src="/images/logos/mark-only-full-398x408.png"
               alt="Rhythm Code Studio"
               width={398}
@@ -57,7 +57,9 @@ export default async function About() {
           </p>
         </div>
         <div className="order-5 px-6 lg:px-0 flex justify-center lg:justify-start items-center mb-4 lg:mt-8">
-          <Link href="/contact" className="inline-block hover:scale-105 transform-gpu will-change-transform transition-all duration-300 ease-in-out">
+          <Link
+            href="/contact"
+            className="inline-block hover:scale-105 transform-gpu will-change-transform transition-all duration-300 ease-in-out">
             <span className="inline-block tracking-wider border-2 rounded-full text-xl px-4 py-1 hover:bg-white font-bold shadow-md shadow-black transition-all duration-300 ease-in-out">
               SYNC UP TODAY
             </span>

@@ -18,7 +18,7 @@ export default function Header() {
   const isHome = pathname === "/";
 
   return (
-    <header className="m-4 mb-12 lg:mb-6 lg:m-6 p-2 lg:p-6 ">
+    <header className="m-4 mb-12 lg:mb-6 lg:m-6 p-2 lg:p-4">
       <div className="flex justify-between items-center">
         <div className="w-full max-w-40 md:max-w-48 lg:max-w-50 2xl:max-w-64">
           {isHome ? (
