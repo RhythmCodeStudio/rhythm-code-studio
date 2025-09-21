@@ -28,11 +28,12 @@ export default function NavListItem({
   const textColor = themeObj.textColor;
   const textOpposite = themeObj.textOpposite;
   const bgColor = themeObj.bgColor;
-  const bgOpposite = themeObj.bgOpposite;
+  // const bgOpposite = themeObj.bgOpposite;
   // const textShadow = themeObj.textShadow;
 
   return (
-    <li className={`tracking-wider font-semibold ${textColor} transition-all duration-700 ease-in-out`}>
+    <li
+      className={`tracking-wider font-semibold ${textColor} transition-all duration-700 ease-in-out`}>
       {label === "Contact" ? (
         isActive ? (
           <span aria-current="page">
@@ -47,7 +48,15 @@ export default function NavListItem({
             href="/contact"
             className="transition-all duration-300 ease-in-out">
             <span
-              className={`lg:hover:font-bold border-2 rounded-full shadow-md shadow-black px-6 py-1 lg:hover:${textOpposite} lg:hover:${bgColor} transition-all duration-700 ease-in-out`}
+              className={clsx(
+                "border-2 rounded-full shadow-md shadow-black px-6 py-1 transition-all duration-700 ease-in-out",
+                {
+                  "lg:hover:font-bold lg:hover:bg-white":
+                    theme === "funk" || theme === "rock",
+                  "lg:hover:font-bold lg:hover:text-black lg:hover:bg-white":
+                    theme === "blues" || theme === "jazz",
+                }
+              )}
               onClick={onClick}>
               {label}
             </span>
@@ -78,7 +87,7 @@ export default function NavListItem({
               {label}
             </span>
             <span
-              className={`absolute bottom-[-.25rem] left-0 w-0 h-[2px] ${bgColor} transition-all ease-in-out duration-700 group-hover:w-full`}></span>
+              className={`absolute bottom-[-.25rem] left-0 w-0 h-[2.75px] ${bgColor} transition-all ease-in-out duration-700 group-hover:w-full`}></span>
           </Link>
         )
       ) : htmlElement === "externalLink" ? (
