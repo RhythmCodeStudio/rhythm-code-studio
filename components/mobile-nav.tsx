@@ -28,6 +28,8 @@ interface MobileMenuProps {
 export default function MobileNav({ navListItems }: MobileMenuProps) {
   const { theme } = useTheme();
   const themeObj = themes[theme];
+  const textColor = themeObj.textColor;
+  const logoInvert = themeObj.logoInvert;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -39,7 +41,7 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
       {/* Menu Button */}
       <button
         onClick={toggleMenu}
-        className=""
+        className={`${textColor}`}
         value={isMenuOpen ? "Close menu" : "Open menu"}
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}>
         <FiMenu size={28} />
@@ -59,14 +61,14 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
           <DialogPanel
             className="h-[100vh] w-[100vw] relative border-2 border-black bg-neutral-800 text-black flex flex-col justify-center p-6"
             style={{
-               backgroundImage: `url(${themeObj.avif}), url(${themeObj.webp})`,
+              backgroundImage: `url(${themeObj.avif}), url(${themeObj.webp})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}>
             {/* Close Button */}
             <button
               onClick={toggleMenu}
-              className="absolute top-12 right-5 text-black"
+              className={`absolute top-12 right-5 ${textColor}`}
               aria-label="Close menu">
               <FiXCircle size={28} />
             </button>
@@ -74,23 +76,24 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
             {/* Dialog Title */}
             <DialogTitle as="h2" className="">
               <div
-                className="flex items-center justify-center text-center p-4 mb-8"
+                className={`${textColor} flex items-center justify-center text-center p-4 mb-8`}
                 onClick={toggleMenu}>
                 <Link href="/">
                   <span className="font-blenny text-2xl">
                     Rhythm Code Studio
                   </span>
                   <br />
-                  <span className="text-sm">
+                  <span>
                     Custom Web Solutions To Match Your Beat
                   </span>
-                  <div className="flex justify-center mt-2">
+                  <div className="flex justify-center mt-12">
                     <Image
                       src="/images/logos/mark-only-full-128x131.png"
                       width={128}
                       height={131}
                       alt="Rhythm Code Studio"
                       priority
+                      className={`${logoInvert}`}
                     />
                   </div>
                 </Link>
@@ -99,7 +102,8 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
 
             {/* Navigation */}
             <nav>
-              <ul className="flex flex-col gap-12 font-semibold text-black items-center text-lg">
+              <ul
+                className={`flex flex-col gap-12 font-semibold ${textColor} items-center text-lg`}>
                 {navListItems.map((item) => (
                   <NavListItem
                     key={item.label}

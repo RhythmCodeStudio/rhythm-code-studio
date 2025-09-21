@@ -39,7 +39,7 @@ export default function ProjectGallery() {
                 <DesktopCarousel slides={project.desktop_image} />
               </figure>
             </div>
-            <div className="flex-grow mx-6 p-4 border border-zinc-900 rounded-2xl shadow-2xl mb-12 description-container">
+            <div className="flex-grow mx-6 p-4 border border-zinc-900 rounded-2xl shadow-2xl mb-12 description-container bg-white/50">
               <a
                 href={`https://${project.url}`}
                 target="_blank"
@@ -48,7 +48,7 @@ export default function ProjectGallery() {
                   {project.url}
                 </h4>
               </a>
-              <p className=" md:text-lg 2xl:text-xl">{project.description}</p>
+              <p className="md:text-lg 2xl:text-xl">{project.description}</p>
             </div>
             <section className="feature-container">
               <h5 className="font-bold text-lg md:text-xl text-center mb-4">

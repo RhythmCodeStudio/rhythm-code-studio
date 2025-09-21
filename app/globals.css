@@ -65,13 +65,13 @@ a, button {
   -moz-background-clip: text;
 }
 
-span.hover\:text-shadow-black-background-black:hover {
+/* span.hover\:text-shadow-black-background-black:hover {
   text-shadow: 2px 2px 0 black;
   background-color: rgba(0, 0, 0, 1);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-}
+} */
 
 .text-shadow-white-background-black {
   text-shadow: 2px 2px 0 white;
@@ -79,4 +79,12 @@ span.hover\:text-shadow-black-background-black:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+}
+
+.logo-shadow-black {
+  filter: invert(1) drop-shadow(2px 2px 0 #000);
+}
+
+.logo-shadow-white {
+  filter: drop-shadow(2px 2px 0 #fff);
 }

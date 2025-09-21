@@ -1,6 +1,3 @@
-"use client";
-// import navList items
-import { navListItems } from "@/lib/nav-list-items";
 // import components
 import NavListItem from "./nav-list-item";
 

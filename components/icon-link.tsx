@@ -1,32 +1,6 @@
 // import from vercel
 import { track } from "@vercel/analytics";
-// import { JSX } from "react";
 
-// export default function IconLink({
-//   href,
-//   icon,
-//   label,
-//   name,
-// }: {
-//   href: string;
-//   icon: JSX.Element;
-//   label: string;
-//   name: string;
-// }) {
-//   return (
-//     <a
-//       href={href}
-//       target="_blank"
-//       rel="noopener noreferrer"
-//       aria-label={label}
-//       onClick={() => {
-//         track("contact icon link clicked", {name: `${name}`});
-//       }}
-//     >
-//       {icon}
-//     </a>
-//   );
-// }
 export default function IconLink({
   href,
   icon: Icon,
@@ -38,6 +12,7 @@ export default function IconLink({
   label: string;
   size: number;
 }) {
+
   return (
     <a
       href={href}
@@ -52,7 +27,7 @@ export default function IconLink({
     >
       {/* Screen reader only text for accessibility */}
       <span className="sr-only">{label}</span>
-      <Icon className="icon-link" size={size} />
+      <Icon className={`icon-link `} size={size} />
     </a>
   );
 }

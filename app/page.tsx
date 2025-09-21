@@ -1,14 +1,14 @@
 // import from next
 import { connection } from "next/server";
-import Image from "next/image";
 // import components
-import ThemeToggle from "../components/theme-toggle";
+import HomePageContainer from "../components/home-page-container";
 
 export default async function Home() {
   await connection();
   return (
     <section className="flex flex-col">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 justify-items-center items-center">
+      <HomePageContainer />
+      {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 justify-items-center items-center">
         <div className="w-64 sm:w-72 md:w-80 lg:w-128 h-auto flex justify-center items-center lg:-mr-8">
           <Image
             className="w-full h-auto p-6 lg:p-0"
@@ -20,7 +20,7 @@ export default async function Home() {
             // sizes="(max-width: 768px) 480px, (max-width: 1280px) 480px"
           />
         </div>
-        <div className="p-2 lg:p-0 lg:-ml-8 space-y-12 lg:space-y-0">
+        <div className="p-2 lg:p-0 lg:-ml-8 space-y-24 lg:space-y-0">
           <div className="relative">
             <h1 className="text-center lg:text-left text-3xl md:text-4xl lg:text-6xl font-blenny pb-2 px-2">
               Rhythm Code
@@ -34,7 +34,7 @@ export default async function Home() {
               <ThemeToggle />
             </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

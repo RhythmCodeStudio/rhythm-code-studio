@@ -66,8 +66,8 @@ export default async function About() {
           </Link> */}
           <Link
             href="/contact"
-            className="transition-all duration-300 ease-in-out">
-            <span className="text-lg xl:text-xl 2xl:text-2xl border-2 rounded-full shadow-md shadow-black px-6 py-1 hover:bg-white transition-all duration-700 ease-in-out "
+          >
+            <span className="font-bold text-lg xl:text-xl 2xl:text-2xl border-2 rounded-full shadow-md shadow-black px-6 py-1 hover:bg-white transition-all duration-700 ease-in-out"
           >
               SYNC UP TODAY
             </span>

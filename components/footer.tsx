@@ -1,13 +1,21 @@
 "use client";
 // import from next
 import Image from "next/image";
+// import themes
+import { useTheme } from "../context/theme-context";
+import { themes } from "../lib/themes";
 // import components
 import ContactIconLinks from "./contact-icon-links";
 import ScheduleConsultation from "./schedule-consultation";
 
 export default function Footer() {
+  const { theme } = useTheme();
+  const themeObj = themes[theme];
+  const logoInvert = themeObj.logoInvert;
+  const textColor = themeObj.textColor;
+
   return (
-    <footer className="text-center text-sm m-4">
+    <footer className={`text-center text-sm mb-1 mt-6 ${textColor}`}>
       <div className="my-6 lg:my-0">
         <ScheduleConsultation />
       </div>
@@ -18,17 +26,18 @@ export default function Footer() {
           size={32}
         />
       </div>
-      <span className="">© 2025 Rhythm Code Studio</span>
-      <div className="flex flex-col items-center justify-center mt-2">
+      
+      <div className="flex flex-col items-center justify-center">
         <Image
           src="/images/logos/mark-only-light-32x33.png"
           width={32}
           height={33}
           alt=""
-          className="h-auto max-w-8"
+          className={`${logoInvert} w-8 h-auto`}
           // sizes="32px"
         />
       </div>
+      <span className="mt-2">© 2025 Rhythm Code Studio</span>
     </footer>
   );
 };

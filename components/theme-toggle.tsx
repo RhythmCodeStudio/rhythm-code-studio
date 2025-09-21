@@ -11,23 +11,25 @@ const themeKeys = Object.keys(themes) as (keyof typeof themes)[];
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   const currentIndex = themeKeys.indexOf(theme);
+  const logoInvert = themes[theme].logoInvert;
+  const textColor = themes[theme].textColor;
 
   const prevTheme = () => setTheme(themeKeys[(currentIndex - 1 + themeKeys.length) % themeKeys.length]);
   const nextTheme = () => setTheme(themeKeys[(currentIndex + 1) % themeKeys.length]);
 
   return (
-    <div className="grid grid-cols-3 items-center" id="theme-toggle">
+    <div className="grid grid-cols-3 items-center" id="theme-toggle" title="Select Theme">
       <button className="flex flex-col justify-center items-center" onClick={prevTheme}>
         <Image
           src="/images/design-elements/left-arrow.png"
           alt="left arrow"
           width={96}
           height={175}
-          className="w-8 md:w-12 lg:w-18 h-auto"
+          className={`w-8 md:w-12 lg:w-18 h-auto ${logoInvert}`}
         />
       </button>
       <div className="flex flex-col justify-center items-center w-18 md:w-24 lg:w-26">
-        <p className="text-2xl md:text-3xl">{theme.toUpperCase()}</p>
+        <p className={`text-2xl md:text-3xl ${textColor}`}>{theme.toUpperCase()}</p>
       </div>
       <button className="flex flex-col justify-center items-center" onClick={nextTheme}>
         <Image
@@ -35,7 +37,7 @@ export default function ThemeToggle() {
           alt="right arrow"
           width={96}
           height={175}
-          className="w-8 md:w-12 lg:w-18 h-auto"
+          className={`w-8 md:w-12 lg:w-18 h-auto ${logoInvert}`}
         />
       </button>
     </div>

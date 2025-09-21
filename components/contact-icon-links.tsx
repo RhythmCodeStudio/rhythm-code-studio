@@ -1,4 +1,6 @@
+// import link data
 import { contactIconLinkData } from "../lib/contact-icon-link-data";
+// import components
 import IconLink from "./icon-link";
 
 type ContactIconLinkProps = {
@@ -19,6 +21,7 @@ export default function ContactIconLinks({
   include,
   size,
 }: ContactIconLinkProps) {
+
   // Filter links if include is provided
   const filteredLinks = include
     ? contactIconLinkData.filter((item: ContactIconLinkData) =>
