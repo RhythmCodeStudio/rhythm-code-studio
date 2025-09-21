@@ -59,7 +59,7 @@ a, button {
 
 .text-shadow-black-background-black {
   text-shadow: 2px 2px 0 black;
-  /* background-color: rgba(0, 0, 0, 1); */
+  background-color: rgba(0, 0, 0, 1);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -67,16 +67,16 @@ a, button {
 
 span.hover\:text-shadow-black-background-black:hover {
   text-shadow: 2px 2px 0 black;
-  /* background-color: rgba(0, 0, 0, 1); */
+  background-color: rgba(0, 0, 0, 1);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
 }
 
-/* .text-shadow-white-background-black {
+.text-shadow-white-background-black {
   text-shadow: 2px 2px 0 white;
   background-color: rgba(0, 0, 0, 1);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-} */
+}

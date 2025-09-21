@@ -22,11 +22,11 @@ export default async function Home() {
         </div>
         <div className="p-2 lg:p-0 lg:-ml-8 space-y-12 lg:space-y-0">
           <div className="relative">
-            <h1 className="text-center lg:text-left text-3xl text-4xl lg:text-6xl font-blenny pb-2">
+            <h1 className="text-center lg:text-left text-3xl md:text-4xl lg:text-6xl font-blenny pb-2 px-2">
               Rhythm Code
               <br className="hidden lg:block" /> Studio
             </h1>
-            <h2 className="text-center lg:text-left lg:text-xl">
+            <h2 className="font-bold text-center lg:text-left lg:text-xl">
               CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT
             </h2>
           </div>

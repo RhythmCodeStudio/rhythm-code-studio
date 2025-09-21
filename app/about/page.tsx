@@ -57,10 +57,18 @@ export default async function About() {
           </p>
         </div>
         <div className="order-5 px-6 lg:px-0 flex justify-center lg:justify-start items-center mb-4 lg:mt-8">
-          <Link
+          {/* <Link
             href="/contact"
             className="inline-block hover:scale-105 transform-gpu will-change-transform transition-all duration-300 ease-in-out">
             <span className="inline-block tracking-wider border-2 rounded-full text-xl px-4 py-1 hover:bg-white font-bold shadow-md shadow-black transition-all duration-300 ease-in-out">
+              SYNC UP TODAY
+            </span>
+          </Link> */}
+          <Link
+            href="/contact"
+            className="transition-all duration-300 ease-in-out">
+            <span className="text-lg xl:text-xl 2xl:text-2xl border-2 rounded-full shadow-md shadow-black px-6 py-1 hover:bg-white transition-all duration-700 ease-in-out "
+          >
               SYNC UP TODAY
             </span>
           </Link>
