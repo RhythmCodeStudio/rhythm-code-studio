@@ -16,8 +16,8 @@ export default function HomePageContainer() {
   const color = themeObj.color;
 
   return (
-    <section className="flex flex-col justify-center items-center space-y-18">
-      <div className="flex flex-col justify-center items-center space-y-2">
+    <section className="flex flex-col justify-center items-center space-y-16">
+      <div className="flex flex-col justify-center items-center">
         <Heading
           headingLevel={1}
           text="Rhythm Code Studio"
@@ -26,7 +26,7 @@ export default function HomePageContainer() {
         <Heading
           headingLevel={2}
           text="CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
-          className={`font-bold text-${color}`}
+          className={`font-bold text-${color} px-2`}
         />
       </div>
       <div className="w-48 lg:w-full">

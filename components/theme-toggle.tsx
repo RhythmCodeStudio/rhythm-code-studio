@@ -27,7 +27,7 @@ export default function ThemeToggle() {
       id="theme-toggle"
       title="Select Theme">
       <button
-        className="flex flex-col justify-center items-center"
+        className="flex justify-end"
         onClick={prevTheme}>
         <Image
           src="/images/design-elements/left-arrow.png"
@@ -43,7 +43,7 @@ export default function ThemeToggle() {
         </p>
       </div>
       <button
-        className="flex flex-col justify-center items-center"
+        className="flex justify-start"
         onClick={nextTheme}>
         <Image
           src="/images/design-elements/right-arrow.png"
