@@ -29,7 +29,7 @@ export default function HomePageContainer() {
           className={`font-bold text-${color} px-2`}
         />
       </div>
-      <div className="w-48 lg:w-full">
+      <div className="w-42 lg:w-full">
         <LogoMarkOnlyFull logoInvert={logoInvert} />
       </div>
       <div>
