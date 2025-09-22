@@ -27,30 +27,30 @@ export default function ThemeToggle() {
       id="theme-toggle"
       title="Select Theme">
       <button
-        className="flex justify-end"
+        className="flex justify-end mr-2"
         onClick={prevTheme}>
         <Image
           src="/images/design-elements/left-arrow.png"
           alt="left arrow"
           width={96}
           height={175}
-          className={`w-6 sm:w-8 md:w-12 lg:w-14 h-auto ${logoInvert}`}
+          className={`w-8 sm:w-8 md:w-12 lg:w-14 h-auto ${logoInvert}`}
         />
       </button>
       <div className="flex flex-col justify-center items-center w-18 md:w-24 lg:w-26">
-        <p className={`text-xl md:text-2xl lg:text-3xl text-${color}`}>
+        <p className={`font-bold text-xl md:text-2xl lg:text-3xl text-${color}`}>
           {theme.toUpperCase()}
         </p>
       </div>
       <button
-        className="flex justify-start"
+        className="flex justify-start ml-2"
         onClick={nextTheme}>
         <Image
           src="/images/design-elements/right-arrow.png"
           alt="right arrow"
           width={96}
           height={175}
-          className={`w-6 sm:w-8 md:w-12 lg:w-14 h-auto ${logoInvert}`}
+          className={`w-8 sm:w-8 md:w-12 lg:w-14 h-auto ${logoInvert}`}
         />
       </button>
     </div>
