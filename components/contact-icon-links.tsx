@@ -1,3 +1,6 @@
+"use client";
+// import from next
+import { usePathname } from "next/navigation";
 // import link data
 import { contactIconLinkData } from "../lib/contact-icon-link-data";
 // import components
@@ -21,6 +24,13 @@ export default function ContactIconLinks({
   include,
   size,
 }: ContactIconLinkProps) {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
+  // Don't render on the home page
+  if (isHome) {
+    return null;
+  }
 
   // Filter links if include is provided
   const filteredLinks = include

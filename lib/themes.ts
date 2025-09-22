@@ -6,7 +6,7 @@ export const themes = {
     avif: "/images/backgrounds/funk.avif",
     webp: "/images/backgrounds/funk.webp",
     alt: "Funky abstract background with vibrant colors and dynamic shapes",
-    textColor: "text-black",
+    color: "black",
     // textShadow: "text-shadow-white-background-black",
     // logoShadow: "logo-shadow-white",
     bgColor: "bg-black",
@@ -18,7 +18,7 @@ export const themes = {
     avif: "/images/backgrounds/blues.avif",
     webp: "/images/backgrounds/blues.webp",
     alt: "Cool blue abstract background with smooth gradients and flowing lines",
-    textColor: "text-white",
+    color: "white",
     // textShadow: "text-shadow-black-background-black",
     // logoShadow: "logo-shadow-black",
     bgColor: "bg-white",
@@ -26,11 +26,11 @@ export const themes = {
     bgOpposite: "bg-black",
     logoInvert: "invert",
   },
-   rock: {
+  rock: {
     avif: "/images/backgrounds/rock.avif",
     webp: "/images/backgrounds/rock.webp",
     alt: "Bold rock-inspired background with strong contrasts and dynamic shapes",
-    textColor: "text-black",
+    color: "black",
     // textShadow: "text-shadow-white-background-black",
     // logoShadow: "logo-shadow-white",
     bgColor: "bg-black",
@@ -42,7 +42,7 @@ export const themes = {
     avif: "/images/backgrounds/jazz.avif",
     webp: "/images/backgrounds/jazz.webp",
     alt: "Smooth jazz-inspired background with rich colors and elegant curves",
-    textColor: "text-white",
+    color: "white",
     // textShadow: "text-shadow-black-background-black",
     // logoShadow: "logo-shadow-black",
     bgColor: "bg-white",
@@ -50,5 +50,4 @@ export const themes = {
     bgOpposite: "bg-black",
     logoInvert: "invert",
   },
-
 };

@@ -15,6 +15,7 @@ import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 // import components
 import NavListItem from "./nav-list-item";
 import ContactIconLinks from "./contact-icon-links";
+import Heading from "./heading";
 
 interface MobileMenuProps {
   navListItems: {
@@ -28,7 +29,7 @@ interface MobileMenuProps {
 export default function MobileNav({ navListItems }: MobileMenuProps) {
   const { theme } = useTheme();
   const themeObj = themes[theme];
-  const textColor = themeObj.textColor;
+  const color = themeObj.color;
   const logoInvert = themeObj.logoInvert;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -41,7 +42,7 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
       {/* Menu Button */}
       <button
         onClick={toggleMenu}
-        className={`${textColor}`}
+        className={`text-${color}`}
         value={isMenuOpen ? "Close menu" : "Open menu"}
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}>
         <FiMenu size={28} />
@@ -57,7 +58,7 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
         <div className="fixed inset-0 bg-black/50" aria-hidden="true"></div>
 
         {/* Dialog Content */}
-        <div className="fixed inset-0 flex items-center justify-center">
+        <div className="fixed inset-0 flex flex-col items-center justify-center">
           <DialogPanel
             className="h-[100vh] w-[100vw] relative border-2 border-black bg-neutral-800 text-black flex flex-col justify-center p-6"
             style={{
@@ -68,42 +69,37 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
             {/* Close Button */}
             <button
               onClick={toggleMenu}
-              className={`absolute top-12 right-5 ${textColor}`}
+              className={`absolute top-6 right-6 text-${color}`}
               aria-label="Close menu">
               <FiXCircle size={28} />
             </button>
-            {/* <div className="absolute inset-0 bg-black/30 rounded-lg"></div> */}
             {/* Dialog Title */}
-            <DialogTitle as="h2" className="">
-              <div
-                className={`${textColor} flex items-center justify-center text-center p-4 mb-8`}
-                onClick={toggleMenu}>
-                <Link href="/">
-                  <span className="font-blenny text-2xl">
-                    Rhythm Code Studio
-                  </span>
-                  <br />
-                  <span>
-                    Custom Web Solutions To Match Your Beat
-                  </span>
-                  <div className="flex justify-center mt-12">
-                    <Image
-                      src="/images/logos/mark-only-full-128x131.png"
-                      width={128}
-                      height={131}
-                      alt="Rhythm Code Studio"
-                      priority
-                      className={`${logoInvert}`}
-                    />
-                  </div>
-                </Link>
-              </div>
+            <DialogTitle
+              as="h1"
+              className={`text-${color} flex items-center justify-center text-center  font-blenny text-2xl`}>
+              Rhythm Code Studio
             </DialogTitle>
-
+            <Heading 
+              text="CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
+              headingLevel={2}
+              className={`text-${color} text-center mb-12`}
+            />
+            <Link href="/">
+              <div className="flex justify-center mb-12" onClick={toggleMenu}>
+                <Image
+                  src="/images/logos/mark-only-full-128x131.png"
+                  width={128}
+                  height={131}
+                  alt="Rhythm Code Studio"
+                  priority
+                  className={`${logoInvert}`}
+                />
+              </div>
+            </Link>
             {/* Navigation */}
             <nav>
               <ul
-                className={`flex flex-col gap-12 font-semibold ${textColor} items-center text-lg`}>
+                className={`flex flex-col gap-12 font-semibold text-${color} items-center text-lg`}>
                 {navListItems.map((item) => (
                   <NavListItem
                     key={item.label}

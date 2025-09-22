@@ -2,6 +2,7 @@
 import { connection } from "next/server";
 // import components
 import HomePageContainer from "../components/home-page-container";
+import LogoMarkOnlyFull from "@/components/logo-mark-only-full";
 
 export default async function Home() {
   await connection();

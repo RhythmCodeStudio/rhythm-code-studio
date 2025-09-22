@@ -12,10 +12,10 @@ export default function Footer() {
   const { theme } = useTheme();
   const themeObj = themes[theme];
   const logoInvert = themeObj.logoInvert;
-  const textColor = themeObj.textColor;
+  const color = themeObj.color;
 
   return (
-    <footer className={`text-center text-sm mb-1 mt-6 ${textColor}`}>
+    <footer className={`text-center text-sm mb-1 mt-6 text-${color}`}>
       <div className="my-6 lg:my-0">
         <ScheduleConsultation />
       </div>
@@ -26,7 +26,7 @@ export default function Footer() {
           size={32}
         />
       </div>
-      
+
       <div className="flex flex-col items-center justify-center">
         <Image
           src="/images/logos/mark-only-light-32x33.png"
@@ -40,4 +40,4 @@ export default function Footer() {
       <span className="mt-2">© 2025 Rhythm Code Studio</span>
     </footer>
   );
-};
+}

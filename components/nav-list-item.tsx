@@ -25,7 +25,7 @@ export default function NavListItem({
   const isActive = pathname === href;
   const { theme } = useTheme();
   const themeObj = themes[theme];
-  const textColor = themeObj.textColor;
+  const color = themeObj.color;
   const textOpposite = themeObj.textOpposite;
   const bgColor = themeObj.bgColor;
   // const bgOpposite = themeObj.bgOpposite;
@@ -33,7 +33,7 @@ export default function NavListItem({
 
   return (
     <li
-      className={`tracking-wider font-semibold ${textColor} transition-all duration-700 ease-in-out`}>
+      className={`tracking-wider font-semibold text-${color} transition-all duration-700 ease-in-out`}>
       {label === "Contact" ? (
         isActive ? (
           <span aria-current="page">
@@ -49,11 +49,11 @@ export default function NavListItem({
             className="transition-all duration-300 ease-in-out">
             <span
               className={clsx(
-                "border-2 rounded-full shadow-md shadow-black px-6 py-1 transition-all duration-700 ease-in-out",
+                `border-2 rounded-full shadow-md shadow-${color} px-6 py-1 transition-all duration-700 ease-in-out`,
                 {
-                  "lg:hover:font-bold lg:hover:bg-white":
+                  "lg:hover:font-bold lg:hover:bg-white shadow-black":
                     theme === "funk" || theme === "rock",
-                  "lg:hover:font-bold lg:hover:text-black lg:hover:bg-white":
+                  "shadow-white lg:hover:font-bold lg:hover:text-black lg:hover:bg-white":
                     theme === "blues" || theme === "jazz",
                 }
               )}
