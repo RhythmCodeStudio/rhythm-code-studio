@@ -16,7 +16,7 @@ export default function HomePageContainer() {
   const color = themeObj.color;
 
   return (
-    <section className="flex flex-col justify-center items-center space-y-16">
+    <section className="flex flex-col justify-center items-center space-y-24">
       <div className="flex flex-col justify-center items-center">
         <Heading
           headingLevel={1}
