@@ -34,11 +34,11 @@ export default function ThemeToggle() {
           alt="left arrow"
           width={96}
           height={175}
-          className={`w-8 md:w-12 lg:w-18 h-auto ${logoInvert}`}
+          className={`w-6 sm:w-8 md:w-12 lg:w-14 h-auto ${logoInvert}`}
         />
       </button>
       <div className="flex flex-col justify-center items-center w-18 md:w-24 lg:w-26">
-        <p className={`text-2xl md:text-3xl text-${color}`}>
+        <p className={`text-xl md:text-2xl lg:text-3xl text-${color}`}>
           {theme.toUpperCase()}
         </p>
       </div>
@@ -50,7 +50,7 @@ export default function ThemeToggle() {
           alt="right arrow"
           width={96}
           height={175}
-          className={`w-8 md:w-12 lg:w-18 h-auto ${logoInvert}`}
+          className={`w-6 sm:w-8 md:w-12 lg:w-14 h-auto ${logoInvert}`}
         />
       </button>
     </div>

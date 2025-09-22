@@ -16,7 +16,7 @@ export default function HomePageContainer() {
   const color = themeObj.color;
 
   return (
-    <section className="flex flex-col justify-center items-center space-y-36">
+    <section className="flex flex-col justify-center items-center space-y-18">
       <div className="flex flex-col justify-center items-center space-y-2">
         <Heading
           headingLevel={1}
@@ -29,7 +29,7 @@ export default function HomePageContainer() {
           className={`font-bold text-${color}`}
         />
       </div>
-      <div className="w-52 lg:w-full">
+      <div className="w-48 lg:w-full">
         <LogoMarkOnlyFull logoInvert={logoInvert} />
       </div>
       <div>

@@ -15,7 +15,7 @@ export default function Footer() {
   const color = themeObj.color;
 
   return (
-    <footer className={`text-center text-sm mb-1 mt-6 text-${color}`}>
+    <footer className={`text-center text-sm mb-1 text-${color}`}>
       <div className="my-6 lg:my-0">
         <ScheduleConsultation />
       </div>
