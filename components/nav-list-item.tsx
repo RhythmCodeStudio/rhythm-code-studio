@@ -151,9 +151,9 @@ export default function NavListItem({
               className={clsx(
                 `border-2 rounded-full shadow-md shadow-${color} px-6 py-1 transition-colors duration-150 ease-in-out`,
                 {
-                  "lg:hover:font-bold lg:hover:bg-white shadow-black":
+                  "lg:hover:bg-white shadow-black":
                     theme === "funk" || theme === "rock",
-                  "shadow-white lg:hover:font-bold lg:hover:text-black lg:hover:bg-white":
+                  "shadow-white lg:hover:shadow-lg":
                     theme === "blues" || theme === "jazz",
                 }
               )}
