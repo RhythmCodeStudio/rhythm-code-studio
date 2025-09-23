@@ -1,11 +1,10 @@
 "use client";
-// import from next
-import Image from "next/image";
 // import themes
 import { useTheme } from "../context/theme-context";
 import { themes } from "../lib/themes";
 // import components
 import Heading from "./heading";
+import LogoHorizontalFull from "./logo-horizontal-full";
 import LogoMarkOnlyFull from "./logo-mark-only-full";
 import ThemeToggle from "./theme-toggle";
 
@@ -17,23 +16,28 @@ export default function HomePageContainer() {
 
   return (
     <section className="flex flex-col justify-center items-center space-y-24">
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center lg:sr-only">
         <Heading
           headingLevel={1}
           text="Rhythm Code Studio"
-          className={`font-blenny text-3xl text-${color}`}
+          className={`font-blenny text-3xl sm:text-4xl md:text-5xl text-${color}`}
         />
         <Heading
           headingLevel={2}
           text="CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
-          className={`font-bold text-${color} px-2`}
+          className={`font-bold text-${color} text-center text-sm sm:text-base md:text-lg lg:text-xl`}
         />
       </div>
-      <div className="w-42 lg:w-full">
+      <div className="w-48 sm:w-52 md:w-64 lg:hidden">
         <LogoMarkOnlyFull logoInvert={logoInvert} />
       </div>
-      <div>
-        <ThemeToggle />
+      <div className="relative">
+        <div className="hidden lg:block w-3xl ">
+          <LogoHorizontalFull logoInvert={logoInvert} />
+        </div>
+        <div className="lg:absolute lg:bottom-6 lg:right-16">
+          <ThemeToggle />
+        </div>
       </div>
     </section>
   );

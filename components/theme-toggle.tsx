@@ -23,7 +23,7 @@ export default function ThemeToggle() {
 
   return (
     <div
-      className="grid grid-cols-3 items-center"
+      className="grid grid-cols-3 items-center gap-2"
       id="theme-toggle"
       title="Select Theme">
       <button
@@ -34,11 +34,11 @@ export default function ThemeToggle() {
           alt="left arrow"
           width={96}
           height={175}
-          className={`w-8 sm:w-8 md:w-12 lg:w-14 h-auto ${logoInvert}`}
+          className={`w-8 md:w-10 lg:w-12 h-auto ${logoInvert}`}
         />
       </button>
-      <div className="flex flex-col justify-center items-center w-18 md:w-24 lg:w-26">
-        <p className={`font-bold text-xl md:text-2xl lg:text-3xl text-${color}`}>
+       <div className="flex justify-center text-center items-center min-w-[8ch]">
+        <p className={`font-bold text-xl xl:text-2xl text-${color}`}>
           {theme.toUpperCase()}
         </p>
       </div>
@@ -50,7 +50,7 @@ export default function ThemeToggle() {
           alt="right arrow"
           width={96}
           height={175}
-          className={`w-8 sm:w-8 md:w-12 lg:w-14 h-auto ${logoInvert}`}
+          className={`w-8 md:w-10 lg:w-12 h-auto ${logoInvert}`}
         />
       </button>
     </div>
