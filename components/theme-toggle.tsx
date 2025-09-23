@@ -38,9 +38,9 @@ export default function ThemeToggle() {
         />
       </button>
        <div className="flex justify-center text-center items-center min-w-[8ch]">
-        <p className={`font-bold text-xl xl:text-2xl text-${color}`}>
+        <h3 className={`font-bold text-xl xl:text-2xl text-${color}`}>
           {theme.toUpperCase()}
-        </p>
+        </h3>
       </div>
       <button
         className="flex justify-start ml-2"

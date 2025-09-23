@@ -25,7 +25,6 @@ export default function Header() {
       <div className="flex justify-between items-center">
         <div className="h-auto w-34 lg:w-36 xl:w-42 2xl:w-48">
           {isHome ? (
-            // 
             // don't show the logo on home page
             <div className="hidden"></div>
           ) : (

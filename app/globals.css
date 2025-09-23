@@ -81,6 +81,14 @@ a, button {
   -moz-background-clip: text;
 }
 
+.text-shadow-cyan-background-black {
+  text-shadow: 1px 1px 0 black;
+  background-color: rgba(0, 0, 0, 1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
 .logo-shadow-black {
   filter: invert(1) drop-shadow(2px 2px 0 #000);
 }

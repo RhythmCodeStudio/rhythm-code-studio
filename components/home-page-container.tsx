@@ -13,6 +13,7 @@ export default function HomePageContainer() {
   const themeObj = themes[theme];
   const logoInvert = themeObj.logoInvert;
   const color = themeObj.color;
+  const textShadow = themeObj.textShadow;
 
   return (
     <section className="flex flex-col justify-center items-center space-y-24">
@@ -20,12 +21,12 @@ export default function HomePageContainer() {
         <Heading
           headingLevel={1}
           text="Rhythm Code Studio"
-          className={`font-blenny text-3xl sm:text-4xl md:text-5xl text-${color}`}
+          className={`font-blenny text-3xl sm:text-4xl md:text-5xl text-${color} ${textShadow}`}
         />
         <Heading
           headingLevel={2}
           text="CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
-          className={`font-bold text-${color} text-center text-sm sm:text-base md:text-lg lg:text-xl`}
+          className={`text-${color} text-center text-sm sm:text-base md:text-lg lg:text-xl ${textShadow}`}
         />
       </div>
       <div className="w-48 sm:w-52 md:w-64 lg:hidden">
@@ -35,7 +36,7 @@ export default function HomePageContainer() {
         <div className="hidden lg:block w-3xl ">
           <LogoHorizontalFull logoInvert={logoInvert} />
         </div>
-        <div className="lg:absolute lg:bottom-6 lg:right-16">
+        <div className={`lg:absolute lg:bottom-6 lg:right-16 ${textShadow}`}>
           <ThemeToggle />
         </div>
       </div>
