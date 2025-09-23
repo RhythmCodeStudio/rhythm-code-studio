@@ -21,12 +21,12 @@ export default function HomePageContainer() {
         <Heading
           headingLevel={1}
           text="Rhythm Code Studio"
-          className={`font-blenny text-3xl sm:text-4xl md:text-5xl text-${color} ${textShadow}`}
+          className={`font-blenny text-3xl sm:text-4xl md:text-5xl`}
         />
         <Heading
           headingLevel={2}
           text="CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
-          className={`text-${color} text-center text-sm sm:text-base md:text-lg lg:text-xl ${textShadow}`}
+          className={`text-center text-sm sm:text-base md:text-lg lg:text-xl `}
         />
       </div>
       <div className="w-48 sm:w-52 md:w-64 lg:hidden">

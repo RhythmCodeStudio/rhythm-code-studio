@@ -30,7 +30,7 @@ export default function Footer() {
 
       <div className="flex flex-col items-center justify-center">
         <Image
-          src="/images/logos/mark-only-light-32x33.png"
+          src="/images/logos/mark-only-light-200x205.png"
           width={32}
           height={33}
           alt=""

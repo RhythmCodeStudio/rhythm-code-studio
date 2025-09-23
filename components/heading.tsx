@@ -1,6 +1,9 @@
 "use client";
 // import from react
 import React, { JSX, FC } from "react";
+// import themes
+import { useTheme } from "../context/theme-context";
+import { themes } from "../lib/themes";
 
 interface HeadingProps {
   text: string;
@@ -9,10 +12,15 @@ interface HeadingProps {
 }
 
 const Heading: FC<HeadingProps> = ({ text, headingLevel, className }) => {
+  const { theme } = useTheme();
+  const themeObj = themes[theme];
+  const color = themeObj.color;
+  const textShadow = themeObj.textShadow;
+
   const HeadingTag = `h${headingLevel}` as keyof JSX.IntrinsicElements;
 
   return (
-    <HeadingTag className={`${className}`}>
+    <HeadingTag className={`${className} text-${color} ${textShadow}`}>
       {text}
     </HeadingTag>
   );
