@@ -1,6 +1,7 @@
 // import from next
 import { connection } from "next/server";
 // import components
+import heading from "../../components/heading";
 import ProjectGallery from "../../components/project-gallery";
 
 export const metadata = {
