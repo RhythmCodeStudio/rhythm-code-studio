@@ -12,7 +12,6 @@ import { navListItems } from "@/lib/nav-list-items";
 // import components
 import MobileNav from "./mobile-nav";
 import DesktopNav from "./desktop-nav";
-import Heading from "./heading";
 
 export default function Header() {
   const pathname = usePathname();
@@ -22,9 +21,9 @@ export default function Header() {
   const logoInvert = themeObj.logoInvert;
 
   return (
-    <header className={`m-4 p-2 lg:p-4`}>
+    <header className={`m-4 p-2 lg:p-4 lg:mb-0 lg:h-36`}>
       <div className="flex justify-between items-center">
-        <div className="h-auto w-34 lg:w-36 xl:w-42 2xl:w-48">
+        <div className="h-auto w-34 lg:w-36 xl:w-42 2xl:w-48 aspect-[256/138]">
           {isHome ? (
             // don't show the logo on home page
             <div className="hidden"></div>
@@ -42,26 +41,13 @@ export default function Header() {
             </Link>
           )}
         </div>
-        <div className="hidden lg:flex items-center">
+        <div className="hidden lg:flex items-center mr-2">
           <DesktopNav navListItems={navListItems} />
         </div>
         <div className="flex lg:hidden items-center">
           <MobileNav navListItems={navListItems} />
         </div>
-        
       </div>
-      {isHome ? (
-            // don't show the logo on home page
-            <div className="hidden"></div>
-          ) : (
-        <div>
-          <Heading
-            headingLevel={1}
-            text="Rhythm Code Studio"
-            className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny p-6"
-          />
-        </div>
-          )}
     </header>
   );
 }

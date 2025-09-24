@@ -18,7 +18,6 @@ import "./globals.css";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import ScrollToTopButton from "../components/scroll-to-top-button";
-import CircularTexture from "@/components/circular-texture";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.rhythmcodestudio.tech"),
@@ -55,8 +54,7 @@ export default function RootLayout({
       <body className="max-h-screen">
         <ClientWrapper>
         {/* Flex container that occupies at least the viewport height */}
-        <div className="flex flex-col min-h-screen relative">
-          {/* <CircularTexture /> */}
+        <div className="flex flex-col min-h-screen">
           <Header />
           {/* Main content area, flex-grow allows it to expand */}
           <main className="flex flex-grow items-center justify-center">

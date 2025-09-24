@@ -1,12 +1,8 @@
 // import from next
 import { connection } from "next/server";
-// import Image from "next/image";
-// import Link from "next/link";
 // import components
-// import Services from "@/components/services";
 import Heading from "@/components/heading";
 import TextBlock from "@/components/text-block";
-import CircularTexture from "@/components/circular-texture";
 
 export const metadata = {
   title: "About Rhythm Code Studio",
@@ -21,13 +17,12 @@ export default async function About() {
   await connection();
   return (
     <>
-      {/* <CircularTexture /> */}
       <div className="flex flex-col max-w-xl mx-auto px-6 lg:px-0 space-y-4">
-        {/* <Heading
+        <Heading
           headingLevel={1}
           text="Rhythm Code Studio"
-          className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny"
-      /> */}
+          className="lg:hidden text-center text-3xl sm:text-4xl md:text-5xl font-blenny"
+        />
       <div className="flex flex-col justify-center ">
         <Heading
           headingLevel={2}
