@@ -1,11 +1,12 @@
 // import from next
 import { connection } from "next/server";
-import Image from "next/image";
-import Link from "next/link";
+// import Image from "next/image";
+// import Link from "next/link";
 // import components
 // import Services from "@/components/services";
 import Heading from "@/components/heading";
 import TextBlock from "@/components/text-block";
+import CircularTexture from "@/components/circular-texture";
 
 export const metadata = {
   title: "About Rhythm Code Studio",
@@ -19,12 +20,14 @@ export const metadata = {
 export default async function About() {
   await connection();
   return (
-    <div className="flex flex-col max-w-xl mx-auto px-6 lg:px-0 space-y-4">
-      <Heading
-        headingLevel={1}
-        text="Rhythm Code Studio"
-        className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny"
-      />
+    <>
+      {/* <CircularTexture /> */}
+      <div className="flex flex-col max-w-xl mx-auto px-6 lg:px-0 space-y-4">
+        {/* <Heading
+          headingLevel={1}
+          text="Rhythm Code Studio"
+          className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny"
+      /> */}
       <div className="flex flex-col justify-center ">
         <Heading
           headingLevel={2}
@@ -33,13 +36,22 @@ export default async function About() {
         />
       </div>
       <div>
-        <TextBlock text="Rhythm Code Studio develops high-performing custom websites and web applications for small businesses, musicians, artists, creatives, and organizations in St. Louis, Missouri and beyond." />
+        <TextBlock 
+          text="Rhythm Code Studio develops high-performing custom websites and web applications for small businesses, musicians, artists, creatives, and organizations in St. Louis, Missouri and beyond." 
+          className="2xl:text-lg"
+        />
       </div>
        <div>
-        <TextBlock text="We develop web solutions with a pulse - ones that match your personal rhythm and style. Our work is fast and secure. Always fully responsive so your website looks great on any device. Always fully accessible so everyone can receive your message." />
+        <TextBlock 
+          text="We develop web solutions with a pulse - ones that match your personal rhythm and style. Our work is fast and secure. Always fully responsive so your website looks great on any device. Always fully accessible so everyone can receive your message." 
+          className="2xl:text-lg"
+        />
       </div>
-       <div>
-        <TextBlock text="We manage it all for you so you can focus on doing what you love and sharing it with the world." />
+      <div>
+        <TextBlock 
+          text="We manage it all for you so you can focus on doing what you love and sharing it with the world." 
+          className="2xl:text-lg"
+        />
       </div>
       {/* <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny">
         Rhythm Code Studio
@@ -105,5 +117,6 @@ export default async function About() {
         />
       </div> */}
     </div>
+    </>
   );
 }

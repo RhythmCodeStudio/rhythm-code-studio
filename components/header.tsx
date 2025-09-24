@@ -12,6 +12,7 @@ import { navListItems } from "@/lib/nav-list-items";
 // import components
 import MobileNav from "./mobile-nav";
 import DesktopNav from "./desktop-nav";
+import Heading from "./heading";
 
 export default function Header() {
   const pathname = usePathname();
@@ -47,7 +48,20 @@ export default function Header() {
         <div className="flex lg:hidden items-center">
           <MobileNav navListItems={navListItems} />
         </div>
+        
       </div>
+      {isHome ? (
+            // don't show the logo on home page
+            <div className="hidden"></div>
+          ) : (
+        <div>
+          <Heading
+            headingLevel={1}
+            text="Rhythm Code Studio"
+            className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny p-6"
+          />
+        </div>
+          )}
     </header>
   );
 }
