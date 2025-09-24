@@ -5,6 +5,7 @@ import Link from "next/link";
 // import components
 // import Services from "@/components/services";
 import Heading from "@/components/heading";
+import TextBlock from "@/components/text-block";
 
 export const metadata = {
   title: "About Rhythm Code Studio",
@@ -18,19 +19,28 @@ export const metadata = {
 export default async function About() {
   await connection();
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col max-w-xl mx-auto px-6 lg:px-0 space-y-4">
       <Heading
         headingLevel={1}
         text="Rhythm Code Studio"
         className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny"
       />
-      <section className="flex flex-col justify-center max-w-xl mx-auto px-6 lg:px-0">
+      <div className="flex flex-col justify-center ">
         <Heading
           headingLevel={2}
           text="WE SPECIALIZE IN CREATING CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
-          className="font-bold text-left text-xl lg:text-2xl xl:text-4xl mt-4"
+          className="font-bold lg:text-2xl xl:text-4xl mt-4"
         />
-      </section>
+      </div>
+      <div>
+        <TextBlock text="Rhythm Code Studio develops high-performing custom websites and web applications for small businesses, musicians, artists, creatives, and organizations in St. Louis, Missouri and beyond." />
+      </div>
+       <div>
+        <TextBlock text="We develop web solutions with a pulse - ones that match your personal rhythm and style. Our work is fast and secure. Always fully responsive so your website looks great on any device. Always fully accessible so everyone can receive your message." />
+      </div>
+       <div>
+        <TextBlock text="We manage it all for you so you can focus on doing what you love and sharing it with the world." />
+      </div>
       {/* <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny">
         Rhythm Code Studio
       </h1> */}
