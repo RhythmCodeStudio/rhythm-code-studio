@@ -1,5 +1,7 @@
 // import from next
 import { connection } from "next/server";
+import Image from "next/image";
+import Link from "next/link";
 // import components
 import Heading from "@/components/heading";
 import TextBlock from "@/components/text-block";
@@ -21,7 +23,7 @@ export default async function About() {
         <Heading
           headingLevel={1}
           text="Rhythm Code Studio"
-          className="lg:hidden text-center text-3xl sm:text-4xl md:text-5xl font-blenny"
+          className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny"
         />
       <div className="flex flex-col justify-center ">
         <Heading
@@ -48,6 +50,26 @@ export default async function About() {
           className="2xl:text-lg"
         />
       </div>
+      <div className="w-20 h-auto mx-auto">
+        <Link href="/behind-the-beat">
+          <Image
+            src="/images/design-elements/down-arrow.png"
+            alt="arrow down"
+            width={175}
+            height={96}
+            className="mx-auto mt-2 animate-pulse hover:animate-none hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out"
+          />
+        </Link>
+      </div>
+          
+    
+      
+      {/* <div className="flex justify-center mt-4">
+        <a href="/contact" className="font-bold text-lg xl:text-xl 2xl:text-2xl border-2 rounded-full shadow-md shadow-black px-6 py-1 hover:bg-white transition-all duration-700 ease-in-out">
+          SYNC UP TODAY
+        </a>
+      </div> */}
+
       {/* <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny">
         Rhythm Code Studio
       </h1> */}
