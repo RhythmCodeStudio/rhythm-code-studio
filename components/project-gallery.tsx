@@ -1,4 +1,8 @@
 "use client";
+// import context
+import { useTheme } from "../context/theme-context";
+// import themes
+import { themes } from "../lib/themes";
 // import data
 import { projects } from "../lib/project-data";
 // import types
@@ -8,23 +12,37 @@ import Image from "next/image";
 // import components
 import MobileCarousel from "./mobile-carousel";
 import DesktopCarousel from "./desktop-carousel";
+import Heading from "./heading";
 
 export default function ProjectGallery() {
+  const { theme } = useTheme();
+  const themeObj = themes[theme];
+  const color = themeObj.color;
+  const textShadow = themeObj.textShadow;
+  const logoInvert = themeObj.logoInvert;
+
   return (
-    <>
+    <section>
       {/* <h2 className="font-semibold tracking-tight text-center xs:text-lg sm:text-xl md:text-2xl lg:text-3xl 3xl:text-5xl mb-12">
         CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT
       </h2> */}
-      <ul className="grid grid-cols-1 lg:grid-cols-2 p-2 lg:p-6 gap-2">
+      <Heading
+        headingLevel={2}
+        text="CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
+        className="text-center sm:text-lg md:text-xl lg:text-2xl"
+      />
+
+      <ul className={`grid grid-cols-1 lg:grid-cols-2 p-2 lg:p-6 gap-2`}>
         {projects.map((project: Project) => (
           <li
             key={project.client}
-            className="flex flex-col shadow-2xl m-4 max-w-200 border-2 border-zinc-900 rounded-2xl">
-            <h3 className="text-center font-bold text-lg sm:text-xl md:text-2xl mt-4 font-blenny">
+            className={`flex flex-col shadow-2xl shadow-${color} m-4 max-w-200 border-2 border-${color} rounded-2xl`}>
+            <h3
+              className={`text-${color} ${textShadow} text-center font-bold text-lg sm:text-xl md:text-2xl mt-4 font-blenny`}>
               {project.client}
             </h3>
             <div className="flex items-center justify-center my-4">
-              <figure className="w-full h-auto">
+              <figure className={`text-${color} ${textShadow} w-full h-auto`}>
                 <figcaption className="text-center font-bold text-xs lg:text-sm">
                   Mobile View
                 </figcaption>
@@ -32,26 +50,31 @@ export default function ProjectGallery() {
               </figure>
             </div>
             <div className="flex items-center justify-center my-8">
-              <figure className="w-full h-auto px-4">
+              <figure
+                className={`text-${color} ${textShadow} w-full h-auto px-4`}>
                 <figcaption className="text-center font-bold text-xs lg:text-sm">
                   Desktop View
                 </figcaption>
                 <DesktopCarousel slides={project.desktop_image} />
               </figure>
             </div>
-            <div className="flex-grow mx-6 p-4 border border-zinc-900 rounded-2xl shadow-2xl mb-12 description-container bg-white/50">
-              <a
-                href={`https://${project.url}`}
-                target="_blank"
-                rel="noopener noreferrer">
-                <h4 className="text-center font-semibold sm:text-lg md:text-xl mb-2 underline">
-                  {project.url}
-                </h4>
-              </a>
+            <div className="flex-grow mx-6 p-4 border-2 border-zinc-900 rounded-2xl shadow-2xl mb-12 description-container bg-white/50 text-black">
+              <div className="flex justify-center">
+                <a
+                  href={`https://${project.url}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block hover:scale-105 active:scale-100 transition-all duration-300 ease-in-out will-change-transform">
+                  <h4 className="mx-auto font-semibold sm:text-lg md:text-xl mb-2 border-b-2 border-black">
+                    {project.url}
+                  </h4>
+                </a>
+              </div>
               <p className="md:text-lg 2xl:text-xl">{project.description}</p>
             </div>
             <section className="feature-container">
-              <h5 className="font-bold text-lg md:text-xl text-center mb-4">
+              <h5
+                className={`text-${color} ${textShadow} font-bold text-lg md:text-xl text-center mb-4`}>
                 Features
               </h5>
               <div className="flex justify-center mb-4">
@@ -72,12 +95,12 @@ export default function ProjectGallery() {
                 alt="Rhythm Code Studio Logo"
                 width={75}
                 height={75}
-                className="m-4"
+                className={`m-4 ${logoInvert}`}
               />
             </div>
           </li>
         ))}
       </ul>
-    </>
+    </section>
   );
 }
