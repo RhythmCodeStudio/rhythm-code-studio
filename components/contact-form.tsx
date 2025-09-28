@@ -161,11 +161,11 @@ export default function ContactForm({
               email.
             </p>
             <a
-              href="mailto:kevinlong.dev@gmail.com"
+              href="mailto:kevin@rhythmcodestudio.tech"
               target="_blank"
               rel="noopener noreferrer"
               className="underline text-blue-500 hover:text-blue-700">
-              kevinlong.dev@gmail.com
+              kevin@rhythmcodestudio.tech
             </a>
           </div>,
           {

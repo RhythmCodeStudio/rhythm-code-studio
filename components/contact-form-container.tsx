@@ -18,10 +18,10 @@ export default function ContactFormContainer() {
   const textShadow = themeObj.textShadow;
 
   return (
-    <div className="flex flex-col items-center sm:text-lg xl:text-xl">
+    <div className="flex flex-col items-center">
       {formSubmitted ? (
         <div className="items-center justify-center ">
-          <h1 className="text-6xl lg:text-8xl 2xl:text-10xl font-blenny text-center">
+          <h1 className="text-6xl lg:text-8xl font-blenny text-center">
             Rock On!
           </h1>
           <p className="m-4 max-w-128">
@@ -37,9 +37,9 @@ export default function ContactFormContainer() {
           <Heading
             headingLevel={1}
             text="Contact"
-            className="text-center text-3xl xs:text-4xl md:text-5xl lg:text-6xl font-blenny pb-2"
+            className="text-center text-4xl md:text-5xl lg:text-6xl font-blenny"
           />
-          <div className={`text-${color} ${textShadow} items-center justify-center max-w-200`}>
+          <div className={`text-${color} ${textShadow} items-center justify-center max-w-3xl md:text-lg`}>
             <p className="px-12 py-4">{contactPageCopy.text_block_one}</p>
             <p className=" px-12 py-4">{contactPageCopy.text_block_two}</p>
           </div>

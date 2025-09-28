@@ -1,3 +1,8 @@
+"use client";
+// import theme
+import { useTheme } from "../context/theme-context";
+import { themes } from "../lib/themes";
+
 export default function ContactFormInput({
   inputType,
   label,
@@ -26,11 +31,14 @@ export default function ContactFormInput({
   ) => void;
   setStateVariable: React.Dispatch<React.SetStateAction<string>>;
 }) {
+  const theme = useTheme();
+  const themeObj = themes[theme.theme];
+  const color = themeObj.color;
+  const textShadow = themeObj.textShadow;
+
   return (
-    // <div className="flex flex-col justify-start">
-    <div className="flex flex-col py-1">
+    <div className={`flex flex-col py-1 text-${color} ${textShadow}`}>
       <label
-        // className="m-2 text-left text-base"
         className="px-4 font-bold"
         htmlFor={name}>
         {label}
@@ -50,11 +58,11 @@ export default function ContactFormInput({
           required
           name="message"
           id="message"
-          className="rounded-3xl px-4 opacity-75 h-60 resize-none p-4 border-2 bg-white text-black shadow-md shadow-black"
+          className={`rounded-3xl px-4 opacity-75 h-60 resize-none p-4 border-2 border-${color} bg-white text-black shadow-md shadow-${color}`}
         />
       ) : (
         <input
-          className="rounded-3xl px-4 opacity-75 h-10 resize-none p-4 border-2 bg-white text-black shadow-md shadow-black"
+          className={`rounded-3xl px-4 opacity-75 h-10 resize-none p-4 border-2 border-${color} bg-white text-black shadow-md shadow-${color}`}
           type={type}
           id={name}
           name={name}
