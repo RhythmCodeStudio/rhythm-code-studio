@@ -2,6 +2,16 @@
 
 /* @import url("https://use.typekit.net/afh1ney.css"); */
 
+@theme {
+  --font-blenny: 'blenny', sans-serif;
+  --font-karla: 'karla', sans-serif;
+  --breakpoint-xs: 30rem;
+  --breakpoint-3xl: 112rem;
+  --breakpoint-4xl: 128rem;   /* 2048px */
+  --breakpoint-5xl: 144rem;   /* 2304px */
+  --breakpoint-6xl: 160rem;   /* 2560px */
+}
+
 .font-blenny {
   font-family: var(--font-blenny), sans-serif;
 }

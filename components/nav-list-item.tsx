@@ -103,7 +103,6 @@
 //   );
 // }
 
-
 "use client";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -128,12 +127,11 @@ export default function NavListItem({
   const { theme } = useTheme();
   const themeObj = themes[theme];
   const color = themeObj.color;
-  const bgColor = themeObj.bgColor;
+  // const bgColor = themeObj.bgColor;
   const textShadow = themeObj.textShadow;
 
   return (
-    <li
-      className={`tracking-wider font-semibold text-${color} ${textShadow}`}>
+    <li className={`tracking-wider font-semibold text-${color} ${textShadow}`}>
       {label === "Contact" ? (
         isActive ? (
           <span aria-current="page">
@@ -179,18 +177,11 @@ export default function NavListItem({
           <Link href={href} className="flex items-center relative group">
             <span
               className={clsx(
-                "lg:group-hover:font-bold transition-colors duration-150 ease-in-out"
+                "lg:group-hover:font-bold lg:group-hover:scale-110 transition-all duration-150 ease-in-out"
               )}
               onClick={onClick}>
               {label}
             </span>
-            <span
-              className={clsx(
-                "absolute bottom-[-.25rem] left-0 w-0 h-[2.75px]",
-                bgColor,
-                "transition-all ease-in-out duration-700 group-hover:w-full"
-              )}
-            ></span>
           </Link>
         )
       ) : htmlElement === "externalLink" ? (

@@ -5,6 +5,7 @@ import Link from "next/link";
 // import components
 import Heading from "@/components/heading";
 import TextBlock from "@/components/text-block";
+import ArrowLink from "@/components/arrow-link";
 
 export const metadata = {
   title: "About Rhythm Code Studio",
@@ -18,18 +19,18 @@ export const metadata = {
 export default async function About() {
   await connection();
   return (
-    <>
-      <div className="flex flex-col max-w-xl mx-auto px-6 lg:px-0 space-y-4">
+    <section className="px-6 lg:px-0">
+      <div className="flex flex-col max-w-xl mx-auto px-6 lg:px-0 space-y-4 3xl:space-y-6">
         <Heading
           headingLevel={1}
           text="Rhythm Code Studio"
-          className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny"
+          className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny mb-6"
         />
       <div className="flex flex-col justify-center ">
         <Heading
           headingLevel={2}
           text="WE SPECIALIZE IN CREATING CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
-          className="font-bold lg:text-2xl xl:text-4xl mt-4"
+          className="font-bold lg:text-2xl xl:text-4xl"
         />
       </div>
       <div>
@@ -50,16 +51,11 @@ export default async function About() {
           className="2xl:text-lg"
         />
       </div>
-      <div className="w-20 h-auto mx-auto">
-        <Link href="/behind-the-beat">
-          <Image
-            src="/images/design-elements/down-arrow.png"
-            alt="arrow down"
-            width={175}
-            height={96}
-            className="mx-auto mt-2 animate-pulse hover:animate-none hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out"
-          />
-        </Link>
+      <div className="w-20 h-auto mx-auto mt-4 ">
+        <ArrowLink 
+          href="/behind-the-beat"
+          direction="down"
+        />
       </div>
           
     
@@ -134,6 +130,6 @@ export default async function About() {
         />
       </div> */}
     </div>
-    </>
+    </section>
   );
 }

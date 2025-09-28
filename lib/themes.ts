@@ -1,6 +1,3 @@
-import { BiLogoPhp } from "react-icons/bi";
-import { text } from "stream/consumers";
-
 export const themes = {
   funk: {
     avif: "/images/backgrounds/funk.avif",

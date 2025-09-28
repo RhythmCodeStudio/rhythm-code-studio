@@ -13,7 +13,7 @@ export default function DesktopNav({
 }) {
   return (
     <nav>
-      <ul className="w-full flex gap-12 lg:gap-16 justify-between text-lg xl:text-xl 2xl:text-2xl">
+      <ul className="w-full flex gap-12 lg:gap-16 justify-between text-lg 3xl:text-2xl">
         {navListItems.map((item) => (
           <NavListItem 
             key={item.label}
