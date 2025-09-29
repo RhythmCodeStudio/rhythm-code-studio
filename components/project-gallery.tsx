@@ -32,7 +32,7 @@ export default function ProjectGallery() {
         className="text-center sm:text-lg md:text-xl lg:text-2xl"
       />
 
-      <ul className={`grid grid-cols-1 lg:grid-cols-2 p-1 lg:p-6 gap-2`}>
+      <ul className={`grid grid-cols-1 xl:grid-cols-2 md:p-2 xl:p-6 gap-2`}>
         {projects.map((project: Project) => (
           <li
             key={project.client}
@@ -74,15 +74,15 @@ export default function ProjectGallery() {
             </div>
             <section className="feature-container">
               <h5
-                className={`text-${color} ${textShadow} font-bold text-lg md:text-xl text-center mb-4`}>
+                className={`text-${color} ${textShadow} font-bold text-lg md:text-xl text-center mb-2`}>
                 Features
               </h5>
               <div className="flex justify-center mb-4">
-                <ul className="grid grid-cols-3 lg:grid-cols-4">
+                <ul className="grid grid-cols-3 sm:grid-cols-4">
                   {project.features.map((feature) => (
                     <li
                       key={feature}
-                      className="bg-zinc-900 text-white m-1 p-2 rounded-2xl text-xs md:text-sm text-center shadow-xl">
+                      className="bg-zinc-900 text-white m-1 p-2 rounded-2xl text-xs xl:text-sm text-center shadow-xl">
                       {feature}
                     </li>
                   ))}
