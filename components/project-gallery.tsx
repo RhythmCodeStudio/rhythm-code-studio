@@ -78,7 +78,7 @@ export default function ProjectGallery() {
                 Features
               </h5>
               <div className="flex justify-center mb-4">
-                <ul className="grid grid-cols-3 sm:grid-cols-4 gap-2">
+                <ul className="grid grid-cols-3 sm:grid-cols-4 px-1 gap-1">
                   {project.features.map((feature) => (
                     <li
                       key={feature}
