@@ -18,7 +18,9 @@ export default function Footer() {
   const textShadow = themeObj.textShadow;
 
   if (pathname === "/about") {
-    return null;
+    return (
+      <footer className="h-24"></footer>
+    );
   }
 
   return (

@@ -60,7 +60,7 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
         {/* Dialog Content */}
         <div className="fixed inset-0 flex flex-col items-center justify-center">
           <DialogPanel
-            className="h-[100vh] w-[100vw] relative border-2 border-black bg-neutral-800 text-black flex flex-col justify-center p-6"
+            className="h-[100vh] w-[100vw] relative border-2 border-black bg-neutral-800 text-black flex flex-col justify-center p-4"
             style={{
               backgroundImage: `url(${themeObj.avif}), url(${themeObj.webp})`,
               backgroundSize: "cover",
@@ -76,13 +76,13 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
             {/* Dialog Title */}
             <DialogTitle
               as="h1"
-              className={`text-${color} flex items-center justify-center text-center  font-blenny text-2xl`}>
+              className={`text-${color} flex items-center justify-center text-center  font-blenny text-3xl`}>
               Rhythm Code Studio
             </DialogTitle>
             <Heading 
               text="CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
               headingLevel={2}
-              className={`text-${color} text-center mb-12`}
+              className={`text-center text-${color} mb-12`}
             />
             <Link href="/">
               <div className="flex justify-center mb-12" onClick={toggleMenu}>
