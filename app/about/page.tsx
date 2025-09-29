@@ -25,7 +25,7 @@ export default async function About() {
         <Heading
           headingLevel={1}
           text="Rhythm Code Studio"
-          className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny mb-6"
+          className="text-center text-2xl sm:text-4xl md:text-5xl font-blenny mb-6"
         />
         <div className="flex flex-col justify-center ">
           <Heading
@@ -52,7 +52,7 @@ export default async function About() {
             className="2xl:text-lg"
           />
         </div>
-        <div className="w-20 h-auto mx-auto ">
+        <div className="w-16 lg:w-20 h-auto mx-auto ">
           <ArrowLinkOrButton 
             href="/behind-the-beat" 
             direction="down" 
