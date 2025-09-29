@@ -39,9 +39,9 @@ export default function ContactFormContainer() {
             text="Contact"
             className="text-center text-4xl md:text-5xl lg:text-6xl font-blenny"
           />
-          <div className={`text-${color} ${textShadow} items-center justify-center max-w-3xl md:text-lg`}>
-            <p className="px-12 py-4">{contactPageCopy.text_block_one}</p>
-            <p className=" px-12 py-4">{contactPageCopy.text_block_two}</p>
+          <div className={`text-${color} ${textShadow} items-center justify-center max-w-3xl md:text-lg py-2`}>
+            <p className="px-12 py-2">{contactPageCopy.text_block_one}</p>
+            <p className=" px-12 py-2">{contactPageCopy.text_block_two}</p>
           </div>
           <ContactForm setFormSubmitted={setFormSubmitted} />
         </>

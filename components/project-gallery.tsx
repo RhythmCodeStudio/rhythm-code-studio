@@ -32,11 +32,11 @@ export default function ProjectGallery() {
         className="text-center sm:text-lg md:text-xl lg:text-2xl"
       />
 
-      <ul className={`grid grid-cols-1 lg:grid-cols-2 p-2 lg:p-6 gap-2`}>
+      <ul className={`grid grid-cols-1 lg:grid-cols-2 p-1 lg:p-6 gap-2`}>
         {projects.map((project: Project) => (
           <li
             key={project.client}
-            className={`flex flex-col shadow-2xl shadow-${color} m-4 max-w-200 border-2 border-${color} rounded-2xl`}>
+            className={`flex flex-col shadow-xl shadow-${color} m-4 max-w-200 border-2 border-${color} rounded-2xl`}>
             <h3
               className={`text-${color} ${textShadow} text-center font-bold text-lg sm:text-xl md:text-2xl mt-4 font-blenny`}>
               {project.client}
@@ -82,7 +82,7 @@ export default function ProjectGallery() {
                   {project.features.map((feature) => (
                     <li
                       key={feature}
-                      className="bg-zinc-900 text-white m-1 p-2 rounded-2xl text-xs md:text-base text-center shadow-xl">
+                      className="bg-zinc-900 text-white m-1 p-2 rounded-2xl text-xs md:text-sm text-center shadow-xl">
                       {feature}
                     </li>
                   ))}

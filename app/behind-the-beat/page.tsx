@@ -42,11 +42,8 @@ export default async function Page() {
           </div>
         </div>
         <div className="order-1 lg:order-2 text-center lg:text-start place-content-end">
-          {/* <h2 className="font-bold text-2xl lg:text-3xl 2xl:text-4xl">
-            WHO'S BEHIND THE BEAT
-          </h2> */}
           <Heading
-            headingLevel={2}
+            headingLevel={1}
             text="WHO'S BEHIND THE BEAT"
             className="font-bold text-2xl lg:text-3xl 2xl:text-4xl"
           />
@@ -54,14 +51,12 @@ export default async function Page() {
         <div className="order-2 lg:order-3 place-content-center max-w-lg">
           <TextBlock
             text="  Rhythm Code founder and lead developer, Kevin Long is attuned to the pulse of his hometown. He serves small businesses, musicians, creatives, and organizations in St. Louis and beyond."
-            // className="p-6 lg:mr-36 lg:pl-0 lg:py-0"
             className="p-6 lg:p-0 lg:pr-6 lg:pr-6 xl:pr-0"
           />
         </div>
         <div className="order-4 place-content-center max-w-lg">
           <TextBlock
             text=" Kevin brings the passion and imagination of an artist, along with the patient persistence of an educator to every job he touches. His diverse background in arts and education and deep development knowledge make for a disciplined creativity like none other. Kevin and Rhythm Code Studio are dedicated to making your project sing in your own distinctive voice."
-            // className="p-6 lg:mr-36 lg:pl-0 lg:py-0"
             className="p-6 lg:p-0 lg:pr-6 xl:pr-0"
           />
         </div>
