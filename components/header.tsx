@@ -22,7 +22,7 @@ export default function Header() {
   const logoInvert = themeObj.logoInvert;
 
   return (
-    <header className={`m-4 mb-0 p-2 pb-0 h-24`}>
+    <header className={`m-4 lg:mb-0 p-2 lg:pb-0 h-24`}>
       <div className="flex justify-between items-center">
         <div className="h-auto w-34 lg:w-36 xl:w-42 2xl:w-48 aspect-[256/138]">
           {isHome ? (

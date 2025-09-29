@@ -25,7 +25,7 @@ export default function Footer() {
 
   return (
     <footer
-      className={`relative h-24 flex flex-col justify-end items-center text-center text-sm m-4 mt-0 p-2 pt-0 text-${color} ${textShadow}`}>
+      className={`relative h-24 flex flex-col justify-end items-center text-center text-sm m-4 lg:mt-0 p-2 lg:pt-0 text-${color} ${textShadow}`}>
       {/* <div className="my-6 lg:my-0">
         <ScheduleConsultation />
       </div> */}

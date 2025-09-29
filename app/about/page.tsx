@@ -20,7 +20,7 @@ export const metadata = {
 export default async function About() {
   await connection();
   return (
-    <section className="px-6 lg:px-0">
+    <section className="px-4 lg:px-0">
       <div className="flex flex-col max-w-xl mx-auto px-6 lg:px-0 space-y-4 3xl:space-y-6">
         <Heading
           headingLevel={1}
