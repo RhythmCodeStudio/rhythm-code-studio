@@ -5,7 +5,8 @@ import Link from "next/link";
 // import components
 import Heading from "@/components/heading";
 import TextBlock from "@/components/text-block";
-import ArrowLink from "@/components/arrow-link";
+import ArrowLinkOrButton from "@/components/arrow-link-or-button";
+import InternalLink from "@/components/internal-link";
 
 export const metadata = {
   title: "About Rhythm Code Studio",
@@ -26,110 +27,39 @@ export default async function About() {
           text="Rhythm Code Studio"
           className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny mb-6"
         />
-      <div className="flex flex-col justify-center ">
-        <Heading
-          headingLevel={2}
-          text="WE SPECIALIZE IN CREATING CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
-          className="font-bold lg:text-2xl xl:text-4xl"
-        />
-      </div>
-      <div>
-        <TextBlock 
-          text="Rhythm Code Studio develops high-performing custom websites and web applications for small businesses, musicians, artists, creatives, and organizations in St. Louis, Missouri and beyond." 
-          className="2xl:text-lg"
-        />
-      </div>
-       <div>
-        <TextBlock 
-          text="We develop web solutions with a pulse - ones that match your personal rhythm and style. Our work is fast and secure. Always fully responsive so your website looks great on any device. Always fully accessible so everyone can receive your message." 
-          className="2xl:text-lg"
-        />
-      </div>
-      <div>
-        <TextBlock 
-          text="We manage it all for you so you can focus on doing what you love and sharing it with the world." 
-          className="2xl:text-lg"
-        />
-      </div>
-      <div className="w-20 h-auto mx-auto mt-4 ">
-        <ArrowLink 
-          href="/behind-the-beat"
-          direction="down"
-        />
-      </div>
-          
-    
-      
-      {/* <div className="flex justify-center mt-4">
-        <a href="/contact" className="font-bold text-lg xl:text-xl 2xl:text-2xl border-2 rounded-full shadow-md shadow-black px-6 py-1 hover:bg-white transition-all duration-700 ease-in-out">
-          SYNC UP TODAY
-        </a>
-      </div> */}
-
-      {/* <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny">
-        Rhythm Code Studio
-      </h1> */}
-      {/* <section className="grid grid-cols-1 lg:grid-rows-4 lg:grid-cols-2 ">
-        <div className="order-3 lg:order-1 row-span-4 flex justify-center lg:justify-end items-center lg:mx-12">
-          <div className="w-[209px] h-[215px] md:w-[279px] md:h-[286px] xl:w-[318px] xl:h-[326px] 2xl:w-[398px] 2xl:h-[408px] flex justify-center items-center">
-            <Image
-              priority
-              src="/images/logos/mark-only-full-398x408.png"
-              alt="Rhythm Code Studio"
-              width={398}
-              height={408}
-              sizes="(max-width: 768px) 209px, (max-width: 1280px) 279px, (max-width: 1536px) 318px, 398px"
-            />
-          </div>
+        <div className="flex flex-col justify-center ">
+          <Heading
+            headingLevel={2}
+            text="WE SPECIALIZE IN CREATING CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
+            className="font-bold lg:text-2xl xl:text-4xl"
+          />
         </div>
-        <div className="order-1 lg:order-2 text-center lg:text-start place-content-end">
-          <h2 className="font-bold text-2xl lg:text-3xl 2xl:text-4xl 3xl:text-5xl">
-            ABOUT RHYTHM CODE STUDIO
-          </h2>
+        <div>
+          <TextBlock
+            text="Rhythm Code Studio develops high-performing custom websites and web applications for small businesses, musicians, artists, creatives, and organizations in St. Louis, Missouri and beyond."
+            className="2xl:text-lg"
+          />
         </div>
-        <div className="order-2 lg:order-3 place-content-center max-w-4xl">
-          <p className="p-6 xl:mr-36 3xl:mr-96 lg:p-0 lg:text-lg 3xl:text-xl">
-            Rhythm Code founder and lead developer, Kevin Long is attuned to the
-            pulse of his hometown. He serves small businesses, musicians,
-            creatives, and organizations in St. Louis and beyond.
-          </p>
+        <div>
+          <TextBlock
+            text="We develop web solutions with a pulse - ones that match your personal rhythm and style. Our work is fast and secure. Always fully responsive so your website looks great on any device. Always fully accessible so everyone can receive your message."
+            className="2xl:text-lg"
+          />
         </div>
-        <div className="order-4 place-content-center max-w-4xl">
-          <p className="p-6 xl:mr-36 3xl:mr-96 lg:p-0 lg:text-lg 3xl:text-xl">
-            Kevin brings the passion and imagination of an artist, along with
-            the patient persistence of an educator to every job he touches. His
-            diverse background in arts and education and deep development
-            knowledge make for a disciplined creativity like none other. Kevin
-            and Rhythm Code Studio are dedicated to making your project sing in
-            your own distinctive voice.
-          </p>
+        <div>
+          <TextBlock
+            text="We manage it all for you so you can focus on doing what you love and sharing it with the world."
+            className="2xl:text-lg"
+          />
         </div>
-        <div className="order-5 px-6 lg:px-0 flex justify-center lg:justify-start items-center mb-4 lg:mt-8">
-          <Link
-            href="/contact"
-          >
-            <span className="font-bold text-lg xl:text-xl 2xl:text-2xl border-2 rounded-full shadow-md shadow-black px-6 py-1 hover:bg-white transition-all duration-700 ease-in-out"
-          >
-              SYNC UP TODAY
-            </span>
-          </Link>
+        <div className="w-20 h-auto mx-auto ">
+          <ArrowLinkOrButton 
+            href="/behind-the-beat" 
+            direction="down" 
+            title="See who's behind the beat."
+          />
         </div>
-      </section> */}
-      {/* <div className="flex justify-center 3xl:mt-24">
-        <Services
-          headingLevel="h3"
-          headingText="CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
-          subHeadingLevel="h3"
-          subHeadingText="Services Offered"
-          headingClassName={
-            "font-bold text-center md:text-lg lg:text-xl xl:text-2xl mt-4"
-          }
-          subHeadingClassName={
-            "font-bold text-lg md:text-xl xl:text-2xl mt-6 md:mt-12 mb-2"
-          }
-        />
-      </div> */}
-    </div>
+      </div>
     </section>
   );
 }

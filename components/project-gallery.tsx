@@ -58,7 +58,7 @@ export default function ProjectGallery() {
                 <DesktopCarousel slides={project.desktop_image} />
               </figure>
             </div>
-            <div className="flex-grow mx-6 p-4 border-2 border-zinc-900 rounded-2xl shadow-2xl mb-12 description-container bg-white/50 text-black">
+            <div className="flex-grow mx-6 mb-6 p-4 border-2 border-zinc-900 rounded-2xl shadow-2xl description-container bg-white/50 text-black">
               <div className="flex justify-center">
                 <a
                   href={`https://${project.url}`}

@@ -1,5 +1,6 @@
 "use client";
 // import from next
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 // import themes
 import { useTheme } from "../context/theme-context";
@@ -9,15 +10,20 @@ import { themes } from "../lib/themes";
 // import ScheduleConsultation from "./schedule-consultation";
 
 export default function Footer() {
+  const pathname = usePathname();
   const { theme } = useTheme();
   const themeObj = themes[theme];
   const logoInvert = themeObj.logoInvert;
   const color = themeObj.color;
   const textShadow = themeObj.textShadow;
 
+  if (pathname === "/about") {
+    return null;
+  }
+
   return (
     <footer
-      className={`relative h-30 flex flex-col justify-end items-center text-center text-sm m-4 mt-0 p-2  text-${color} ${textShadow}`}>
+      className={`relative h-24 flex flex-col justify-end items-center text-center text-sm m-4 mt-0 p-2 pt-0 text-${color} ${textShadow}`}>
       {/* <div className="my-6 lg:my-0">
         <ScheduleConsultation />
       </div> */}
