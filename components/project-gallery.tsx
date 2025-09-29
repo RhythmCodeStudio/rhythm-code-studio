@@ -78,11 +78,11 @@ export default function ProjectGallery() {
                 Features
               </h5>
               <div className="flex justify-center mb-4">
-                <ul className="grid grid-cols-3 sm:grid-cols-4">
+                <ul className="grid grid-cols-3 sm:grid-cols-4 gap-2">
                   {project.features.map((feature) => (
                     <li
                       key={feature}
-                      className="bg-zinc-900 text-white m-1 p-2 rounded-2xl text-xs xl:text-sm text-center shadow-xl">
+                      className="bg-zinc-900 text-white p-2 rounded-2xl text-xs xl:text-sm text-center shadow-xl">
                       {feature}
                     </li>
                   ))}
