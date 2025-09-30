@@ -7,6 +7,7 @@ import { themes } from "../lib/themes";
 // import components
 import Heading from "./heading";
 import ContactForm from "../components/contact-form";
+import ContactIconLinks from "./contact-icon-links";
 // import copy
 import { contactPageCopy } from "@/lib/copy/contact-page-copy";
 
@@ -18,16 +19,23 @@ export default function ContactFormContainer() {
   const textShadow = themeObj.textShadow;
 
   return (
-    <div className="flex flex-col items-center">
+    <div className={`flex flex-col items-center `}>
       {formSubmitted ? (
-        <div className="items-center justify-center ">
-          <h1 className="text-6xl lg:text-8xl font-blenny text-center">
+        <div className={`items-center justify-center text-${color} ${textShadow}`}>
+          <h1 className="text-6xl font-blenny text-center">
             Rock On!
           </h1>
-          <p className="m-4 max-w-128">
-            Thanks for your inquiry. Your request to sync up was received.
+          <p className="m-6 max-w-128 px-6">
+            Thank you for your inquiry. Your request to sync up has been received.
             Rhythm Code Studio will reach out to you shortly.
           </p>
+          <div className="flex justify-center m-6">
+            <ContactIconLinks
+              orientation="horizontal"
+              include={["GitHub", "LinkedIn", "Email", "Phone"]}
+              size={24}
+            />
+          </div>
         </div>
       ) : (
         <>

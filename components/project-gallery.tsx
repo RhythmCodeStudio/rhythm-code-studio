@@ -29,7 +29,7 @@ export default function ProjectGallery() {
       <Heading
         headingLevel={2}
         text="CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
-        className="text-center sm:text-lg md:text-xl lg:text-2xl"
+        className="text-center sm:text-lg md:text-xl lg:text-2xl font-semibold"
       />
 
       <ul className={`grid grid-cols-1 xl:grid-cols-2 md:p-2 xl:p-6 gap-2`}>
