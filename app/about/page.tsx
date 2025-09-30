@@ -31,7 +31,7 @@ export default async function About() {
           <Heading
             headingLevel={2}
             text="WE SPECIALIZE IN CREATING CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
-            className="font-bold text-2xl  md:text-2xl lg:text-3xl xl:text-4xl"
+            className="font-bold lg:text-2xl xl:text-4xl"
           />
         </div>
         <div>
