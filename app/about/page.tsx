@@ -25,7 +25,7 @@ export default async function About() {
         <Heading
           headingLevel={1}
           text="Rhythm Code Studio"
-          className="text-center text-3xl sm:text-4xl md:text-5xl font-blenny mb-6 3xl:mb-12"
+          className="text-center text-2xl sm:text-4xl md:text-5xl font-blenny mb-6 3xl:mb-12"
         />
         <div className="flex flex-col justify-center ">
           <Heading
