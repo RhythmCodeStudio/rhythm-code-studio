@@ -15,3 +15,12 @@ export const navListItems = [
     htmlElement: "internalLink",
   },
 ];
+
+export const navSubMenuItems = [
+  {
+    label: "Who We Are",
+    href: "/behind-the-beat",
+    htmlElement: "internalLink",
+    category: "About"
+  },
+];
