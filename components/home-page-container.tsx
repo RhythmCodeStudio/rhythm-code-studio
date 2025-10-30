@@ -30,7 +30,7 @@ export default function HomePageContainer() {
         />
       </div>
       <div className="w-48 sm:w-52 md:w-64 lg:hidden">
-        <LogoMarkOnlyFull logoInvert={logoInvert} />
+        <LogoMarkOnlyFull logoInvert={logoInvert} priority={true} fetchPriority="high"/>
       </div>
       <div className="relative">
         <div className="hidden lg:block w-3xl ">
