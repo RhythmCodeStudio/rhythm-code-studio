@@ -9,6 +9,7 @@ export default function LogoHorizontalFull({
   return (
     <Image
       priority
+      fetchPriority="high"
       alt="Rhythm Code Studio logo"
       src="/images/logos/horizontal-full.png"
       width={1000}

@@ -23,15 +23,11 @@ export default function ProjectGallery() {
 
   return (
     <section>
-      {/* <h2 className="font-semibold tracking-tight text-center xs:text-lg sm:text-xl md:text-2xl lg:text-3xl 3xl:text-5xl mb-12">
-        CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT
-      </h2> */}
       <Heading
         headingLevel={2}
         text="CUSTOM WEB SOLUTIONS TO MATCH YOUR BEAT"
         className="text-center sm:text-lg md:text-xl lg:text-2xl font-semibold"
       />
-
       <ul className={`grid grid-cols-1 xl:grid-cols-2 md:p-2 xl:p-6 gap-2`}>
         {projects.map((project: Project) => (
           <li
