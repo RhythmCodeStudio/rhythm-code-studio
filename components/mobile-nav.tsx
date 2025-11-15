@@ -62,14 +62,14 @@ export default function MobileNav({ navListItems }: MobileMenuProps) {
           <DialogPanel
             className="h-[100vh] w-[100vw] relative border-2 border-black bg-neutral-800 text-black flex flex-col justify-center p-4"
             style={{
-              backgroundImage: `url(${themeObj.avif}), url(${themeObj.webp})`,
+              backgroundImage: `url(${themeObj.webp})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}>
             {/* Close Button */}
             <button
               onClick={toggleMenu}
-              className={`absolute top-6 right-6 text-${color}`}
+              className={`absolute top-12 right-6 text-${color}`}
               aria-label="Close menu">
               <FiXCircle size={28} />
             </button>
