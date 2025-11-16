@@ -47,7 +47,7 @@ function generateUrls(directory: string, baseUrl: string = ""): Url[] {
         priority: 1.0,
       }; // Default values
       urls.push({
-        url: `https://www.kevinlong.dev${urlPath}`,
+        url: `https://www.rhythmcodestudio.tech${urlPath}`,
         lastModified: getLastModified(filePath),
         changeFrequency: config.changeFrequency,
         priority: config.priority,
