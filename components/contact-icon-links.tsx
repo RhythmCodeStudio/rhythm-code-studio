@@ -13,6 +13,7 @@ type ContactIconLinkProps = {
   orientation: "vertical" | "horizontal";
   include?: string[]; // array of names to include, e.g. ["GitHub", "Email"]
   size?: number; // optional size for the icons, default can be set in IconLink component
+  className?: string;
 };
 
 type ContactIconLinkData = {
@@ -26,6 +27,7 @@ export default function ContactIconLinks({
   orientation,
   include,
   size,
+  className,
 }: ContactIconLinkProps) {
   // const pathname = usePathname();
   // const isHome = pathname === "/";
@@ -36,9 +38,9 @@ export default function ContactIconLinks({
 
   const { theme } = useTheme();
   const themeObj = themes[theme];
-  const logoInvert = themeObj.logoInvert;
+  // const logoInvert = themeObj.logoInvert;
   const color = themeObj.color;
-  const textShadow = themeObj.textShadow;
+  // const textShadow = themeObj.textShadow;
 
   // Filter links if include is provided
   const filteredLinks = include
@@ -52,12 +54,12 @@ export default function ContactIconLinks({
 
   return (
     <div
-      className={`flex items-center space-x-12 text-${color} ${
+      className={`flex items-center space-x-12 text-${color} ${className} ${
         orientation === "vertical" ? "flex-col" : "flex-row"
       }`}
     >
       {filteredLinks.map(({ href, icon: Icon, label }: ContactIconLinkData) => (
-        <IconLink key={href} href={href} icon={Icon} size={iconSize} label={label}  />
+        <IconLink key={href} href={href} icon={Icon} size={iconSize} label={label} />
       ))}
     </div>
   );

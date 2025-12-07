@@ -2,6 +2,7 @@
 import { connection } from "next/server";
 // import components
 import ContactFormContainer from "../../components/contact-form-container";
+import ContactIconLinks from "@/components/contact-icon-links";
 
 export const metadata = {
   title: "Sync Up | Rhythm Code Studio",
@@ -15,6 +16,9 @@ export const metadata = {
 export default async function ContactPage() {
   await connection();
   return (
-    <ContactFormContainer />
+    <div className="flex flex-col items-center justify-center">
+      <ContactFormContainer />
+      <ContactIconLinks orientation="horizontal" size={24} className="mt-12" />
+    </div>
   )
 }
