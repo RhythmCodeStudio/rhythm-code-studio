@@ -87,10 +87,10 @@ export default function ProjectGallery() {
             </section>
             <div className="flex justify-center">
               <Image
-                src="/images/logos/mark-only-full.png"
+                src="/images/logos/mark-only-full-128x131.png"
                 alt="Rhythm Code Studio Logo"
                 width={75}
-                height={75}
+                height={77}
                 className={`m-4 ${logoInvert}`}
               />
             </div>
