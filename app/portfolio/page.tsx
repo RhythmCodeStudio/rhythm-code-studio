@@ -19,7 +19,7 @@ export default async function Portfolio() {
     <section>
       <Heading
         headingLevel={1}
-        text="Portfolio"
+        text="Featured Projects"
         className="text-center text-3xl xs:text-4xl md:text-5xl lg:text-6xl font-blenny pb-2"
       />
       <ProjectGallery />
