@@ -1,5 +1,5 @@
 import { SiGithub } from "react-icons/si";
-import { SiLinkedin } from "react-icons/si";
+import { BsLinkedin } from "react-icons/bs";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 
@@ -12,7 +12,7 @@ export const contactIconLinkData = [
   },
   {
     href: "https://www.linkedin.com/company/rhythm-code-studio/",
-    icon: SiLinkedin,
+    icon: BsLinkedin,
     name: "LinkedIn",
     label: "Follow Rhythm Code Studio on LinkedIn"
   },
