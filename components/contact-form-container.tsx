@@ -7,7 +7,6 @@ import { themes } from "../lib/themes";
 // import components
 import Heading from "./heading";
 import ContactForm from "../components/contact-form";
-import ContactIconLinks from "./contact-icon-links";
 // import copy
 import { contactPageCopy } from "@/lib/copy/contact-page-copy";
 
@@ -29,19 +28,9 @@ export default function ContactFormContainer() {
             Thank you for your inquiry. Your request to sync up has been received.
             Rhythm Code Studio will reach out to you shortly.
           </p>
-          <div className="flex justify-center m-6">
-            <ContactIconLinks
-              orientation="horizontal"
-              include={["GitHub", "LinkedIn", "Email", "Phone"]}
-              size={24}
-            />
-          </div>
         </div>
       ) : (
         <>
-          {/* <h1 className="text-center text-3xl xs:text-4xl md:text-5xl lg:text-6xl font-blenny pb-2">
-            Contact
-          </h1> */}
           <Heading
             headingLevel={1}
             text="Contact"
