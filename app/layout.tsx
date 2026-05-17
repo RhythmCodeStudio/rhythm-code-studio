@@ -29,8 +29,7 @@ export const metadata: Metadata = {
     },
   },
   title: {
-    template:
-      "%s | Custom web solutions to match your beat",
+    template: "%s | Custom web solutions to match your beat",
     default: "Rhythm Code Studio | Custom web solutions to match your beat",
   },
   description:
@@ -53,18 +52,18 @@ export default function RootLayout({
       {/* <body className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 max-h-screen"> */}
       <body className="max-h-screen">
         <ClientWrapper>
-        {/* Flex container that occupies at least the viewport height */}
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          {/* Main content area, flex-grow allows it to expand */}
-          <main className="flex grow items-center justify-center">
-            {children}
-          </main>
-          {/* Footer will be positioned at the bottom */}
-          <Footer />
-        </div>
-        <ScrollToTopButton />
-        <Analytics />
+          {/* Flex container that occupies at least the viewport height */}
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            {/* Main content area, flex-grow allows it to expand */}
+            <main className="flex grow items-center justify-center">
+              {children}
+            </main>
+            {/* Footer will be positioned at the bottom */}
+            <Footer />
+          </div>
+          <ScrollToTopButton />
+          <Analytics />
         </ClientWrapper>
       </body>
       {/* <GoogleAnalytics gaId={process.env.GA_ID || ""} /> */}
