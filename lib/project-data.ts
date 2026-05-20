@@ -32,10 +32,43 @@ export const projects = [
     url: "mikemartinmedia.com",
   },
   {
+    client: "po mia",
+    project: "Musician Website",
+    description:
+      "po mia is an eclectic, up-and-coming singer/songwriter based in St. Louis, MO. They are best known for their versatility of musical styles, colourful stylistic expression, as well as their ability to engage a crowd through their lyricism and captivating performances. Coming from a music therapy educational background, po mia's musical works often tackle themes of identity, love, fear, and navigating real life experiences. Their website is a full stack progressive web application that can be installed on devices. The project features a custom content management system, push notifications, mailing list, gig calendar, music player, and contact form. Fully responsive and accessible. Integrated with Vercel Analytics for monitoring site traffic. Built with Next.js and Tailwind CSS.",
+    mobile_images: [
+      "/images/projects/po-mia/mobile/home.jpg",
+      "/images/projects/po-mia/mobile/lyrics.jpg",
+      "/images/projects/po-mia/mobile/music.jpg",
+      "/images/projects/po-mia/mobile/music-2.jpg",
+      "/images/projects/po-mia/mobile/music-player.jpg",
+      "/images/projects/po-mia/mobile/shows-future.jpg",
+      "/images/projects/po-mia/mobile/shows-past.jpg",
+      "/images/projects/po-mia/mobile/contact.jpg",
+    ],
+    desktop_image: [
+      "/images/projects/po-mia/desktop/home.png",
+      // "/images/projects/po-mia/desktop/music.png",
+      // "/images/projects/po-mia/desktop/lyrics.png",
+      // "/images/projects/po-mia/desktop/contact.png",
+      // "/images/projects/po-mia/desktop/shows-past.png",
+      // "/images/projects/po-mia/desktop/shows-future.png",
+    ],
+    url: "pomiamusic.com",
+    features: [
+      "Responsive",
+      "Accessible",
+      "Analytics",
+      "Gig Calendar",
+      "Audio Player",
+      "Contact Form",
+    ],
+  },
+  {
     client: "The Long Emergency",
     project: "Band Website",
     description:
-      "The Long Emergency is a rock band in St. Louis, Missouri. Their website features a gig calendar, music player, audio downloads, merch store, blog, and contact form. Fully responsive and accessible. Integrated with Vercel Analytics for monitoring site traffic. Built with Next.js and Tailwind CSS.",
+      "The Long Emergency is a rock band in St. Louis, Missouri. Their website features a gig calendar, music player, audio downloads, and contact form. Fully responsive and accessible. Integrated with Vercel Analytics for monitoring site traffic. Built with Next.js and Tailwind CSS.",
     mobile_images: [
       "/images/projects/the-long-emergency/mobile/home.jpg",
       "/images/projects/the-long-emergency/mobile/lyrics.jpg",
