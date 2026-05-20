@@ -1,4 +1,6 @@
-export const projects = [
+import type { Project } from "./definitions";
+
+export const projects: Project[] = [
   {
     client: "Mike Martin Media",
     project: "Business Website",
@@ -29,6 +31,7 @@ export const projects = [
       "/images/projects/mmm/desktop/blog-preview.png",
       "/images/projects/mmm/desktop/contact-form.png",
     ],
+    status: "live",
     url: "mikemartinmedia.com",
   },
   {
@@ -41,8 +44,12 @@ export const projects = [
       "/images/projects/po-mia/mobile/mobile-menu.jpg",
       "/images/projects/po-mia/mobile/calendar.jpg",
       "/images/projects/po-mia/mobile/music.jpg",
+      "/images/projects/po-mia/mobile/po-logue.jpg",
+      "/images/projects/po-mia/mobile/golden-tongue.jpg",
+      "/images/projects/po-mia/mobile/rebirth.jpg",
+      "/images/projects/po-mia/mobile/hope-is-plenty.jpg",
       "/images/projects/po-mia/mobile/contact.jpg",
-      "/images/projects/po-mia/mobile/frog-footer.jpg",
+      // "/images/projects/po-mia/mobile/frog-footer.jpg",
       "/images/projects/po-mia/mobile/photos.jpg",
       "/images/projects/po-mia/mobile/contact.jpg",
       "/images/projects/po-mia/mobile/videos.jpg",
@@ -56,7 +63,7 @@ export const projects = [
       "/images/projects/po-mia/desktop/sign-in.png",
       "/images/projects/po-mia/desktop/sign-up.png"
     ],
-    url: "pomiamusic.com",
+    status: "in-development",
     features: [
       "Responsive",
       "Accessible",
@@ -93,6 +100,7 @@ export const projects = [
       "/images/projects/the-long-emergency/desktop/shows-past.png",
       "/images/projects/the-long-emergency/desktop/shows-future.png",
     ],
+    status: "live",
     url: "thelongemergency.net",
     features: [
       "Responsive",

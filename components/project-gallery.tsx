@@ -56,15 +56,22 @@ export default function ProjectGallery() {
             </div>
             <div className="grow mx-6 mb-6 p-4 border-2 border-zinc-900 rounded-2xl shadow-2xl description-container bg-white/50 text-black">
               <div className="flex justify-center">
-                <a
-                  href={`https://${project.url}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block hover:scale-105 active:scale-100 transition-all duration-300 ease-in-out will-change-transform">
-                  <h4 className="mx-auto font-semibold sm:text-lg md:text-xl mb-2 border-b-2 border-black">
-                    {project.url}
+                {" "}
+                {project.status === "live" ? (
+                  <a
+                    href={"https://" + project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block hover:scale-105 active:scale-100 transition-all duration-300 ease-in-out will-change-transform">
+                    <h4 className="mx-auto font-semibold sm:text-lg md:text-xl mb-2 border-b-2 border-black">
+                      {project.url}
+                    </h4>
+                  </a>
+                ) : (
+                  <h4 className="mx-auto font-semibold sm:text-lg md:text-xl mb-2 opacity-70 cursor-default">
+                    In Development - Coming Soon
                   </h4>
-                </a>
+                )}
               </div>
               <p className="md:text-lg 2xl:text-xl">{project.description}</p>
             </div>

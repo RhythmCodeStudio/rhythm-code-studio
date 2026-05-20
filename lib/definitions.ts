@@ -1,12 +1,22 @@
-export type Project = {
+type ProjectBase = {
   client: string;
   project: string;
   description: string;
   desktop_image: string[];
   mobile_images: string[];
-  url: string;
   features: string[];
 };
+
+type LiveProject = ProjectBase & {
+  status: "live";
+  url: string;
+};
+
+type InDevelopmentProject = ProjectBase & {
+  status: "in-development";
+};
+
+export type Project = LiveProject | InDevelopmentProject;
 
 export type Client = {
   id: string;
@@ -21,4 +31,4 @@ export type Message = {
   email: string;
   message: string;
   date: string;
-}
+};
