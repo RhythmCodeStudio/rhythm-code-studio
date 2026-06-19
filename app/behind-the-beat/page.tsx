@@ -50,15 +50,27 @@ export default async function Page() {
         </div>
         <div className="order-2 lg:order-3 place-content-center max-w-lg">
           <TextBlock
-            text="  Rhythm Code founder and lead developer, Kevin Long is attuned to the pulse of his hometown. He serves small businesses, musicians, creatives, and organizations in St. Louis and beyond."
-            className="p-6 lg:p-0 lg:pr-6 lg:pr-6 xl:pr-0"
+            text="Rhythm Code founder and lead developer, Kevin Long is attuned to the pulse of his hometown. He serves small businesses, musicians, creatives, and organizations in St. Louis and beyond."
+            className="p-6 lg:p-0 lg:pr-6 xl:pr-0"
           />
         </div>
         <div className="order-4 place-content-center max-w-lg">
           <TextBlock
-            text=" Kevin brings the passion and imagination of an artist, along with the patient persistence of an educator to every job he touches. His diverse background in arts and education and deep development knowledge make for a disciplined creativity like none other. Kevin and Rhythm Code Studio are dedicated to making your project sing in your own distinctive voice."
+            text={
+              <>
+                Kevin brings the passion and imagination of an artist, along with the patient persistence of an educator to every job he touches. His diverse background in arts and education and deep development knowledge make for a disciplined creativity like none other. Kevin and Rhythm Code Studio are dedicated to making your project sing in your own distinctive voice. For any questions or to get started on your project, contact Kevin directly at{" "}
+                <a
+                  href="mailto:kevin@rhythmcodestudio.tech"
+                  className="underline underline-offset-4 hover:opacity-80">
+                  kevin@rhythmcodestudio.tech
+                </a>
+              </>
+            }
             className="p-6 lg:p-0 lg:pr-6 xl:pr-0"
           />
+          <div className="p-6 lg:p-0 lg:pr-6 xl:pr-0">
+            <p className=""></p>
+          </div>
         </div>
         <div className="order-5 px-6 lg:px-0 flex justify-center lg:justify-start items-center">
           <InternalLink href="/contact" label="contact" />

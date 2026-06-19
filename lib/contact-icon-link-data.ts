@@ -17,15 +17,15 @@ export const contactIconLinkData = [
     label: "Follow Rhythm Code Studio on LinkedIn"
   },
   {
-    href: "mailto:kevin@rhythmcodestudio.tech",
+    href: "mailto:info@rhythmcodestudio.tech",
     icon: BsEnvelopeFill,
     name: "Email",
-    label: "Email kevin@rhythmcodestudio.tech"
+    label: "Email info@rhythmcodestudio.tech"
   },
   {
     href: "tel:+15129750082",
     icon: MdOutlinePhoneAndroid,
     name: "Phone",
-    label: "Call Kevin at 512-975-0082"
+    label: "Call Rhythm Code Studio at 512-975-0082"
   },
 ];
