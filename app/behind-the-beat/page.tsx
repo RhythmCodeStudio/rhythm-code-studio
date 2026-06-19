@@ -30,7 +30,7 @@ export default async function Page() {
       /> */}
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 xl:gap-0">
         <div className="order-3 lg:order-1 row-span-4 flex justify-center lg:justify-end items-center lg:mx-10">
-          <div className="w-[274px] h-auto md:w-[328px] lg:w-[356px] xl:w-[410px] flex justify-center items-center">
+          <div className="w-68.5 h-auto md:w-82 lg:w-89 xl:w-102.5 flex justify-center items-center">
             <Image
               priority
               src="/images/kevin/kevin.png"
