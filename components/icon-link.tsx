@@ -1,5 +1,11 @@
+"use client";
 // import from vercel
 import { track } from "@vercel/analytics";
+// import clsx
+import clsx from "clsx";
+// import themes
+import { useTheme } from "../context/theme-context";
+import { themes } from "../lib/themes";
 
 export default function IconLink({
   href,
@@ -12,6 +18,10 @@ export default function IconLink({
   label: string;
   size: number;
 }) {
+  const { theme } = useTheme();
+  const themeObj = themes[theme];
+  const isBlues = theme === "blues";
+  const isJazz = theme === "jazz";
 
   return (
     <a
@@ -23,10 +33,15 @@ export default function IconLink({
       aria-label={label}
       onClick={() => {
         track("contact icon link clicked", { name: `${label}` });
-      }}
-    >
+      }}>
       {/* Screen reader only text for accessibility */}
-      <span className="sr-only">{label}</span>
+      <span
+        className={clsx(
+          `sr-only`,
+          (isJazz || isBlues) && `text-shadow-black-background-black`,
+        )}>
+        {label}
+      </span>
       <Icon className={`icon-link `} size={size} />
     </a>
   );
