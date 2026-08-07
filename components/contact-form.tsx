@@ -9,7 +9,7 @@ import { clsx } from "clsx";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, Zoom, toast } from "react-toastify/unstyled";
 // import components
-import ContactFormInput from "./contact-form-input";
+import ContactFormInput from "./form-input";
 // import from utils
 import {
   validateEmail,
