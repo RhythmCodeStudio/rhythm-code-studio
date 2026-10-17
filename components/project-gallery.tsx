@@ -6,7 +6,7 @@ import { themes } from "../lib/themes";
 // import data
 import { projects } from "../lib/project-data";
 // import types
-import { Project } from "../lib/definitions";
+import { Project } from "../definitions/definitions";
 // import from next
 import Image from "next/image";
 // import components

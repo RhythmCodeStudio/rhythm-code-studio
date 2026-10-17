@@ -1,4 +1,4 @@
-import type { Project } from "./definitions";
+import type { Project } from "../definitions/definitions";
 
 export const projects: Project[] = [
   {
@@ -61,7 +61,7 @@ export const projects: Project[] = [
       "/images/projects/po-mia/desktop/contact.png",
       "/images/projects/po-mia/desktop/videos.png",
       "/images/projects/po-mia/desktop/sign-in.png",
-      "/images/projects/po-mia/desktop/sign-up.png"
+      "/images/projects/po-mia/desktop/sign-up.png",
     ],
     status: "in-development",
     features: [
@@ -101,7 +101,7 @@ export const projects: Project[] = [
       "/images/projects/the-long-emergency/desktop/shows-future.png",
     ],
     status: "live",
-    url: "thelongemergency.net",
+    url: "thelongemergency.com",
     features: [
       "Responsive",
       "Accessible",

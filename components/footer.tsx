@@ -47,7 +47,7 @@ export default function Footer() {
             // sizes="32px"
           />
         </div>
-        <span>© 2025 Rhythm Code Studio</span>
+        <span>© 2026 Rhythm Code Studio</span>
       </div>
     </footer>
   );
