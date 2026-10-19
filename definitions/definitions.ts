@@ -34,43 +34,44 @@ export type Message = {
   date: string;
 };
 
-export type MusicianSurveyResponse = {
-  id: string;
-  date: string;
-  first_name: string;
-  last_name: string;
-  email: string;
-  phone: string;
-  bandOrArtistName: string;
-  musicIs: string;
-  incomeFromMusic: string;
-  isInteresedInMakingMoreMoney?: boolean;
-  hasWebsite: boolean;
-  website?: string;
-  isInterestedInWebsiteUpgrade?: boolean;
-  isInterestedInNewWebsite?: boolean;
-  socialMediaYouUse: string[];
-  streamingPlatformsYouUse: string[];
-  whatDoYouLIkeAboutSocialMedia?: string;
-  whatDoYouHateAboutSocialMedia?: string;
-  whatDoYouLikeAboutStreamingPlatforms?: string;
-  whatDoYouHateAboutStreamingPlatforms?: string;
-  howCouldTheInternetBetterHelpYou?: string;
-  wouldYouBeInterestedInUsingNewLocalPlatforms?: string;
-  wantFromNewLocalPlatforms?: string;
-  isWillingToProvideMemberOnlyPerks?: boolean;
-  potentialPerks?: string;
-  whatWouldMakeLocalMusicSceneBetter?: string;
-  additionalComments?: string;
-};
-
-export type MusicFanSurveyResponse = {
+type BaseResponse = {
   id: string;
   date: string;
   first_name?: string;
   last_name?: string;
   email: string;
   phone?: string;
+};
+
+export type MusicianSurveyResponse = {
+} & BaseResponse & {
+  bandOrArtistName: string;
+  forMeMusicIs: string;
+  incomeFromMusic: string;
+  isInterestedInMakingMoreMoney?: boolean;
+  socialMediaYouUse: string[];
+  howDoYouUseSocialMedia?: string;
+  whatDoYouLikeAboutSocialMedia?: string;
+  whatDoYouHateAboutSocialMedia?: string;
+  streamingPlatformsYouUse: string[];
+  howDoYouUseStreamingPlatforms?: string;
+  whatDoYouLikeAboutStreamingPlatforms?: string;
+  whatDoYouHateAboutStreamingPlatforms?: string;
+  howCouldTheInternetBetterHelpYou?: string;
+  isInterestedInUsingNewLocalPlatforms?: boolean;
+  wantFromNewLocalPlatforms?: string;
+  isWillingToProvideMemberOnlyPerks?: boolean;
+  potentialPerks?: string;
+  whatWouldMakeLocalMusicSceneBetter?: string;
+  hasWebsite: boolean;
+  website?: string;
+  isInterestedInWebsiteUpgrade?: boolean;
+  isInterestedInNewWebsite?: boolean;
+  additionalComments?: string;
+};
+
+export type MusicFanSurveyResponse = {
+} & BaseResponse & {
   localBandsYouLove: string[];
   localVenuesYouLove: string[];
   socialMediaYouUse: string[];
@@ -82,7 +83,7 @@ export type MusicFanSurveyResponse = {
   whatDoYouLikeAboutStreamingPlatforms?: string;
   whatDoYouHateAboutStreamingPlatforms?: string;
   howCouldTheInternetBetterHelpYou?: string;
-  wouldYouBeInterestedInUsingNewLocalPlatforms?: string;
+  isInterestedInUsingNewLocalPlatforms?: boolean;
   wantFromNewLocalPlatforms?: string;
   whatWouldMakeLocalMusicSceneBetter?: string;
   isInterestedInHostingShows?: boolean;
@@ -90,19 +91,10 @@ export type MusicFanSurveyResponse = {
 };
 
 export type VenueSurveyResponse = {
-  id: string;
-  date: string;
-  first_name?: string;
-  last_name?: string;
-  email: string;
-  phone?: string;
+} & BaseResponse & {
   venueName: string;
   venueType: string;
   positionAtVenue: string;
-  hasWebsite: boolean;
-  website?: string;
-  isInterestedInWebsiteUpgrade?: boolean;
-  isInterestedInNewWebsite?: boolean;
   socialMediaYouUse: string[];
   streamingPlatformsYouUse: string[];
   softwareYouUse?: string[];
@@ -117,21 +109,20 @@ export type VenueSurveyResponse = {
   doYouHaveAnyProblemsThatSoftwareCouldSolve?: boolean;
   whatProblemsCouldSoftwareSolve?: string;
   howCouldTheInternetBetterHelpYou?: string;
-  wouldYouBeInterestedInUsingNewLocalPlatforms?: string;
+  isInterestedInUsingNewLocalPlatforms?: boolean;
   wantFromNewLocalPlatforms?: string;
   whatWouldMakeLocalMusicSceneBetter?: string;
   whatAreYourBiggestChallenges?: string;
   whatWouldBestHelpYouAddressBiggestChallenges?: string;
+  hasWebsite: boolean;
+  website?: string;
+  isInterestedInWebsiteUpgrade?: boolean;
+  isInterestedInNewWebsite?: boolean;
   additionalComments?: string;
 };
 
 export type SoundPersonSurveyResponse = {
-  id: string;
-  date: string;
-  first_name?: string;
-  last_name?: string;
-  email: string;
-  phone?: string;
+} & BaseResponse & {
   socialMediaYouUse: string[];
   // streamingPlatformsYouUse: string[];
   softwareYouUse?: string[];
@@ -147,7 +138,7 @@ export type SoundPersonSurveyResponse = {
   doYouHaveAnyProblemsThatSoftwareCouldSolve?: boolean;
   whatProblemsCouldSoftwareSolve?: string;
   howCouldTheInternetBetterHelpYou?: string;
-  wouldYouBeInterestedInUsingNewLocalPlatforms?: string;
+  isInterestedInUsingNewLocalPlatforms?: boolean;
   wantFromNewLocalPlatforms?: string;
   whatWouldMakeLocalMusicSceneBetter?: string;
   whatAreYourBiggestChallenges?: string;

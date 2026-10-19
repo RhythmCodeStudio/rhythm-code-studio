@@ -1,5 +1,5 @@
 // import components
-import MusicianSurveyForm from "@/components/musician-survey-form";
+import MusicianSurveyForm from "@/components/music-survey-form";
 
 export default function MusicianSurveyPage() {
   return (

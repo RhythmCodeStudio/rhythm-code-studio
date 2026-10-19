@@ -3,6 +3,7 @@ import { ChangeEvent } from "react";
 interface FormCheckboxProps {
   label: string;
   name: string;
+  value?: string;
   checked: boolean;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   required?: boolean;
@@ -10,11 +11,13 @@ interface FormCheckboxProps {
   idPrefix?: string;
   className?: string;
   labelClassName?: string;
+  inputClassName?: string;
 }
 
 export default function FormCheckbox({
   label,
   name,
+  value,
   checked,
   onChange,
   required = false,
@@ -22,23 +25,26 @@ export default function FormCheckbox({
   idPrefix = "",
   className = "",
   labelClassName = "",
+  inputClassName = "",
 }: FormCheckboxProps) {
   const uniqueInputId = idPrefix ? `${idPrefix}-${name}` : name;
 
   return (
-    <div className={`flex flex-col justify-start w-full ${className}`}>
+    <div className={`flex flex-col w-full ${className}`}>
       <label
         htmlFor={uniqueInputId}
-        className={`m-2 text-left text-base flex items-start gap-2 ${labelClassName}`}
-      >
+        className={`m-2 text-left text-base flex items-start gap-2 ${labelClassName}`}>
         <input
           id={uniqueInputId}
           name={name}
+          value={value}
           type="checkbox"
           checked={checked}
           onChange={onChange}
           required={required}
-          className="mt-1 h-4 w-4 accent-blue-500 cursor-pointer"
+          className={`mt-1 h-4 w-4 ${
+            inputClassName || "accent-blue-500"
+          } cursor-pointer`}
         />
         <span>
           {label}
@@ -56,8 +62,7 @@ export default function FormCheckbox({
         style={{
           visibility: errorMessage ? "visible" : "hidden",
           opacity: errorMessage ? 1 : 0,
-        }}
-      >
+        }}>
         {errorMessage || " "}
       </p>
     </div>

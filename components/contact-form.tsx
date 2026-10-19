@@ -6,7 +6,7 @@ import { useState } from "react";
 // import from clsx
 import { clsx } from "clsx";
 // import from toastify
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, Zoom, toast } from "react-toastify/unstyled";
 // import components
 import ContactFormInput from "./form-input";
@@ -57,7 +57,7 @@ export default function ContactForm({
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-    setState: React.Dispatch<React.SetStateAction<string>>
+    setState: React.Dispatch<React.SetStateAction<string>>,
   ) => {
     const { name, value } = e.target;
     setState(value);
@@ -66,33 +66,33 @@ export default function ContactForm({
       setEmailErrorMessage(
         value && !validateEmail(value)
           ? "Please enter a valid email address."
-          : ""
+          : "",
       );
     }
     if (name === "first_name") {
       setFirstNameErrorMessage(
         value && !validateName(value)
           ? "Name can only contain letters and spaces."
-          : ""
+          : "",
       );
     }
     if (name === "last_name") {
       setLastNameErrorMessage(
         value && !validateName(value)
           ? "Name can only contain letters and spaces."
-          : ""
+          : "",
       );
     }
     if (name === "phone") {
       setPhoneErrorMessage(
         value && !validatePhone(value)
           ? "Please enter a valid phone number."
-          : ""
+          : "",
       );
     }
     if (name === "message") {
       setMessageErrorMessage(
-        value && !validateMessage(value) ? "Please enter a valid message." : ""
+        value && !validateMessage(value) ? "Please enter a valid message." : "",
       );
     }
   };
@@ -133,7 +133,7 @@ export default function ContactForm({
           process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
           process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
           emailTemplateParams,
-          process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+          process.env.NEXT_PUBLIC_EMAILJS_USER_ID,
         );
         // .then((result) => {
         track("Contact form submission");
@@ -152,7 +152,7 @@ export default function ContactForm({
       } catch (error) {
         console.error("Error sending email:", error);
         setDeliveryErrorMessage(
-          "There was an error delivering your message. Please email me at kevinlong.dev@gmail.com. My apologies for the inconvenience."
+          "There was an error delivering your message. Please email me at kevinlong.dev@gmail.com. My apologies for the inconvenience.",
         );
         toast.error(
           <div className="p-2">
@@ -174,7 +174,7 @@ export default function ContactForm({
             closeOnClick: true,
             pauseOnHover: true,
             className: "border-2 border-neutral-400 text-white",
-          }
+          },
         );
       }
     } else if (errors.length === 1) {
@@ -272,7 +272,7 @@ export default function ContactForm({
           <span
             className={clsx(
               "transition-opacity duration-700",
-              isFormValid && !buttonSubmitted ? "opacity-100" : "opacity-60"
+              isFormValid && !buttonSubmitted ? "opacity-100" : "opacity-60",
             )}>
             <button
               id="contact-form-submit-button"
@@ -281,15 +281,15 @@ export default function ContactForm({
               disabled={!isFormValid || buttonSubmitted}
               aria-disabled={!isFormValid || buttonSubmitted}
               className={clsx(
-                "text-shadow-black border border-2 rounded-2xl py-1 px-6 transition-colors transition-shadow transition-transform duration-700 ease-in-out font-semibold tracking-widest will-change-transform",
+                "text-shadow-black border-2 rounded-2xl py-1 px-6 transition-transform duration-700 ease-in-out font-semibold tracking-widest will-change-transform",
                 {
                   // enabled styles
                   "bg-white shadow-md shadow-black md:hover:bg-black md:hover:text-white md:hover:scale-105 md:active:scale-95 transition-all duration-700 ease-in-out ":
                     isFormValid && !buttonSubmitted,
                   // disabled styles
-                  "border-stone-600 text-stone-600 bg-orange-100 cursor-not-allowed":
+                  "border-stone-600 text-stone-600 bg-orange-100 cursor-not-allowed pointer-events-none":
                     !isFormValid || buttonSubmitted,
-                }
+                },
               )}>
               {buttonSubmitted ? "Message Sent!" : "Send"}
             </button>

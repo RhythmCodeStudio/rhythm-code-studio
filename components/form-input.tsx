@@ -69,8 +69,8 @@ export default function FormInput({
           maxLength={1000}
           onChange={(e) => handleChange(e, setStateVariable)}
           value={value}
-          required
-          name="message"
+          required={required}
+          name={name}
           id={uniqueInputId}
           className={clsx(
             "rounded-3xl px-4 py-2 opacity-75 h-40 resize-none bg-white text-black border-2 shadow-md",
